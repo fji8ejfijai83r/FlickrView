@@ -9,30 +9,92 @@
 #import "FlickrViewAppDelegate.h"
 #import "HomePageTableViewController.h"
 
+NSString *SnapAndRunShouldUpdateAuthInfoNotification = @"SnapAndRunShouldUpdateAuthInfoNotification";
+// preferably, the auth token is stored in the keychain, but since working with keychain is a pain, we use the simpler default system
+NSString *kStoredAuthTokenKeyName = @"FlickrAuthToken";
+NSString *kGetAuthTokenStep = @"kGetAuthTokenStep";
+NSString *kCheckTokenStep = @"kCheckTokenStep";
+
 @implementation FlickrViewAppDelegate
 
-
 @synthesize window=_window;
-
 @synthesize ngc = _ngc;
-
+@synthesize flickrUserName = _flickrUserName;
+@synthesize flickrContext = _flickrContext;
+@synthesize flickrRequest = _flickrRequest;
 @synthesize managedObjectContext=__managedObjectContext;
-
 @synthesize managedObjectModel=__managedObjectModel;
-
 @synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
+@synthesize activityIndicator, progressView, cancelButton, progressDescription;
+
+#pragma mark -
+#pragma mark - GETTER method
+- (OFFlickrAPIRequest *)flickrRequest
+{
+	if (!_flickrRequest) {
+		_flickrRequest = [[OFFlickrAPIRequest alloc] initWithAPIContext:self.flickrContext];
+		_flickrRequest.delegate = self;		
+	}
+	
+	return _flickrRequest;
+}
+
+- (void)_applicationDidFinishLaunchingContinued
+{
+//	if ([self flickrRequest].sessionInfo) {
+//		// is getting auth token
+//		return;
+//	}
+//	
+//	if ([self.flickrContext.authToken length]) {
+//		[self flickrRequest].sessionInfo = kCheckTokenStep;
+//		[self.flickrRequest callAPIMethodWithGET:@"flickr.auth.checkToken" arguments:nil];
+//		
+		[self.activityIndicator startAnimating];
+		[self.ngc.view addSubview:self.progressView];
+//	}
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 	UINavigationController *tempNgc = [[UINavigationController alloc] init];
 	self.ngc = tempNgc;
 	[tempNgc release];
-	HomePageTableViewController *mstvc = [[HomePageTableViewController alloc] init];
-	[self.ngc initWithRootViewController:mstvc];
-	[mstvc release];
+	HomePageTableViewController *hptvc = [[HomePageTableViewController alloc] init];
+	[self.ngc initWithRootViewController:hptvc];
+	[hptvc release];
 	[self.window addSubview:self.ngc.view];
     [self.window makeKeyAndVisible];
+	
+	[self performSelector:@selector(_applicationDidFinishLaunchingContinued) withObject:nil afterDelay:0.0];
     return YES;
+}
+
+- (void)setAndStoreFlickrAuthToken:(NSString *)inAuthToken
+{
+	if (![inAuthToken length]) {
+		self.flickrContext.authToken = nil;
+		[[NSUserDefaults standardUserDefaults] removeObjectForKey:kStoredAuthTokenKeyName];
+	}
+	else {
+		self.flickrContext.authToken = inAuthToken;
+		[[NSUserDefaults standardUserDefaults] setObject:inAuthToken forKey:kStoredAuthTokenKeyName];
+	}
+}
+
+- (IBAction)cancelAction
+{
+	[self.flickrRequest cancel];	
+	[activityIndicator stopAnimating];
+	[progressView removeFromSuperview];
+	[self setAndStoreFlickrAuthToken:nil];
+	[[NSNotificationCenter defaultCenter] postNotificationName:SnapAndRunShouldUpdateAuthInfoNotification object:self];
+}
+#pragma mark -
+#pragma mark FlickrViewAppDelegate
++ (FlickrViewAppDelegate *)sharedDelegate
+{
+    return (FlickrViewAppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -74,6 +136,8 @@
 - (void)dealloc
 {
     [_ngc release];
+	[_flickrContext release];
+	[_flickrUserName release];
 	[_window release];
     [__managedObjectContext release];
     [__managedObjectModel release];

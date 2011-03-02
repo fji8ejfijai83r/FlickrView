@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ObjectiveFlickr.h"
 
-@interface FlickrViewAppDelegate : NSObject <UIApplicationDelegate> {
+extern NSString *SnapAndRunShouldUpdateAuthInfoNotification;
 
+@interface FlickrViewAppDelegate : NSObject <UIApplicationDelegate, OFFlickrAPIRequestDelegate> {
+	//OFFlickrAPIContext *flickrContext;
+	//OFFlickrAPIRequest *flickrRequest;
+	//NSString *flickrUserName;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -18,7 +23,19 @@
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property (nonatomic, readonly) OFFlickrAPIContext *flickrContext;
+@property (nonatomic, readonly) OFFlickrAPIRequest *flickrRequest;
+@property (nonatomic, copy) NSString *flickrUserName;
+
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, retain) IBOutlet UIView *progressView;
+@property (nonatomic, retain) IBOutlet UIButton *cancelButton;
+@property (nonatomic, retain) IBOutlet UILabel *progressDescription;
+
++ (FlickrViewAppDelegate *)sharedDelegate;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (void)setAndStoreFlickrAuthToken:(NSString *)inAuthToken;
+- (IBAction)cancelAction;
 
 @end

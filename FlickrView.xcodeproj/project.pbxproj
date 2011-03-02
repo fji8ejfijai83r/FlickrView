@@ -27,6 +27,8 @@
 		3F0D88CD131DF28400734292 /* FlickrViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D88CC131DF28400734292 /* FlickrViewTests.h */; };
 		3F0D88CF131DF28400734292 /* FlickrViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D88CE131DF28400734292 /* FlickrViewTests.m */; };
 		3F0D88E1131DF5DA00734292 /* HomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */; };
+		3FD96C52131E3276007D5406 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD96C51131E3276007D5406 /* CFNetwork.framework */; };
+		3FD96C62131E3289007D5406 /* libObjectiveFlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD96C4E131E320F007D5406 /* libObjectiveFlickr.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3F0D888F131DF28300734292;
 			remoteInfo = FlickrView;
+		};
+		3FD96C4B131E320F007D5406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A8666490F9593B200325E1C /* ObjectiveFlickr.framework */;
+			remoteInfo = "ObjectiveFlickr (framework)";
+		};
+		3FD96C4D131E320F007D5406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6ABF72E60F939BE600B9179E /* libObjectiveFlickr.a */;
+			remoteInfo = "ObjectiveFlickr (library)";
+		};
+		3FD96C4F131E3264007D5406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ABF72E50F939BE600B9179E /* ObjectiveFlickr (library) */;
+			remoteInfo = "ObjectiveFlickr (library)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,6 +89,8 @@
 		3F0D88CE131DF28400734292 /* FlickrViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrViewTests.m; sourceTree = "<group>"; };
 		3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTableViewController.h; sourceTree = "<group>"; };
 		3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTableViewController.m; sourceTree = "<group>"; };
+		3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = objectiveflickr/ObjectiveFlickr.xcodeproj; sourceTree = "<group>"; };
+		3FD96C51131E3276007D5406 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +98,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD96C62131E3289007D5406 /* libObjectiveFlickr.a in Frameworks */,
 				3F0D8895131DF28300734292 /* UIKit.framework in Frameworks */,
 				3F0D8897131DF28300734292 /* Foundation.framework in Frameworks */,
 				3F0D8899131DF28300734292 /* CoreGraphics.framework in Frameworks */,
 				3F0D889B131DF28300734292 /* CoreData.framework in Frameworks */,
+				3FD96C52131E3276007D5406 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +124,12 @@
 		3F0D8885131DF28300734292 = {
 			isa = PBXGroup;
 			children = (
+				3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */,
 				3F0D889C131DF28300734292 /* FlickrView */,
 				3F0D88C5131DF28400734292 /* FlickrViewTests */,
 				3F0D8893131DF28300734292 /* Frameworks */,
 				3F0D8891131DF28300734292 /* Products */,
+				3FD96C51131E3276007D5406 /* CFNetwork.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +227,15 @@
 			name = Class;
 			sourceTree = "<group>";
 		};
+		3FD96C43131E320F007D5406 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD96C4C131E320F007D5406 /* ObjectiveFlickr.framework */,
+				3FD96C4E131E320F007D5406 /* libObjectiveFlickr.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +250,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3FD96C50131E3264007D5406 /* PBXTargetDependency */,
 			);
 			name = FlickrView;
 			productName = FlickrView;
@@ -252,6 +291,12 @@
 			mainGroup = 3F0D8885131DF28300734292;
 			productRefGroup = 3F0D8891131DF28300734292 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3FD96C43131E320F007D5406 /* Products */;
+					ProjectRef = 3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3F0D888F131DF28300734292 /* FlickrView */,
@@ -259,6 +304,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3FD96C4C131E320F007D5406 /* ObjectiveFlickr.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveFlickr.framework;
+			remoteRef = 3FD96C4B131E320F007D5406 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3FD96C4E131E320F007D5406 /* libObjectiveFlickr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectiveFlickr.a;
+			remoteRef = 3FD96C4D131E320F007D5406 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3F0D888E131DF28300734292 /* Resources */ = {
@@ -327,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 3F0D888F131DF28300734292 /* FlickrView */;
 			targetProxy = 3F0D88C3131DF28400734292 /* PBXContainerItemProxy */;
+		};
+		3FD96C50131E3264007D5406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveFlickr (library)";
+			targetProxy = 3FD96C4F131E3264007D5406 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -407,6 +474,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlickrView/FlickrView-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					objectiveflickr/Source,
+					objectiveflickr/LFWebAPIKit,
+				);
 				INFOPLIST_FILE = "FlickrView/FlickrView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +492,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlickrView/FlickrView-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					objectiveflickr/Source,
+					objectiveflickr/LFWebAPIKit,
+				);
 				INFOPLIST_FILE = "FlickrView/FlickrView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -4,6 +4,12 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 3FD96B59131DFB88007D5406 /* FlickrView */;
 		activeTarget = 3F0D888F131DF28300734292 /* FlickrView */;
+		addToTargets = (
+			3F0D888F131DF28300734292 /* FlickrView */,
+		);
+		breakpoints = (
+			3FD96CC2131E528D007D5406 /* FlickrViewAppDelegate.m:47 */,
+		);
 		codeSenseManager = 3FD96B79131DFB9F007D5406 /* Code sense */;
 		executables = (
 			3FD96B59131DFB88007D5406 /* FlickrView */,
@@ -14,9 +20,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					833,
+					830,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -29,6 +35,28 @@
 					PBXFileDataSource_Errors_ColumnID,
 					PBXFileDataSource_Warnings_ColumnID,
 					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					793,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
 			PBXPerProjectTemplateStateSaveDate = 320732040;
@@ -83,6 +111,46 @@
 			3FD96C38131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C38131E30D5007D5406 /* PBXTextBookmark */;
 			3FD96C39131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C39131E30D5007D5406 /* PBXTextBookmark */;
 			3FD96C3A131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C3A131E30D5007D5406 /* PBXTextBookmark */;
+			3FD96C68131E3333007D5406 /* PBXTextBookmark */ = 3FD96C68131E3333007D5406 /* PBXTextBookmark */;
+			3FD96C69131E3333007D5406 /* PBXTextBookmark */ = 3FD96C69131E3333007D5406 /* PBXTextBookmark */;
+			3FD96C6A131E3333007D5406 /* PBXTextBookmark */ = 3FD96C6A131E3333007D5406 /* PBXTextBookmark */;
+			3FD96C6B131E3333007D5406 /* PBXTextBookmark */ = 3FD96C6B131E3333007D5406 /* PBXTextBookmark */;
+			3FD96C6E131E3345007D5406 /* PBXTextBookmark */ = 3FD96C6E131E3345007D5406 /* PBXTextBookmark */;
+			3FD96C83131E33C5007D5406 /* PBXTextBookmark */ = 3FD96C83131E33C5007D5406 /* PBXTextBookmark */;
+			3FD96C8E131E36B3007D5406 /* PlistBookmark */ = 3FD96C8E131E36B3007D5406 /* PlistBookmark */;
+			3FD96C8F131E36B3007D5406 /* PBXTextBookmark */ = 3FD96C8F131E36B3007D5406 /* PBXTextBookmark */;
+			3FD96C90131E36B3007D5406 /* PBXTextBookmark */ = 3FD96C90131E36B3007D5406 /* PBXTextBookmark */;
+			3FD96C93131E3831007D5406 /* PBXTextBookmark */ = 3FD96C93131E3831007D5406 /* PBXTextBookmark */;
+			3FD96C94131E3831007D5406 /* PBXTextBookmark */ = 3FD96C94131E3831007D5406 /* PBXTextBookmark */;
+			3FD96C95131E3831007D5406 /* PBXTextBookmark */ = 3FD96C95131E3831007D5406 /* PBXTextBookmark */;
+			3FD96C96131E3831007D5406 /* PBXTextBookmark */ = 3FD96C96131E3831007D5406 /* PBXTextBookmark */;
+			3FD96C97131E3831007D5406 /* PBXTextBookmark */ = 3FD96C97131E3831007D5406 /* PBXTextBookmark */;
+			3FD96C98131E3831007D5406 /* PBXTextBookmark */ = 3FD96C98131E3831007D5406 /* PBXTextBookmark */;
+			3FD96CB3131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB3131E51F6007D5406 /* PBXTextBookmark */;
+			3FD96CB4131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB4131E51F6007D5406 /* PBXTextBookmark */;
+			3FD96CB5131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB5131E51F6007D5406 /* PBXTextBookmark */;
+			3FD96CB6131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB6131E51F6007D5406 /* PBXTextBookmark */;
+			3FD96CB7131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB7131E51F6007D5406 /* PBXTextBookmark */;
+			3FD96CBA131E5215007D5406 /* PBXTextBookmark */ = 3FD96CBA131E5215007D5406 /* PBXTextBookmark */;
+			3FD96CBF131E525E007D5406 /* PBXTextBookmark */ = 3FD96CBF131E525E007D5406 /* PBXTextBookmark */;
+			3FD96CC6131E528F007D5406 /* PBXTextBookmark */ = 3FD96CC6131E528F007D5406 /* PBXTextBookmark */;
+			3FD96CC7131E528F007D5406 /* PBXTextBookmark */ = 3FD96CC7131E528F007D5406 /* PBXTextBookmark */;
+			3FD96CE8131E5307007D5406 /* PBXTextBookmark */ = 3FD96CE8131E5307007D5406 /* PBXTextBookmark */;
+			3FD96CE9131E5307007D5406 /* PBXTextBookmark */ = 3FD96CE9131E5307007D5406 /* PBXTextBookmark */;
+			3FD96CEB131E5355007D5406 /* PBXTextBookmark */ = 3FD96CEB131E5355007D5406 /* PBXTextBookmark */;
+			3FD96D01131E56AA007D5406 /* PBXTextBookmark */ = 3FD96D01131E56AA007D5406 /* PBXTextBookmark */;
+			3FD96D02131E5703007D5406 /* PBXTextBookmark */ = 3FD96D02131E5703007D5406 /* PBXTextBookmark */;
+			3FD96D03131E5703007D5406 /* PBXTextBookmark */ = 3FD96D03131E5703007D5406 /* PBXTextBookmark */;
+			3FD96D0F131E583A007D5406 /* PBXTextBookmark */ = 3FD96D0F131E583A007D5406 /* PBXTextBookmark */;
+			3FD96D10131E583A007D5406 /* PBXTextBookmark */ = 3FD96D10131E583A007D5406 /* PBXTextBookmark */;
+			3FD96D11131E583A007D5406 /* PBXTextBookmark */ = 3FD96D11131E583A007D5406 /* PBXTextBookmark */;
+			3FD96D12131E583A007D5406 /* PBXTextBookmark */ = 3FD96D12131E583A007D5406 /* PBXTextBookmark */;
+			3FD96D1B131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1B131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D1C131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1C131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D1D131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1D131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D1E131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1E131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D1F131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1F131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D22131E58BA007D5406 /* PBXTextBookmark */ = 3FD96D22131E58BA007D5406 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3FD96B78131DFB9F007D5406 /* Source Control */;
 		userBuildSettings = {
@@ -96,29 +164,30 @@
 	};
 	3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1060.9, 700}}";
-			sepNavSelRange = "{372, 0}";
-			sepNavVisRange = "{0, 709}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 1046}}";
+			sepNavSelRange = "{1328, 0}";
+			sepNavVisRange = "{264, 1256}";
 		};
 	};
 	3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{3000, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8032}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {3025.69, 5225}}";
-			sepNavSelRange = "{192, 0}";
-			sepNavVisRange = "{0, 966}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{5309, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 10341}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1448.63, 7042}}";
+			sepNavSelRange = "{2765, 0}";
+			sepNavVisRange = "{1021, 1008}";
+			sepNavWindowFrame = "{{2, 4}, {1278, 998}}";
 		};
 	};
 	3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 700}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1008, 881}}";
 			sepNavSelRange = "{284, 0}";
 			sepNavVisRange = "{0, 289}";
 		};
 	};
 	3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 700}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1008, 881}}";
 			sepNavSelRange = "{243, 0}";
 			sepNavVisRange = "{0, 292}";
 		};
@@ -128,8 +197,8 @@
 	};
 	3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 858}}";
-			sepNavSelRange = "{288, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1008, 881}}";
+			sepNavSelRange = "{250, 0}";
 			sepNavVisRange = "{0, 305}";
 			sepNavWindowFrame = "{{2, 223}, {1278, 774}}";
 		};
@@ -137,9 +206,9 @@
 	3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{4689, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{4740, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{4790, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 5030}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1589.06, 4269}}";
-			sepNavSelRange = "{4964, 0}";
-			sepNavVisRange = "{4014, 959}";
+			sepNavIntBoundsRect = "{{0, 0}, {1589.06, 4724}}";
+			sepNavSelRange = "{3927, 0}";
+			sepNavVisRange = "{55, 740}";
 			sepNavWindowFrame = "{{2, 223}, {1278, 774}}";
 		};
 	};
@@ -167,9 +236,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = FlickrView;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	3FD96B78131DFB9F007D5406 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -399,7 +472,7 @@
 		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 29;
+		rLoc = 62;
 		rType = 1;
 	};
 	3FD96C04131E049F007D5406 /* PBXTextBookmark */ = {
@@ -437,7 +510,7 @@
 		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
 		name = "FlickrViewAppDelegate.h: 16";
 		rLen = 0;
-		rLoc = 372;
+		rLoc = 594;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 0;
@@ -659,5 +732,421 @@
 		rType = 0;
 		vrLen = 1016;
 		vrLoc = 4014;
+	};
+	3FD96C68131E3333007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 167";
+		rLen = 0;
+		rLoc = 4248;
+		rType = 0;
+		vrLen = 784;
+		vrLoc = 3893;
+	};
+	3FD96C69131E3333007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 325;
+		rType = 0;
+		vrLen = 680;
+		vrLoc = 46;
+	};
+	3FD96C6A131E3333007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 16";
+		rLen = 0;
+		rLoc = 594;
+		rType = 0;
+		vrLen = 709;
+		vrLoc = 0;
+	};
+	3FD96C6B131E3333007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 10";
+		rLen = 0;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 719;
+		vrLoc = 0;
+	};
+	3FD96C6E131E3345007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 10";
+		rLen = 0;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 737;
+		vrLoc = 0;
+	};
+	3FD96C83131E33C5007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 10";
+		rLen = 0;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 737;
+		vrLoc = 0;
+	};
+	3FD96C8E131E36B3007D5406 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/hdhiessu/Desktop/FlickrView/FlickrViewTests/FlickrViewTests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	3FD96C8F131E36B3007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 12";
+		rLen = 0;
+		rLoc = 358;
+		rType = 0;
+		vrLen = 933;
+		vrLoc = 46;
+	};
+	3FD96C90131E36B3007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 325;
+		rType = 0;
+		vrLen = 660;
+		vrLoc = 46;
+	};
+	3FD96C93131E3831007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 32";
+		rLen = 0;
+		rLoc = 638;
+		rType = 0;
+		vrLen = 83;
+		vrLoc = 712;
+	};
+	3FD96C94131E3831007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 24";
+		rLen = 0;
+		rLoc = 860;
+		rType = 0;
+		vrLen = 961;
+		vrLoc = 85;
+	};
+	3FD96C95131E3831007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 20";
+		rLen = 0;
+		rLoc = 841;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	3FD96C96131E3831007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 20";
+		rLen = 0;
+		rLoc = 841;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	3FD96C97131E3831007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+	};
+	3FD96C98131E3831007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+		vrLen = 220;
+		vrLoc = 145;
+	};
+	3FD96CB3131E51F6007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 32";
+		rLen = 0;
+		rLoc = 1326;
+		rType = 0;
+		vrLen = 1323;
+		vrLoc = 0;
+	};
+	3FD96CB4131E51F6007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "HomePageTableViewController.h: 14";
+		rLen = 0;
+		rLoc = 250;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	3FD96CB5131E51F6007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 167";
+		rLen = 0;
+		rLoc = 4248;
+		rType = 0;
+		vrLen = 1213;
+		vrLoc = 3291;
+	};
+	3FD96CB6131E51F6007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 47";
+		rLen = 0;
+		rLoc = 1415;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 738;
+	};
+	3FD96CB7131E51F6007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 1062;
+		rType = 0;
+		vrLen = 1178;
+		vrLoc = 326;
+	};
+	3FD96CBA131E5215007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 1062;
+		rType = 0;
+		vrLen = 1178;
+		vrLoc = 326;
+	};
+	3FD96CBF131E525E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 1062;
+		rType = 0;
+		vrLen = 1178;
+		vrLoc = 326;
+	};
+	3FD96CC2131E528D007D5406 /* FlickrViewAppDelegate.m:47 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		functionName = "-_applicationDidFinishLaunchingContinued";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 47;
+		location = FlickrView;
+		modificationTime = 320754370.496548;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3FD96CC6131E528F007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 1062;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 1362;
+	};
+	3FD96CC7131E528F007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 1062;
+		rType = 0;
+		vrLen = 1069;
+		vrLoc = 1362;
+	};
+	3FD96CE8131E5307007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 45";
+		rLen = 0;
+		rLoc = 1415;
+		rType = 0;
+		vrLen = 1073;
+		vrLoc = 1362;
+	};
+	3FD96CE9131E5307007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 49";
+		rLen = 0;
+		rLoc = 1415;
+		rType = 0;
+		vrLen = 1062;
+		vrLoc = 1362;
+	};
+	3FD96CEB131E5355007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 44";
+		rLen = 0;
+		rLoc = 1415;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 1362;
+	};
+	3FD96D01131E56AA007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 73";
+		rLen = 0;
+		rLoc = 2765;
+		rType = 0;
+		vrLen = 1177;
+		vrLoc = 1483;
+	};
+	3FD96D02131E5703007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 73";
+		rLen = 0;
+		rLoc = 2765;
+		rType = 0;
+		vrLen = 1177;
+		vrLoc = 1483;
+	};
+	3FD96D03131E5703007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 35";
+		rLen = 0;
+		rLoc = 1371;
+		rType = 0;
+		vrLen = 1441;
+		vrLoc = 85;
+	};
+	3FD96D0F131E583A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 237";
+		rLen = 0;
+		rLoc = 9991;
+		rType = 0;
+		vrLen = 1046;
+		vrLoc = 8773;
+	};
+	3FD96D10131E583A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 35";
+		rLen = 0;
+		rLoc = 1370;
+		rType = 0;
+		vrLen = 1232;
+		vrLoc = 202;
+	};
+	3FD96D11131E583A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 18";
+		rLen = 0;
+		rLoc = 468;
+		rType = 0;
+		vrLen = 1234;
+		vrLoc = 202;
+	};
+	3FD96D12131E583A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 81";
+		rLen = 0;
+		rLoc = 3044;
+		rType = 0;
+		vrLen = 1419;
+		vrLoc = 2235;
+	};
+	3FD96D1B131E589E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 12";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 292;
+		vrLoc = 0;
+	};
+	3FD96D1C131E589E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
+		name = "FlickrViewAppDelegate_iPhone.h: 15";
+		rLen = 0;
+		rLoc = 284;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	3FD96D1D131E589E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 154";
+		rLen = 0;
+		rLoc = 3927;
+		rType = 0;
+		vrLen = 740;
+		vrLoc = 55;
+	};
+	3FD96D1E131E589E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 35";
+		rLen = 0;
+		rLoc = 1371;
+		rType = 0;
+		vrLen = 1441;
+		vrLoc = 85;
+	};
+	3FD96D1F131E589E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 85";
+		rLen = 0;
+		rLoc = 2765;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 1021;
+	};
+	3FD96D22131E58BA007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 85";
+		rLen = 0;
+		rLoc = 2765;
+		rType = 0;
+		vrLen = 1008;
+		vrLoc = 1021;
 	};
 }
