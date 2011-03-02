@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	3F0D8887131DF28300734292 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 3FD96B59131DFB88007D5406 /* FlickrView */;
+		activeTarget = 3F0D888F131DF28300734292 /* FlickrView */;
+		codeSenseManager = 3FD96B79131DFB9F007D5406 /* Code sense */;
+		executables = (
+			3FD96B59131DFB88007D5406 /* FlickrView */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 320732040;
+			PBXWorkspaceStateSaveDate = 320732040;
+		};
+		perUserProjectItems = {
+			3FD96BC5131E0254007D5406 /* XCBuildMessageTextBookmark */ = 3FD96BC5131E0254007D5406 /* XCBuildMessageTextBookmark */;
+			3FD96BC6131E0254007D5406 /* PBXTextBookmark */ = 3FD96BC6131E0254007D5406 /* PBXTextBookmark */;
+			3FD96BC9131E025B007D5406 /* PBXTextBookmark */ = 3FD96BC9131E025B007D5406 /* PBXTextBookmark */;
+			3FD96BCA131E025B007D5406 /* PBXTextBookmark */ = 3FD96BCA131E025B007D5406 /* PBXTextBookmark */;
+			3FD96BCB131E025B007D5406 /* PBXTextBookmark */ = 3FD96BCB131E025B007D5406 /* PBXTextBookmark */;
+			3FD96BCC131E025B007D5406 /* XCBuildMessageTextBookmark */ = 3FD96BCC131E025B007D5406 /* XCBuildMessageTextBookmark */;
+			3FD96BCD131E025B007D5406 /* PBXTextBookmark */ = 3FD96BCD131E025B007D5406 /* PBXTextBookmark */;
+			3FD96BD0131E0279007D5406 /* PBXTextBookmark */ = 3FD96BD0131E0279007D5406 /* PBXTextBookmark */;
+			3FD96BD1131E0279007D5406 /* PBXTextBookmark */ = 3FD96BD1131E0279007D5406 /* PBXTextBookmark */;
+			3FD96BD4131E0296007D5406 /* PBXTextBookmark */ = 3FD96BD4131E0296007D5406 /* PBXTextBookmark */;
+			3FD96BD7131E02B5007D5406 /* PBXTextBookmark */ = 3FD96BD7131E02B5007D5406 /* PBXTextBookmark */;
+			3FD96BD8131E02BE007D5406 /* PBXTextBookmark */ = 3FD96BD8131E02BE007D5406 /* PBXTextBookmark */;
+			3FD96BF4131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF4131E039A007D5406 /* PBXTextBookmark */;
+			3FD96BF5131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF5131E039A007D5406 /* PBXTextBookmark */;
+			3FD96BF6131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF6131E039A007D5406 /* PBXTextBookmark */;
+			3FD96BF7131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF7131E039A007D5406 /* PBXTextBookmark */;
+			3FD96BFA131E0428007D5406 /* PBXTextBookmark */ = 3FD96BFA131E0428007D5406 /* PBXTextBookmark */;
+			3FD96BFB131E0428007D5406 /* PBXTextBookmark */ = 3FD96BFB131E0428007D5406 /* PBXTextBookmark */;
+			3FD96BFC131E0428007D5406 /* PBXTextBookmark */ = 3FD96BFC131E0428007D5406 /* PBXTextBookmark */;
+			3FD96BFF131E0435007D5406 /* PBXTextBookmark */ = 3FD96BFF131E0435007D5406 /* PBXTextBookmark */;
+			3FD96C02131E049F007D5406 /* PBXTextBookmark */ = 3FD96C02131E049F007D5406 /* PBXTextBookmark */;
+			3FD96C03131E049F007D5406 /* XCBuildMessageTextBookmark */ = 3FD96C03131E049F007D5406 /* XCBuildMessageTextBookmark */;
+			3FD96C04131E049F007D5406 /* PBXTextBookmark */ = 3FD96C04131E049F007D5406 /* PBXTextBookmark */;
+			3FD96C07131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C07131E04AF007D5406 /* PBXTextBookmark */;
+			3FD96C08131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C08131E04AF007D5406 /* PBXTextBookmark */;
+			3FD96C09131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C09131E04AF007D5406 /* PBXTextBookmark */;
+			3FD96C0A131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C0A131E04AF007D5406 /* PBXTextBookmark */;
+			3FD96C0B131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C0B131E04AF007D5406 /* PBXTextBookmark */;
+			3FD96C0C131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C0C131E04AF007D5406 /* PBXTextBookmark */;
+			3FD96C11131E2952007D5406 /* PBXTextBookmark */ = 3FD96C11131E2952007D5406 /* PBXTextBookmark */;
+			3FD96C12131E2952007D5406 /* PBXTextBookmark */ = 3FD96C12131E2952007D5406 /* PBXTextBookmark */;
+			3FD96C13131E2952007D5406 /* PBXTextBookmark */ = 3FD96C13131E2952007D5406 /* PBXTextBookmark */;
+			3FD96C16131E29F9007D5406 /* PBXTextBookmark */ = 3FD96C16131E29F9007D5406 /* PBXTextBookmark */;
+			3FD96C1B131E2BA7007D5406 /* PBXTextBookmark */ = 3FD96C1B131E2BA7007D5406 /* PBXTextBookmark */;
+			3FD96C1C131E2BA7007D5406 /* PBXTextBookmark */ = 3FD96C1C131E2BA7007D5406 /* PBXTextBookmark */;
+			3FD96C1D131E2BA7007D5406 /* PBXTextBookmark */ = 3FD96C1D131E2BA7007D5406 /* PBXTextBookmark */;
+			3FD96C1E131E2C1A007D5406 /* PBXTextBookmark */ = 3FD96C1E131E2C1A007D5406 /* PBXTextBookmark */;
+			3FD96C21131E2E46007D5406 /* PBXTextBookmark */ = 3FD96C21131E2E46007D5406 /* PBXTextBookmark */;
+			3FD96C22131E2E46007D5406 /* XCBuildMessageTextBookmark */ = 3FD96C22131E2E46007D5406 /* XCBuildMessageTextBookmark */;
+			3FD96C23131E2E46007D5406 /* PBXTextBookmark */ = 3FD96C23131E2E46007D5406 /* PBXTextBookmark */;
+			3FD96C28131E2E4F007D5406 /* PBXTextBookmark */ = 3FD96C28131E2E4F007D5406 /* PBXTextBookmark */;
+			3FD96C29131E2E4F007D5406 /* XCBuildMessageTextBookmark */ = 3FD96C29131E2E4F007D5406 /* XCBuildMessageTextBookmark */;
+			3FD96C2A131E2E4F007D5406 /* PBXTextBookmark */ = 3FD96C2A131E2E4F007D5406 /* PBXTextBookmark */;
+			3FD96C2F131E2EE1007D5406 /* PBXTextBookmark */ = 3FD96C2F131E2EE1007D5406 /* PBXTextBookmark */;
+			3FD96C37131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C37131E30D5007D5406 /* PBXTextBookmark */;
+			3FD96C38131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C38131E30D5007D5406 /* PBXTextBookmark */;
+			3FD96C39131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C39131E30D5007D5406 /* PBXTextBookmark */;
+			3FD96C3A131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C3A131E30D5007D5406 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 3FD96B78131DFB9F007D5406 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3F0D888F131DF28300734292 /* FlickrView */ = {
+		activeExec = 0;
+		executables = (
+			3FD96B59131DFB88007D5406 /* FlickrView */,
+		);
+	};
+	3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1060.9, 700}}";
+			sepNavSelRange = "{372, 0}";
+			sepNavVisRange = "{0, 709}";
+		};
+	};
+	3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{3000, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 8032}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {3025.69, 5225}}";
+			sepNavSelRange = "{192, 0}";
+			sepNavVisRange = "{0, 966}";
+		};
+	};
+	3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 700}}";
+			sepNavSelRange = "{284, 0}";
+			sepNavVisRange = "{0, 289}";
+		};
+	};
+	3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 700}}";
+			sepNavSelRange = "{243, 0}";
+			sepNavVisRange = "{0, 292}";
+		};
+	};
+	3F0D88BD131DF28400734292 /* FlickrViewTests */ = {
+		activeExec = 0;
+	};
+	3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 858}}";
+			sepNavSelRange = "{288, 0}";
+			sepNavVisRange = "{0, 305}";
+			sepNavWindowFrame = "{{2, 223}, {1278, 774}}";
+		};
+	};
+	3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{4689, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{4740, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{4790, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 5030}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1589.06, 4269}}";
+			sepNavSelRange = "{4964, 0}";
+			sepNavVisRange = "{4014, 959}";
+			sepNavWindowFrame = "{{2, 223}, {1278, 774}}";
+		};
+	};
+	3FD96B59131DFB88007D5406 /* FlickrView */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = FlickrView;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	3FD96B78131DFB9F007D5406 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	3FD96B79131DFB9F007D5406 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3FD96BC5131E0254007D5406 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected identifier before '[' token";
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 11;
+		rType = 1;
+	};
+	3FD96BC6131E0254007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 19";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 227;
+		vrLoc = 311;
+	};
+	3FD96BC9131E025B007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
+		name = "FlickrViewAppDelegate_iPhone.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 0;
+	};
+	3FD96BCA131E025B007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "MainScreenTableViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 263;
+		vrLoc = 0;
+	};
+	3FD96BCB131E025B007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 19";
+		rLen = 0;
+		rLoc = 412;
+		rType = 0;
+		vrLen = 553;
+		vrLoc = 153;
+	};
+	3FD96BCC131E025B007D5406 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected identifier before '[' token";
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 11;
+		rType = 1;
+	};
+	3FD96BCD131E025B007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 17";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 546;
+		vrLoc = 38;
+	};
+	3FD96BD0131E0279007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 17";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 546;
+		vrLoc = 38;
+	};
+	3FD96BD1131E0279007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 43";
+		rLen = 0;
+		rLoc = 1075;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 441;
+	};
+	3FD96BD4131E0296007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 42";
+		rLen = 0;
+		rLoc = 1073;
+		rType = 0;
+		vrLen = 758;
+		vrLoc = 464;
+	};
+	3FD96BD7131E02B5007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 17";
+		rLen = 0;
+		rLoc = 357;
+		rType = 0;
+		vrLen = 560;
+		vrLoc = 57;
+	};
+	3FD96BD8131E02BE007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 18";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 209;
+		vrLoc = 311;
+	};
+	3FD96BF4131E039A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 22";
+		rLen = 0;
+		rLoc = 477;
+		rType = 0;
+		vrLen = 560;
+		vrLoc = 57;
+	};
+	3FD96BF5131E039A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
+		name = "FlickrViewAppDelegate_iPhone.h: 15";
+		rLen = 0;
+		rLoc = 284;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 0;
+	};
+	3FD96BF6131E039A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 18";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 545;
+		vrLoc = 38;
+	};
+	3FD96BF7131E039A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 23";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 782;
+		vrLoc = 3;
+	};
+	3FD96BFA131E0428007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
+		name = "FlickrViewAppDelegate_iPhone.h: 15";
+		rLen = 0;
+		rLoc = 284;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 0;
+	};
+	3FD96BFB131E0428007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 23";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 782;
+		vrLoc = 3;
+	};
+	3FD96BFC131E0428007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 20";
+		rLen = 0;
+		rLoc = 454;
+		rType = 0;
+		vrLen = 541;
+		vrLoc = 57;
+	};
+	3FD96BFF131E0435007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 43";
+		rLen = 0;
+		rLoc = 1075;
+		rType = 0;
+		vrLen = 706;
+		vrLoc = 539;
+	};
+	3FD96C02131E049F007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 15";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 134;
+		vrLoc = 156;
+	};
+	3FD96C03131E049F007D5406 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'MainScreenTableViewController' undeclared (first use in this function)";
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 29;
+		rType = 1;
+	};
+	3FD96C04131E049F007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 29";
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+		vrLen = 308;
+		vrLoc = 569;
+	};
+	3FD96C07131E04AF007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 43";
+		rLen = 0;
+		rLoc = 1075;
+		rType = 0;
+		vrLen = 538;
+		vrLoc = 199;
+	};
+	3FD96C08131E04AF007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
+		name = "FlickrViewAppDelegate_iPhone.h: 15";
+		rLen = 0;
+		rLoc = 284;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	3FD96C09131E04AF007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 16";
+		rLen = 0;
+		rLoc = 372;
+		rType = 0;
+		vrLen = 709;
+		vrLoc = 0;
+	};
+	3FD96C0A131E04AF007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 0;
+	};
+	3FD96C0B131E04AF007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 20";
+		rLen = 0;
+		rLoc = 263;
+		rType = 0;
+		vrLen = 337;
+		vrLoc = 0;
+	};
+	3FD96C0C131E04AF007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 10";
+		rLen = 0;
+		rLoc = 197;
+		rType = 0;
+		vrLen = 295;
+		vrLoc = 0;
+	};
+	3FD96C11131E2952007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
+		name = "FlickrViewAppDelegate_iPhone.m: 12";
+		rLen = 0;
+		rLoc = 243;
+		rType = 0;
+		vrLen = 292;
+		vrLoc = 0;
+	};
+	3FD96C12131E2952007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "MainScreenTableViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 263;
+		vrLoc = 0;
+	};
+	3FD96C13131E2952007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 96";
+		rLen = 0;
+		rLoc = 2402;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 1667;
+	};
+	3FD96C16131E29F9007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 97";
+		rLen = 0;
+		rLoc = 2389;
+		rType = 0;
+		vrLen = 618;
+		vrLoc = 1488;
+	};
+	3FD96C1B131E2BA7007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "MainScreenTableViewController.h: 15";
+		rLen = 0;
+		rLoc = 291;
+		rType = 0;
+		vrLen = 314;
+		vrLoc = 0;
+	};
+	3FD96C1C131E2BA7007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 13";
+		rLen = 0;
+		rLoc = 263;
+		rType = 0;
+		vrLen = 523;
+		vrLoc = 0;
+	};
+	3FD96C1D131E2BA7007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 29";
+		rLen = 0;
+		rLoc = 732;
+		rType = 0;
+		vrLen = 512;
+		vrLoc = 199;
+	};
+	3FD96C1E131E2C1A007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 31";
+		rLen = 0;
+		rLoc = 621;
+		rType = 0;
+		vrLen = 636;
+		vrLoc = 283;
+	};
+	3FD96C21131E2E46007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 30";
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+		vrLen = 228;
+		vrLoc = 814;
+	};
+	3FD96C22131E2E46007D5406 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Missing sentinel in function call";
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 31;
+		rType = 1;
+	};
+	3FD96C23131E2E46007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 32";
+		rLen = 0;
+		rLoc = 638;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 555;
+	};
+	3FD96C28131E2E4F007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "MainScreenTableViewController.h: 15";
+		rLen = 0;
+		rLoc = 288;
+		rType = 0;
+		vrLen = 309;
+		vrLoc = 0;
+	};
+	3FD96C29131E2E4F007D5406 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Missing sentinel in function call";
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 31;
+		rType = 1;
+	};
+	3FD96C2A131E2E4F007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 32";
+		rLen = 0;
+		rLoc = 706;
+		rType = 0;
+		vrLen = 642;
+		vrLoc = 999;
+	};
+	3FD96C2F131E2EE1007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 126";
+		rLen = 0;
+		rLoc = 2964;
+		rType = 0;
+		vrLen = 1075;
+		vrLoc = 2316;
+	};
+	3FD96C37131E30D5007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 10";
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	3FD96C38131E30D5007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "HomePageTableViewController.h: 15";
+		rLen = 0;
+		rLoc = 288;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	3FD96C39131E30D5007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "MainScreenTableViewController.m: 186";
+		rLen = 0;
+		rLoc = 5021;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 4014;
+	};
+	3FD96C3A131E30D5007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomwPageTableViewController.m: 186";
+		rLen = 0;
+		rLoc = 5021;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 4014;
+	};
+}

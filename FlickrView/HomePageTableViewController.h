@@ -1,5 +1,5 @@
 //
-//  FlickrViewAppDelegate_iPhone.h
+//  HomePageTableViewController.h
 //  FlickrView
 //
 //  Created by HD hiessu on 11-3-2.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FlickrViewAppDelegate.h"
 
-@interface FlickrViewAppDelegate_iPhone : FlickrViewAppDelegate {
+
+@interface HomePageTableViewController : UITableViewController {
+		
 }
-
+@property (nonatomic, retain) NSArray *showList;
 @end

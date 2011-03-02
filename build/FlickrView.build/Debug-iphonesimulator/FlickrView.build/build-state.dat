@@ -1,0 +1,425 @@
+TFlickrView
+v7
+r0
+t320745712.210821
+cCheck dependencies
+cProcessInfoPlistFile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/Info.plist FlickrView/FlickrView-Info.plist
+cProcessPCH /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch.gch FlickrView/FlickrView-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+cDataModelVersionCompile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView.momd /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView.xcdatamodeld
+cCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/main.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPhone.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPad.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomePageTableViewController.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+cLd /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView normal i386
+cGenerateDSYMFile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app.dSYM /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView
+cCopyStringsFile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/InfoPlist.strings FlickrView/en.lproj/InfoPlist.strings
+cCompileXIB /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib
+cCompileXIB /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/en.lproj/MainWindow_iPad.xib
+cTouch /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004CC122A000000000001D6CE0
+t1287725728
+s1928416
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004CC12294000000000000046B
+t1287725716
+s1131
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView-Prefix.pch
+c000000004D6DBB030000000000000168
+t1299036931
+s360
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i<CoreData/CoreData.h>
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView.xcdatamodeld
+c000000004D6DBB030000000000000088
+t1299036931
+s136
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.h
+c000000004D6DCD1500000000000002C7
+t1299041557
+s711
+i<UIKit/UIKit.h>
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m
+c000000004D6DF94C0000000000001F62
+t1299052876
+s8034
+i"FlickrViewAppDelegate.h"
+i"HomePageTableViewController.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.h
+c000000004D6DF94D0000000000000133
+t1299052877
+s307
+i<UIKit/UIKit.h>
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m
+c000000004D6DF94D00000000000013A8
+t1299052877
+s5032
+i"HomePageTableViewController.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomwPageTableViewController.m
+c000000004D6DF94D00000000000013A8
+t1299052877
+s5032
+i"MainScreenTableViewController.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.h
+c000000004D6DF4D90000000000000137
+t1299051737
+s311
+i<UIKit/UIKit.h>
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.m
+c000000004D6DF75D00000000000013AE
+t1299052381
+s5038
+i"MainScreenTableViewController.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/en.lproj/InfoPlist.strings
+c000000004D6DBB03000000000000002D
+t1299036931
+s45
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.h
+c000000004D6DBB040000000000000124
+t1299036932
+s292
+i<UIKit/UIKit.h>
+i"FlickrViewAppDelegate.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m
+c000000004D6DBB04000000000000011C
+t1299036932
+s284
+i"FlickrViewAppDelegate_iPad.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/en.lproj/MainWindow_iPad.xib
+c000000004D6DBB040000000000003F20
+t1299036932
+s16160
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.h
+c000000004D6DCD0E0000000000000123
+t1299041550
+s291
+i<UIKit/UIKit.h>
+i"FlickrViewAppDelegate.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m
+c000000004D6DF19E0000000000000126
+t1299050910
+s294
+i"FlickrViewAppDelegate_iPhone.h"
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib
+c000000004D6DCB650000000000004A09
+t1299041125
+s18953
+
+N/Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m
+c000000004D6DBB030000000000000165
+t1299036931
+s357
+i<UIKit/UIKit.h>
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app
+t1299052912
+s238
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app.dSYM
+t1299052912
+s102
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView
+t1299052912
+s27276
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView.momd
+t1299039259
+s136
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/Info.plist
+t1299039255
+s932
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/PkgInfo
+t1299039255
+s8
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/InfoPlist.strings
+t1299039262
+s42
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/MainWindow_iPad.nib
+t1299039262
+s1457
+
+N/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/MainWindow_iPhone.nib
+t1299041306
+s994
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrView.LinkFileList
+c000000004D6DF96F00000000000002C2
+t1299052911
+s706
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate.o
+t1299052877
+s61464
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPad.o
+t1299041560
+s4080
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPhone.o
+t1299050961
+s4108
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomePageTableViewController.o
+t1299052912
+s46024
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomwPageTableViewController.o
+t1299052877
+s46024
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/MainScreenTableViewController.o
+t1299052385
+s46172
+
+N/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/main.o
+t1299039259
+s3088
+
+N/var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch.gch
+t1299039259
+s12627952
+
+NFlickrView/FlickrView-Info.plist
+c000000004D6DBB030000000000000603
+t1299036931
+s1539
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies320745711#320745712#0(0"0(0#1#0"8614601952#0"0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320745677.117442
+e320745677.579604
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@77"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m320745677#320745677#0(0"0(0#0#69"/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m8641218752#2084"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrViewAppDelegate.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate.o0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPad.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320734360.628305
+e320734360.758884
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPad.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@87"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m320734360#320734360#0(0"0(0#0#79"/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m8630299264#2099"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/FlickrViewAppDelegate_iPad.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPad.o0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPhone.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320743761.658493
+e320743761.866772
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPhone.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@91"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m320743761#320743761#0(0"0(0#0#83"/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m8638074688#2105"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/FlickrViewAppDelegate_iPhone.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrViewAppDelegate_iPhone.o0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomePageTableViewController.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320745712.028869
+e320745712.139411
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomePageTableViewController.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@83"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m320745712#320745712#0(0"0(0#0#75"/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m8644614336#2096"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomePageTableViewController.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomePageTableViewController.o0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomwPageTableViewController.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomwPageTableViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320745677.118935
+e320745677.433266
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomwPageTableViewController.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomwPageTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@83"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomwPageTableViewController.m320745677#320745677#0(0"0(0#0#75"/Users/hdhiessu/Desktop/FlickrView/FlickrView/HomwPageTableViewController.m8638641824#2096"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/HomwPageTableViewController.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/HomwPageTableViewController.o0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/MainScreenTableViewController.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320745184.885129
+e320745185.103639
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/MainScreenTableViewController.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@85"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.m320745184#320745185#0(0"0(0#0#77"/Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.m8637760736#2100"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/MainScreenTableViewController.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/MainScreenTableViewController.o0#
+
+CCompileC build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/main.o /Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
+s320732059.639469
+e320732059.881208
+r1
+xCompileC
+xbuild/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/main.o
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@60"Compile /Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m320732059#320732059#0(0"0(0#0#52"/Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m8607085888#2050"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -include /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/main.m -o /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/en.lproj/MainWindow_iPad.xib
+s320732062.048357
+e320732062.685680
+r1
+xCompileXIB
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/en.lproj/MainWindow_iPad.xib
+lSLF07#2@55"CompileXIB FlickrView/iPad/en.lproj/MainWindow_iPad.xib320732062#320732062#0(0"0(0#0#79"/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/en.lproj/MainWindow_iPad.xib8607057664#605"    cd /Users/hdhiessu/Desktop/FlickrView    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/MainWindow_iPad.nib /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPad/en.lproj/MainWindow_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib
+s320734104.590294
+e320734106.656386
+r1
+xCompileXIB
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib
+lSLF07#2@59"CompileXIB FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib320734104#320734106#0(0"0(0#0#83"/Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib8637740768#611"    cd /Users/hdhiessu/Desktop/FlickrView    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/MainWindow_iPhone.nib /Users/hdhiessu/Desktop/FlickrView/FlickrView/iPhone/en.lproj/MainWindow_iPhone.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCopyStringsFile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/InfoPlist.strings FlickrView/en.lproj/InfoPlist.strings
+s320732061.436196
+e320732062.048176
+r1
+xCopyStringsFile
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj/InfoPlist.strings
+xFlickrView/en.lproj/InfoPlist.strings
+lSLF07#2@42"Copy FlickrView/en.lproj/InfoPlist.strings320732061#320732062#0(0"0(0#0#72"/Users/hdhiessu/Desktop/FlickrView/FlickrView/en.lproj/InfoPlist.strings8606821440#489"    cd /Users/hdhiessu/Desktop/FlickrView    setenv ICONV /usr/bin/iconv    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding binary FlickrView/en.lproj/InfoPlist.strings --outdir /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/en.lproj0#
+
+CDataModelVersionCompile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView.momd /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView.xcdatamodeld
+s320732059.637550
+e320732059.903055
+r1
+xDataModelVersionCompile
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView.momd
+x/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView.xcdatamodeld
+lSLF07#2@117"DataModelVersionCompile build/Debug-iphonesimulator/FlickrView.app/FlickrView.momd FlickrView/FlickrView.xcdatamodeld320732059#320732059#0(0"0(0#0#69"/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView.xcdatamodeld8605858944#394"    cd /Users/hdhiessu/Desktop/FlickrView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView.xcdatamodeld /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView.momd0#
+
+CGenerateDSYMFile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app.dSYM /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView
+s320745712.181581
+e320745712.205610
+r1
+xGenerateDSYMFile
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app.dSYM
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView
+lSLF07#2@118"GenerateDSYMFile build/Debug-iphonesimulator/FlickrView.app.dSYM build/Debug-iphonesimulator/FlickrView.app/FlickrView320745712#320745712#0(0"0(0#0#88"/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView8641944192#380"    cd /Users/hdhiessu/Desktop/FlickrView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView -o /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app.dSYM0#
+
+CLd /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView normal i386
+s320745712.139531
+e320745712.181461
+r1
+xLd
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView
+xnormal
+xi386
+lSLF07#2@93"Link /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView320745712#320745712#0(0"0(0#0#0"8644073472#929"    cd /Users/hdhiessu/Desktop/FlickrView    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -filelist /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/Objects-normal/i386/FlickrView.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreData -prebind -o /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/FlickrView0#
+
+CProcessInfoPlistFile /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/Info.plist FlickrView/FlickrView-Info.plist
+s320732055.162622
+e320732055.276606
+r1
+xProcessInfoPlistFile
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/Info.plist
+xFlickrView/FlickrView-Info.plist
+lSLF07#2@40"Process FlickrView/FlickrView-Info.plist320732055#320732055#0(0"0(0#0#67"/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView-Info.plist29555366482477168#487"    cd /Users/hdhiessu/Desktop/FlickrView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility FlickrView/FlickrView-Info.plist -genpkginfo /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app/Info.plist0#
+
+CProcessPCH /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch.gch FlickrView/FlickrView-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
+s320732055.276944
+e320732059.637312
+r1
+xProcessPCH
+x/var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch.gch
+xFlickrView/FlickrView-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvmgcc42
+lSLF07#2@43"Precompile FlickrView/FlickrView-Prefix.pch320732055#320732059#0(0"0(0#0#67"/Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView-Prefix.pch8606316544#1943"    cd /Users/hdhiessu/Desktop/FlickrView    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-generated-files.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-own-target-headers.hmap -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-all-target-headers.hmap -iquote /Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/FlickrView-project-headers.hmap -F/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator -I/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/include -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources/i386 -I/Users/hdhiessu/Desktop/FlickrView/build/FlickrView.build/Debug-iphonesimulator/FlickrView.build/DerivedSources -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -c /Users/hdhiessu/Desktop/FlickrView/FlickrView/FlickrView-Prefix.pch -o /var/folders/as/asj-1JUzHpOOIiMKtlrnS++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FlickrView-Prefix-deennzzcfvfcimbhysmtrpuoebfn/FlickrView-Prefix.pch.gch0#
+
+CTouch /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app
+s320745712.206055
+e320745712.210312
+r1
+xTouch
+x/Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app
+lSLF07#2@83"Touch /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app320745712#320745712#0(0"0(0#0#0"8641683872#273"    cd /Users/hdhiessu/Desktop/FlickrView    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/hdhiessu/Desktop/FlickrView/build/Debug-iphonesimulator/FlickrView.app0#
+

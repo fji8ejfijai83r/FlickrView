@@ -26,6 +26,7 @@
 		3F0D88CA131DF28400734292 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D88C8131DF28400734292 /* InfoPlist.strings */; };
 		3F0D88CD131DF28400734292 /* FlickrViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D88CC131DF28400734292 /* FlickrViewTests.h */; };
 		3F0D88CF131DF28400734292 /* FlickrViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D88CE131DF28400734292 /* FlickrViewTests.m */; };
+		3F0D88E1131DF5DA00734292 /* HomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,25 +45,27 @@
 		3F0D8896131DF28300734292 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F0D8898131DF28300734292 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3F0D889A131DF28300734292 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3F0D889E131DF28300734292 /* FlickrView-Info.plist */ = {isa = PBXFileReference; path = "FlickrView-Info.plist"; sourceTree = "<group>"; };
+		3F0D889E131DF28300734292 /* FlickrView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrView-Info.plist"; sourceTree = "<group>"; };
 		3F0D88A0131DF28300734292 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F0D88A2131DF28300734292 /* FlickrView-Prefix.pch */ = {isa = PBXFileReference; path = "FlickrView-Prefix.pch"; sourceTree = "<group>"; };
+		3F0D88A2131DF28300734292 /* FlickrView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrView-Prefix.pch"; sourceTree = "<group>"; };
 		3F0D88A3131DF28300734292 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */ = {isa = PBXFileReference; path = FlickrViewAppDelegate.h; sourceTree = "<group>"; };
+		3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrViewAppDelegate.h; sourceTree = "<group>"; };
 		3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrViewAppDelegate.m; sourceTree = "<group>"; };
 		3F0D88A9131DF28400734292 /* FlickrView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlickrView.xcdatamodel; sourceTree = "<group>"; };
-		3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = FlickrViewAppDelegate_iPhone.h; path = iPhone/FlickrViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlickrViewAppDelegate_iPhone.h; path = iPhone/FlickrViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlickrViewAppDelegate_iPhone.m; path = iPhone/FlickrViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		3F0D88B0131DF28400734292 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		3F0D88B3131DF28400734292 /* FlickrViewAppDelegate_iPad.h */ = {isa = PBXFileReference; name = FlickrViewAppDelegate_iPad.h; path = iPad/FlickrViewAppDelegate_iPad.h; sourceTree = "<group>"; };
+		3F0D88B3131DF28400734292 /* FlickrViewAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlickrViewAppDelegate_iPad.h; path = iPad/FlickrViewAppDelegate_iPad.h; sourceTree = "<group>"; };
 		3F0D88B4131DF28400734292 /* FlickrViewAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlickrViewAppDelegate_iPad.m; path = iPad/FlickrViewAppDelegate_iPad.m; sourceTree = "<group>"; };
 		3F0D88B7131DF28400734292 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		3F0D88BE131DF28400734292 /* FlickrViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */ = {isa = PBXFileReference; path = "FlickrViewTests-Info.plist"; sourceTree = "<group>"; };
+		3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrViewTests-Info.plist"; sourceTree = "<group>"; };
 		3F0D88C9131DF28400734292 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3F0D88CB131DF28400734292 /* FlickrViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "FlickrViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		3F0D88CB131DF28400734292 /* FlickrViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		3F0D88CC131DF28400734292 /* FlickrViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrViewTests.h; sourceTree = "<group>"; };
 		3F0D88CE131DF28400734292 /* FlickrViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrViewTests.m; sourceTree = "<group>"; };
+		3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTableViewController.h; sourceTree = "<group>"; };
+		3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +127,7 @@
 		3F0D889C131DF28300734292 /* FlickrView */ = {
 			isa = PBXGroup;
 			children = (
-				3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */,
-				3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */,
-				3F0D88A8131DF28300734292 /* FlickrView.xcdatamodeld */,
-				3F0D88AB131DF28400734292 /* iPhone */,
-				3F0D88B2131DF28400734292 /* iPad */,
+				3F0D88DE131DF32000734292 /* Class */,
 				3F0D889D131DF28300734292 /* Supporting Files */,
 			);
 			path = FlickrView;
@@ -183,6 +182,20 @@
 				3F0D88CB131DF28400734292 /* FlickrViewTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F0D88DE131DF32000734292 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */,
+				3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */,
+				3F0D88A8131DF28300734292 /* FlickrView.xcdatamodeld */,
+				3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */,
+				3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */,
+				3F0D88AB131DF28400734292 /* iPhone */,
+				3F0D88B2131DF28400734292 /* iPad */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +308,7 @@
 				3F0D88AA131DF28400734292 /* FlickrView.xcdatamodeld in Sources */,
 				3F0D88AE131DF28400734292 /* FlickrViewAppDelegate_iPhone.m in Sources */,
 				3F0D88B5131DF28400734292 /* FlickrViewAppDelegate_iPad.m in Sources */,
+				3F0D88E1131DF5DA00734292 /* HomePageTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +492,7 @@
 				3F0D88D4131DF28400734292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F0D88D5131DF28400734292 /* Build configuration list for PBXNativeTarget "FlickrViewTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +501,7 @@
 				3F0D88D7131DF28400734292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,11 +7,14 @@
 //
 
 #import "FlickrViewAppDelegate.h"
+#import "HomePageTableViewController.h"
 
 @implementation FlickrViewAppDelegate
 
 
 @synthesize window=_window;
+
+@synthesize ngc = _ngc;
 
 @synthesize managedObjectContext=__managedObjectContext;
 
@@ -21,7 +24,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	UINavigationController *tempNgc = [[UINavigationController alloc] init];
+	self.ngc = tempNgc;
+	[tempNgc release];
+	HomePageTableViewController *mstvc = [[HomePageTableViewController alloc] init];
+	[self.ngc initWithRootViewController:mstvc];
+	[mstvc release];
+	[self.window addSubview:self.ngc.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -64,7 +73,8 @@
 
 - (void)dealloc
 {
-    [_window release];
+    [_ngc release];
+	[_window release];
     [__managedObjectContext release];
     [__managedObjectModel release];
     [__persistentStoreCoordinator release];

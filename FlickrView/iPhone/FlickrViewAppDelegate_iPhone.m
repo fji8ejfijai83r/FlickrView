@@ -10,9 +10,10 @@
 
 @implementation FlickrViewAppDelegate_iPhone
 
+
 - (void)dealloc
 {
-	[super dealloc];
+    [super dealloc];
 }
 
 @end
