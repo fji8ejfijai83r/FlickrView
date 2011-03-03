@@ -8,6 +8,7 @@
 
 #import "FlickrViewAppDelegate.h"
 #import "HomePageTableViewController.h"
+#import "FlickrAPIKey.h"
 
 NSString *SnapAndRunShouldUpdateAuthInfoNotification = @"SnapAndRunShouldUpdateAuthInfoNotification";
 // preferably, the auth token is stored in the keychain, but since working with keychain is a pain, we use the simpler default system
@@ -28,7 +29,7 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 @synthesize activityIndicator, progressView, cancelButton, progressDescription;
 
 #pragma mark -
-#pragma mark - GETTER method
+#pragma mark GETTER method
 - (OFFlickrAPIRequest *)flickrRequest
 {
 	if (!_flickrRequest) {
@@ -39,20 +40,50 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 	return _flickrRequest;
 }
 
+- (OFFlickrAPIContext *)flickrContext
+{
+    if (!_flickrContext) {
+        _flickrContext = [[OFFlickrAPIContext alloc] initWithAPIKey:OBJECTIVE_FLICKR_SAMPLE_API_KEY sharedSecret:OBJECTIVE_FLICKR_SAMPLE_API_SHARED_SECRET];
+        
+        NSString *authToken;
+        if (authToken = [[NSUserDefaults standardUserDefaults] objectForKey:kStoredAuthTokenKeyName]) {
+            _flickrContext.authToken = authToken;
+        }
+    }
+    
+    return _flickrContext;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+	// query has the form of "&frob=", the rest is the frob
+	NSLog(@"handleOpenURL");
+	NSString *frob = [[url query] substringFromIndex:6];
+	
+	[self flickrRequest].sessionInfo = kGetAuthTokenStep;
+	[self.flickrRequest callAPIMethodWithGET:@"flickr.auth.getToken" arguments:[NSDictionary dictionaryWithObjectsAndKeys:frob, @"frob", nil]];
+	
+	[activityIndicator startAnimating];
+	[self.ngc.view addSubview:progressView];
+	
+    return YES;
+}
+
+#pragma mark -
 - (void)_applicationDidFinishLaunchingContinued
 {
-//	if ([self flickrRequest].sessionInfo) {
-//		// is getting auth token
-//		return;
-//	}
-//	
-//	if ([self.flickrContext.authToken length]) {
-//		[self flickrRequest].sessionInfo = kCheckTokenStep;
-//		[self.flickrRequest callAPIMethodWithGET:@"flickr.auth.checkToken" arguments:nil];
-//		
+	if ([self flickrRequest].sessionInfo) {
+		// is getting auth token
+		return;
+	}
+	
+	if ([self.flickrContext.authToken length]) {
+		[self flickrRequest].sessionInfo = kCheckTokenStep;
+		[self.flickrRequest callAPIMethodWithGET:@"flickr.auth.checkToken" arguments:nil];
+		
 		[self.activityIndicator startAnimating];
 		[self.ngc.view addSubview:self.progressView];
-//	}
+	}
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -90,12 +121,44 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 	[self setAndStoreFlickrAuthToken:nil];
 	[[NSNotificationCenter defaultCenter] postNotificationName:SnapAndRunShouldUpdateAuthInfoNotification object:self];
 }
-#pragma mark -
+
 #pragma mark FlickrViewAppDelegate
 + (FlickrViewAppDelegate *)sharedDelegate
 {
     return (FlickrViewAppDelegate *)[[UIApplication sharedApplication] delegate];
 }
+
+#pragma mark OFFlickrAPIRequest delegate methods
+- (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest didCompleteWithResponse:(NSDictionary *)inResponseDictionary
+{
+	if (inRequest.sessionInfo == kGetAuthTokenStep) {
+		[self setAndStoreFlickrAuthToken:[[inResponseDictionary valueForKeyPath:@"auth.token"] textContent]];
+		self.flickrUserName = [inResponseDictionary valueForKeyPath:@"auth.user.username"];
+	}
+	else if (inRequest.sessionInfo == kCheckTokenStep) {
+		self.flickrUserName = [inResponseDictionary valueForKeyPath:@"auth.user.username"];
+	}
+	
+	[activityIndicator stopAnimating];
+	[progressView removeFromSuperview];
+	[[NSNotificationCenter defaultCenter] postNotificationName:SnapAndRunShouldUpdateAuthInfoNotification object:self];
+}
+
+- (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest didFailWithError:(NSError *)inError
+{
+	if (inRequest.sessionInfo == kGetAuthTokenStep) {
+	}
+	else if (inRequest.sessionInfo == kCheckTokenStep) {
+		[self setAndStoreFlickrAuthToken:nil];
+	}
+	
+	[activityIndicator stopAnimating];
+	[progressView removeFromSuperview];
+	
+	[[[[UIAlertView alloc] initWithTitle:@"API Failed" message:[inError description] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] autorelease] show];
+	[[NSNotificationCenter defaultCenter] postNotificationName:SnapAndRunShouldUpdateAuthInfoNotification object:self];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

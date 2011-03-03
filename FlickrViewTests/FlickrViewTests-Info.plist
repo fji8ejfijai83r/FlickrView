@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>hd.FlickrView</string>
+	<string>org.hd.FlickrView</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -18,16 +18,5 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>hd.FlickrView</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>FlickrView</string>
-			</array>
-		</dict>
-	</array>
 </dict>
 </plist>

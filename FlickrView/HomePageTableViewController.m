@@ -7,15 +7,36 @@
 //
 
 #import "HomePageTableViewController.h"
+#import "FlickrViewAppDelegate.h"
 
+enum {
+    beforeRowAuthorize,
+    beforeRowExplore,
+    beforeRowNearyby,
+    beforeRowSearch
+};
+
+enum {
+	afterRowYou,
+	afterRowContacts,
+	afterRowUpload,
+	afterRowExplore,
+	afterRowNearby,
+	afterRowSearch
+};
+
+
+@interface HomePageTableViewController (PrivateMethods)
+- (BOOL)isAuthorized;
+- (void)updateUserInterface:(NSNotification *)notification;
+@end
 
 @implementation HomePageTableViewController
-@synthesize showList;
+@synthesize showList = _showList;
 
 - (id)init
 {
     self = [self initWithStyle:UITableViewStyleGrouped];    
-    NSLog(@"init");
 	if (self) {
         // Custom initialization
         self.navigationItem.title = @"Flick View";
@@ -27,18 +48,36 @@
 #pragma mark GETTER method, will call using self.xxx
 - (NSArray *)showList
 {
-	if (!showList) {
-		showList = [[NSArray alloc] initWithObjects:
+	if (!_showList) {
+		_showList = [[NSArray alloc] initWithObjects:
 					@"Authorize with Flickr", @"Explore", @"Nearby", @"Search", nil];
 	}
-	return showList;
+	return _showList;
 }
 
 - (void)dealloc
 {
-    [showList release];
+    [_showList release];
 	[super dealloc];
 }
+- (BOOL)isAuthorized
+{
+	return [[FlickrViewAppDelegate sharedDelegate].flickrContext.authToken length];
+}
+- (void)updateUserInterface:(NSNotification *)notification
+{
+	if ([self isAuthorized]) {
+		_showList = [[NSArray alloc] initWithObjects:@"You", @"Contacts", @"Upload", @"Nearby", @"Eplore", nil];
+	}
+	if ([[FlickrViewAppDelegate sharedDelegate].flickrUserName length]) {
+		self.navigationItem.title = [FlickrViewAppDelegate sharedDelegate].flickrUserName;
+	}
+	else {
+		self.navigationItem.title = @"You";
+	}
+	[self.tableView reloadData];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -53,7 +92,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInterface:) name:SnapAndRunShouldUpdateAuthInfoNotification object:nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -70,25 +109,6 @@
 	self.showList = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -109,7 +129,7 @@
 {
     // Return the number of rows in the section.
     if (SECTION_0 == section) 
-		return 4;
+		return self.showList.count;
 	return 1;
 }
 
@@ -123,7 +143,7 @@
     }
     if (indexPath.section == 0) {
 		cell.textLabel.text = [self.showList objectAtIndex:indexPath.row];
-		if (indexPath.row == 0) return cell;
+		if ([cell.textLabel.text isEqual:@"Authorize with Flickr"]) return cell;	
 	} else {
 		cell.textLabel.text = @"Settings";
 	}
@@ -171,19 +191,52 @@
     return YES;
 }
 */
+- (void)popUpForAuthorize:(NSIndexPath *)indexPath
+{
+//	[[[UIAlertView alloc] initWithTitle:@"Notice" 
+//								 message:@"Flickr" 
+//								delegate:nil 
+//					   cancelButtonTitle:@"Cancel" 
+//					   otherButtonTitles:@"OK"] show];
+	UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+	cell.textLabel.text = @"Logging in...";
+	NSURL *loginURL = [[FlickrViewAppDelegate sharedDelegate].flickrContext 
+					   loginURLFromFrobDictionary:nil requestedPermission:OFFlickrWritePermission];
+	[[UIApplication sharedApplication] openURL:loginURL];
+}
+
+- (void)showExploreScreen
+{
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+
+}
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+	if ([self isAuthorized] && indexPath.section == 0) {
+		switch (indexPath.row) {
+			case afterRowYou:
+				break;
+			case afterRowContacts:
+				break;
+			case afterRowUpload:
+				break;
+			case afterRowExplore:
+				
+				break;
+		}
+	} 
+	if (![self isAuthorized] && indexPath.section == 0) {
+		switch (indexPath.row) {
+			case beforeRowAuthorize:
+				[self popUpForAuthorize:indexPath];
+				break;
+			case beforeRowExplore:
+				break;
+		}
+	}
 }
 
 @end

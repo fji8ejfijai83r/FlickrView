@@ -8,7 +8,7 @@
 			3F0D888F131DF28300734292 /* FlickrView */,
 		);
 		breakpoints = (
-			3FD96CC2131E528D007D5406 /* FlickrViewAppDelegate.m:47 */,
+			3FB9CBB6131F34B7002F46C4 /* HomePageTableViewController.m:234 */,
 		);
 		codeSenseManager = 3FD96B79131DFB9F007D5406 /* Code sense */;
 		executables = (
@@ -20,7 +20,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					830,
+					806,
 					20,
 					48,
 					43,
@@ -59,98 +59,49 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 320732040;
-			PBXWorkspaceStateSaveDate = 320732040;
+			PBXPerProjectTemplateStateSaveDate = 320771896;
+			PBXWorkspaceStateSaveDate = 320771896;
 		};
 		perUserProjectItems = {
-			3FD96BC5131E0254007D5406 /* XCBuildMessageTextBookmark */ = 3FD96BC5131E0254007D5406 /* XCBuildMessageTextBookmark */;
-			3FD96BC6131E0254007D5406 /* PBXTextBookmark */ = 3FD96BC6131E0254007D5406 /* PBXTextBookmark */;
-			3FD96BC9131E025B007D5406 /* PBXTextBookmark */ = 3FD96BC9131E025B007D5406 /* PBXTextBookmark */;
-			3FD96BCA131E025B007D5406 /* PBXTextBookmark */ = 3FD96BCA131E025B007D5406 /* PBXTextBookmark */;
-			3FD96BCB131E025B007D5406 /* PBXTextBookmark */ = 3FD96BCB131E025B007D5406 /* PBXTextBookmark */;
-			3FD96BCC131E025B007D5406 /* XCBuildMessageTextBookmark */ = 3FD96BCC131E025B007D5406 /* XCBuildMessageTextBookmark */;
-			3FD96BCD131E025B007D5406 /* PBXTextBookmark */ = 3FD96BCD131E025B007D5406 /* PBXTextBookmark */;
-			3FD96BD0131E0279007D5406 /* PBXTextBookmark */ = 3FD96BD0131E0279007D5406 /* PBXTextBookmark */;
-			3FD96BD1131E0279007D5406 /* PBXTextBookmark */ = 3FD96BD1131E0279007D5406 /* PBXTextBookmark */;
-			3FD96BD4131E0296007D5406 /* PBXTextBookmark */ = 3FD96BD4131E0296007D5406 /* PBXTextBookmark */;
-			3FD96BD7131E02B5007D5406 /* PBXTextBookmark */ = 3FD96BD7131E02B5007D5406 /* PBXTextBookmark */;
-			3FD96BD8131E02BE007D5406 /* PBXTextBookmark */ = 3FD96BD8131E02BE007D5406 /* PBXTextBookmark */;
-			3FD96BF4131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF4131E039A007D5406 /* PBXTextBookmark */;
-			3FD96BF5131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF5131E039A007D5406 /* PBXTextBookmark */;
-			3FD96BF6131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF6131E039A007D5406 /* PBXTextBookmark */;
-			3FD96BF7131E039A007D5406 /* PBXTextBookmark */ = 3FD96BF7131E039A007D5406 /* PBXTextBookmark */;
-			3FD96BFA131E0428007D5406 /* PBXTextBookmark */ = 3FD96BFA131E0428007D5406 /* PBXTextBookmark */;
-			3FD96BFB131E0428007D5406 /* PBXTextBookmark */ = 3FD96BFB131E0428007D5406 /* PBXTextBookmark */;
-			3FD96BFC131E0428007D5406 /* PBXTextBookmark */ = 3FD96BFC131E0428007D5406 /* PBXTextBookmark */;
-			3FD96BFF131E0435007D5406 /* PBXTextBookmark */ = 3FD96BFF131E0435007D5406 /* PBXTextBookmark */;
-			3FD96C02131E049F007D5406 /* PBXTextBookmark */ = 3FD96C02131E049F007D5406 /* PBXTextBookmark */;
-			3FD96C03131E049F007D5406 /* XCBuildMessageTextBookmark */ = 3FD96C03131E049F007D5406 /* XCBuildMessageTextBookmark */;
-			3FD96C04131E049F007D5406 /* PBXTextBookmark */ = 3FD96C04131E049F007D5406 /* PBXTextBookmark */;
-			3FD96C07131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C07131E04AF007D5406 /* PBXTextBookmark */;
-			3FD96C08131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C08131E04AF007D5406 /* PBXTextBookmark */;
-			3FD96C09131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C09131E04AF007D5406 /* PBXTextBookmark */;
-			3FD96C0A131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C0A131E04AF007D5406 /* PBXTextBookmark */;
-			3FD96C0B131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C0B131E04AF007D5406 /* PBXTextBookmark */;
-			3FD96C0C131E04AF007D5406 /* PBXTextBookmark */ = 3FD96C0C131E04AF007D5406 /* PBXTextBookmark */;
-			3FD96C11131E2952007D5406 /* PBXTextBookmark */ = 3FD96C11131E2952007D5406 /* PBXTextBookmark */;
-			3FD96C12131E2952007D5406 /* PBXTextBookmark */ = 3FD96C12131E2952007D5406 /* PBXTextBookmark */;
-			3FD96C13131E2952007D5406 /* PBXTextBookmark */ = 3FD96C13131E2952007D5406 /* PBXTextBookmark */;
-			3FD96C16131E29F9007D5406 /* PBXTextBookmark */ = 3FD96C16131E29F9007D5406 /* PBXTextBookmark */;
-			3FD96C1B131E2BA7007D5406 /* PBXTextBookmark */ = 3FD96C1B131E2BA7007D5406 /* PBXTextBookmark */;
-			3FD96C1C131E2BA7007D5406 /* PBXTextBookmark */ = 3FD96C1C131E2BA7007D5406 /* PBXTextBookmark */;
-			3FD96C1D131E2BA7007D5406 /* PBXTextBookmark */ = 3FD96C1D131E2BA7007D5406 /* PBXTextBookmark */;
-			3FD96C1E131E2C1A007D5406 /* PBXTextBookmark */ = 3FD96C1E131E2C1A007D5406 /* PBXTextBookmark */;
-			3FD96C21131E2E46007D5406 /* PBXTextBookmark */ = 3FD96C21131E2E46007D5406 /* PBXTextBookmark */;
-			3FD96C22131E2E46007D5406 /* XCBuildMessageTextBookmark */ = 3FD96C22131E2E46007D5406 /* XCBuildMessageTextBookmark */;
-			3FD96C23131E2E46007D5406 /* PBXTextBookmark */ = 3FD96C23131E2E46007D5406 /* PBXTextBookmark */;
-			3FD96C28131E2E4F007D5406 /* PBXTextBookmark */ = 3FD96C28131E2E4F007D5406 /* PBXTextBookmark */;
-			3FD96C29131E2E4F007D5406 /* XCBuildMessageTextBookmark */ = 3FD96C29131E2E4F007D5406 /* XCBuildMessageTextBookmark */;
-			3FD96C2A131E2E4F007D5406 /* PBXTextBookmark */ = 3FD96C2A131E2E4F007D5406 /* PBXTextBookmark */;
-			3FD96C2F131E2EE1007D5406 /* PBXTextBookmark */ = 3FD96C2F131E2EE1007D5406 /* PBXTextBookmark */;
-			3FD96C37131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C37131E30D5007D5406 /* PBXTextBookmark */;
-			3FD96C38131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C38131E30D5007D5406 /* PBXTextBookmark */;
-			3FD96C39131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C39131E30D5007D5406 /* PBXTextBookmark */;
-			3FD96C3A131E30D5007D5406 /* PBXTextBookmark */ = 3FD96C3A131E30D5007D5406 /* PBXTextBookmark */;
-			3FD96C68131E3333007D5406 /* PBXTextBookmark */ = 3FD96C68131E3333007D5406 /* PBXTextBookmark */;
-			3FD96C69131E3333007D5406 /* PBXTextBookmark */ = 3FD96C69131E3333007D5406 /* PBXTextBookmark */;
-			3FD96C6A131E3333007D5406 /* PBXTextBookmark */ = 3FD96C6A131E3333007D5406 /* PBXTextBookmark */;
-			3FD96C6B131E3333007D5406 /* PBXTextBookmark */ = 3FD96C6B131E3333007D5406 /* PBXTextBookmark */;
-			3FD96C6E131E3345007D5406 /* PBXTextBookmark */ = 3FD96C6E131E3345007D5406 /* PBXTextBookmark */;
-			3FD96C83131E33C5007D5406 /* PBXTextBookmark */ = 3FD96C83131E33C5007D5406 /* PBXTextBookmark */;
-			3FD96C8E131E36B3007D5406 /* PlistBookmark */ = 3FD96C8E131E36B3007D5406 /* PlistBookmark */;
-			3FD96C8F131E36B3007D5406 /* PBXTextBookmark */ = 3FD96C8F131E36B3007D5406 /* PBXTextBookmark */;
-			3FD96C90131E36B3007D5406 /* PBXTextBookmark */ = 3FD96C90131E36B3007D5406 /* PBXTextBookmark */;
-			3FD96C93131E3831007D5406 /* PBXTextBookmark */ = 3FD96C93131E3831007D5406 /* PBXTextBookmark */;
-			3FD96C94131E3831007D5406 /* PBXTextBookmark */ = 3FD96C94131E3831007D5406 /* PBXTextBookmark */;
-			3FD96C95131E3831007D5406 /* PBXTextBookmark */ = 3FD96C95131E3831007D5406 /* PBXTextBookmark */;
-			3FD96C96131E3831007D5406 /* PBXTextBookmark */ = 3FD96C96131E3831007D5406 /* PBXTextBookmark */;
-			3FD96C97131E3831007D5406 /* PBXTextBookmark */ = 3FD96C97131E3831007D5406 /* PBXTextBookmark */;
-			3FD96C98131E3831007D5406 /* PBXTextBookmark */ = 3FD96C98131E3831007D5406 /* PBXTextBookmark */;
-			3FD96CB3131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB3131E51F6007D5406 /* PBXTextBookmark */;
-			3FD96CB4131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB4131E51F6007D5406 /* PBXTextBookmark */;
-			3FD96CB5131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB5131E51F6007D5406 /* PBXTextBookmark */;
-			3FD96CB6131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB6131E51F6007D5406 /* PBXTextBookmark */;
-			3FD96CB7131E51F6007D5406 /* PBXTextBookmark */ = 3FD96CB7131E51F6007D5406 /* PBXTextBookmark */;
-			3FD96CBA131E5215007D5406 /* PBXTextBookmark */ = 3FD96CBA131E5215007D5406 /* PBXTextBookmark */;
-			3FD96CBF131E525E007D5406 /* PBXTextBookmark */ = 3FD96CBF131E525E007D5406 /* PBXTextBookmark */;
-			3FD96CC6131E528F007D5406 /* PBXTextBookmark */ = 3FD96CC6131E528F007D5406 /* PBXTextBookmark */;
-			3FD96CC7131E528F007D5406 /* PBXTextBookmark */ = 3FD96CC7131E528F007D5406 /* PBXTextBookmark */;
-			3FD96CE8131E5307007D5406 /* PBXTextBookmark */ = 3FD96CE8131E5307007D5406 /* PBXTextBookmark */;
-			3FD96CE9131E5307007D5406 /* PBXTextBookmark */ = 3FD96CE9131E5307007D5406 /* PBXTextBookmark */;
-			3FD96CEB131E5355007D5406 /* PBXTextBookmark */ = 3FD96CEB131E5355007D5406 /* PBXTextBookmark */;
-			3FD96D01131E56AA007D5406 /* PBXTextBookmark */ = 3FD96D01131E56AA007D5406 /* PBXTextBookmark */;
-			3FD96D02131E5703007D5406 /* PBXTextBookmark */ = 3FD96D02131E5703007D5406 /* PBXTextBookmark */;
-			3FD96D03131E5703007D5406 /* PBXTextBookmark */ = 3FD96D03131E5703007D5406 /* PBXTextBookmark */;
-			3FD96D0F131E583A007D5406 /* PBXTextBookmark */ = 3FD96D0F131E583A007D5406 /* PBXTextBookmark */;
-			3FD96D10131E583A007D5406 /* PBXTextBookmark */ = 3FD96D10131E583A007D5406 /* PBXTextBookmark */;
-			3FD96D11131E583A007D5406 /* PBXTextBookmark */ = 3FD96D11131E583A007D5406 /* PBXTextBookmark */;
-			3FD96D12131E583A007D5406 /* PBXTextBookmark */ = 3FD96D12131E583A007D5406 /* PBXTextBookmark */;
-			3FD96D1B131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1B131E589E007D5406 /* PBXTextBookmark */;
-			3FD96D1C131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1C131E589E007D5406 /* PBXTextBookmark */;
-			3FD96D1D131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1D131E589E007D5406 /* PBXTextBookmark */;
-			3FD96D1E131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1E131E589E007D5406 /* PBXTextBookmark */;
-			3FD96D1F131E589E007D5406 /* PBXTextBookmark */ = 3FD96D1F131E589E007D5406 /* PBXTextBookmark */;
-			3FD96D22131E58BA007D5406 /* PBXTextBookmark */ = 3FD96D22131E58BA007D5406 /* PBXTextBookmark */;
+			3FB9CB39131E9740002F46C4 /* PlistBookmark */ = 3FB9CB39131E9740002F46C4 /* PlistBookmark */;
+			3FB9CBBA131F34BD002F46C4 /* PlistBookmark */ = 3FB9CBBA131F34BD002F46C4 /* PlistBookmark */;
+			3FB9CBBB131F34BD002F46C4 /* PBXTextBookmark */ = 3FB9CBBB131F34BD002F46C4 /* PBXTextBookmark */;
+			3FB9CBBC131F34BD002F46C4 /* PBXTextBookmark */ = 3FB9CBBC131F34BD002F46C4 /* PBXTextBookmark */;
+			3FB9CBBD131F34BD002F46C4 /* PBXTextBookmark */ = 3FB9CBBD131F34BD002F46C4 /* PBXTextBookmark */;
+			3FB9CBBE131F34BD002F46C4 /* XCBuildMessageTextBookmark */ = 3FB9CBBE131F34BD002F46C4 /* XCBuildMessageTextBookmark */;
+			3FB9CBBF131F34BD002F46C4 /* PBXTextBookmark */ = 3FB9CBBF131F34BD002F46C4 /* PBXTextBookmark */;
+			3FB9CBC2131F34D1002F46C4 /* PBXTextBookmark */ = 3FB9CBC2131F34D1002F46C4 /* PBXTextBookmark */;
+			3FB9CBC3131F34D1002F46C4 /* PBXTextBookmark */ = 3FB9CBC3131F34D1002F46C4 /* PBXTextBookmark */;
+			3FB9CBC4131F34D1002F46C4 /* PBXTextBookmark */ = 3FB9CBC4131F34D1002F46C4 /* PBXTextBookmark */;
+			3FB9CBCC131F359B002F46C4 /* PBXTextBookmark */ = 3FB9CBCC131F359B002F46C4 /* PBXTextBookmark */;
+			3FB9CBCD131F359B002F46C4 /* PBXTextBookmark */ = 3FB9CBCD131F359B002F46C4 /* PBXTextBookmark */;
+			3FB9CBCE131F359B002F46C4 /* PBXTextBookmark */ = 3FB9CBCE131F359B002F46C4 /* PBXTextBookmark */;
+			3FB9CBCF131F35B0002F46C4 /* PBXTextBookmark */ = 3FB9CBCF131F35B0002F46C4 /* PBXTextBookmark */;
+			3FB9CBD2131F35BA002F46C4 /* PBXTextBookmark */ = 3FB9CBD2131F35BA002F46C4 /* PBXTextBookmark */;
+			3FB9CBD9131F362E002F46C4 /* PBXTextBookmark */ = 3FB9CBD9131F362E002F46C4 /* PBXTextBookmark */;
+			3FB9CBE0131F36CB002F46C4 /* PBXTextBookmark */ = 3FB9CBE0131F36CB002F46C4 /* PBXTextBookmark */;
+			3FB9CC07131F37BE002F46C4 /* PBXTextBookmark */ = 3FB9CC07131F37BE002F46C4 /* PBXTextBookmark */;
+			3FB9CC0B131F394E002F46C4 /* PBXTextBookmark */ = 3FB9CC0B131F394E002F46C4 /* PBXTextBookmark */;
+			3FB9CC0C131F394E002F46C4 /* PBXTextBookmark */ = 3FB9CC0C131F394E002F46C4 /* PBXTextBookmark */;
+			3FB9CC29131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC29131F3A88002F46C4 /* PBXTextBookmark */;
+			3FB9CC2A131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC2A131F3A88002F46C4 /* PBXTextBookmark */;
+			3FB9CC2B131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC2B131F3A88002F46C4 /* PBXTextBookmark */;
+			3FB9CC2C131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC2C131F3A88002F46C4 /* PBXTextBookmark */;
+			3FB9CC2D131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC2D131F3A88002F46C4 /* PBXTextBookmark */;
+			3FB9CC2E131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC2E131F3A88002F46C4 /* PBXTextBookmark */;
+			3FB9CC2F131F3A88002F46C4 /* PBXTextBookmark */ = 3FB9CC2F131F3A88002F46C4 /* PBXTextBookmark */;
+			3FD96D1B131E589E007D5406 = 3FD96D1B131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D1C131E589E007D5406 = 3FD96D1C131E589E007D5406 /* PBXTextBookmark */;
+			3FD96D35131E5BD0007D5406 = 3FD96D35131E5BD0007D5406 /* PBXTextBookmark */;
+			3FD96D79131E7994007D5406 = 3FD96D79131E7994007D5406 /* PBXTextBookmark */;
+			3FD96D86131E8E4E007D5406 = 3FD96D86131E8E4E007D5406 /* PBXTextBookmark */;
+			3FD96DB0131E9639007D5406 = 3FD96DB0131E9639007D5406 /* PBXTextBookmark */;
+			3FD96DB1131E9639007D5406 = 3FD96DB1131E9639007D5406 /* PBXTextBookmark */;
+			3FD96DB2131E9639007D5406 = 3FD96DB2131E9639007D5406 /* PBXTextBookmark */;
+			3FD96DB3131E9639007D5406 = 3FD96DB3131E9639007D5406 /* PBXTextBookmark */;
+			3FD96DB4131E9639007D5406 = 3FD96DB4131E9639007D5406 /* PBXTextBookmark */;
+			3FD96DB5131E9639007D5406 = 3FD96DB5131E9639007D5406 /* PlistBookmark */;
+			3FD96DB6131E9639007D5406 = 3FD96DB6131E9639007D5406 /* PlistBookmark */;
 		};
 		sourceControlManager = 3FD96B78131DFB9F007D5406 /* Source Control */;
 		userBuildSettings = {
@@ -164,17 +115,17 @@
 	};
 	3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1219, 1046}}";
-			sepNavSelRange = "{1328, 0}";
-			sepNavVisRange = "{264, 1256}";
+			sepNavIntBoundsRect = "{{0, 0}, {1060.9, 1046}}";
+			sepNavSelRange = "{1371, 0}";
+			sepNavVisRange = "{85, 1441}";
 		};
 	};
 	3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{5309, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 10341}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1448.63, 7042}}";
-			sepNavSelRange = "{2765, 0}";
-			sepNavVisRange = "{1021, 1008}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{7658, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 12690}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1697.07, 8780}}";
+			sepNavSelRange = "{2518, 0}";
+			sepNavVisRange = "{2072, 1144}";
 			sepNavWindowFrame = "{{2, 4}, {1278, 998}}";
 		};
 	};
@@ -192,25 +143,359 @@
 			sepNavVisRange = "{0, 292}";
 		};
 	};
+	3F0D88B4131DF28400734292 /* FlickrViewAppDelegate_iPad.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 881}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 282}";
+		};
+	};
 	3F0D88BD131DF28400734292 /* FlickrViewTests */ = {
 		activeExec = 0;
 	};
+	3F0D88C9131DF28400734292 /* en */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 833}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	3F0D88CB131DF28400734292 /* FlickrViewTests-Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1113.78, 833}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 161}";
+		};
+	};
 	3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1008, 881}}";
-			sepNavSelRange = "{250, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {984, 856}}";
+			sepNavSelRange = "{178, 0}";
 			sepNavVisRange = "{0, 305}";
 			sepNavWindowFrame = "{{2, 223}, {1278, 774}}";
 		};
 	};
 	3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{4689, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{4740, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{4790, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 5030}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1589.06, 4724}}";
-			sepNavSelRange = "{3927, 0}";
-			sepNavVisRange = "{55, 740}";
+			sepNavIntBoundsRect = "{{0, 0}, {1589.06, 5796}}";
+			sepNavSelRange = "{5960, 0}";
+			sepNavVisRange = "{5416, 991}";
 			sepNavWindowFrame = "{{2, 223}, {1278, 774}}";
 		};
+	};
+	3FB9CB39131E9740002F46C4 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDevelopmentRegion,
+		);
+		name = "/Users/hdhiessu/Desktop/FlickrView/FlickrViewTests/FlickrViewTests-Info.plist";
+		rLen = 0;
+		rLoc = 0;
+	};
+	3FB9CBB6131F34B7002F46C4 /* HomePageTableViewController.m:234 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		functionName = "-tableView:didSelectRowAtIndexPath:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 234;
+		location = FlickrView;
+		modificationTime = 320812243.400503;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3FB9CBBA131F34BD002F46C4 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDevelopmentRegion,
+		);
+		name = "/Users/hdhiessu/Desktop/FlickrView/FlickrViewTests/FlickrViewTests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	3FB9CBBB131F34BD002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
+		name = "FlickrViewAppDelegate.h: 36";
+		rLen = 0;
+		rLoc = 1371;
+		rType = 0;
+		vrLen = 1441;
+		vrLoc = 85;
+	};
+	3FB9CBBC131F34BD002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 136";
+		rLen = 19;
+		rLoc = 4535;
+		rType = 0;
+		vrLen = 1428;
+		vrLoc = 3779;
+	};
+	3FB9CBBD131F34BD002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "HomePageTableViewController.h: 9";
+		rLen = 0;
+		rLoc = 178;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	3FB9CBBE131F34BD002F46C4 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected expression before 'UITableViewCell'";
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 233;
+		rType = 1;
+	};
+	3FB9CBBF131F34BD002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 224";
+		rLen = 0;
+		rLoc = 6479;
+		rType = 0;
+		vrLen = 1061;
+		vrLoc = 5283;
+	};
+	3FB9CBC2131F34D1002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 224";
+		rLen = 0;
+		rLoc = 6479;
+		rType = 0;
+		vrLen = 1061;
+		vrLoc = 5283;
+	};
+	3FB9CBC3131F34D1002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		rLen = 0;
+		rLoc = 79;
+		rType = 1;
+	};
+	3FB9CBC4131F34D1002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 80";
+		rLen = 0;
+		rLoc = 2518;
+		rType = 0;
+		vrLen = 1144;
+		vrLoc = 2072;
+	};
+	3FB9CBCC131F359B002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
+		name = "FlickrViewAppDelegate.m: 80";
+		rLen = 0;
+		rLoc = 2518;
+		rType = 0;
+		vrLen = 1144;
+		vrLoc = 2072;
+	};
+	3FB9CBCD131F359B002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		rLen = 0;
+		rLoc = 233;
+		rType = 1;
+	};
+	3FB9CBCE131F359B002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 227";
+		rLen = 0;
+		rLoc = 6472;
+		rType = 0;
+		vrLen = 1000;
+		vrLoc = 5413;
+	};
+	3FB9CBCF131F35B0002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 200";
+		rLen = 0;
+		rLoc = 5519;
+		rType = 0;
+		vrLen = 1070;
+		vrLoc = 5278;
+	};
+	3FB9CBD2131F35BA002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 196";
+		rLen = 0;
+		rLoc = 5336;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 5280;
+	};
+	3FB9CBD9131F362E002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 201";
+		rLen = 0;
+		rLoc = 5520;
+		rType = 0;
+		vrLen = 1055;
+		vrLoc = 5283;
+	};
+	3FB9CBE0131F36CB002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 201";
+		rLen = 54;
+		rLoc = 5796;
+		rType = 0;
+		vrLen = 1034;
+		vrLoc = 5334;
+	};
+	3FB9CC07131F37BE002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 196";
+		rLen = 0;
+		rLoc = 5336;
+		rType = 0;
+		vrLen = 1064;
+		vrLoc = 5336;
+	};
+	3FB9CC0B131F394E002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 218";
+		rLen = 0;
+		rLoc = 6474;
+		rType = 0;
+		vrLen = 932;
+		vrLoc = 5412;
+	};
+	3FB9CC0C131F394E002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 201";
+		rLen = 0;
+		rLoc = 5522;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 5197;
+	};
+	3FB9CC13131F3998002F46C4 /* TopPlaceTableViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {984, 921}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 867}";
+		};
+	};
+	3FB9CC14131F3998002F46C4 /* TopPlaceTableViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1686.27, 5305}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 864}";
+		};
+	};
+	3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {984, 856}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 300}";
+		};
+	};
+	3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{3341, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{3392, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{3442, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 4536}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1751.19, 4284}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 617}";
+		};
+	};
+	3FB9CC29131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */;
+		name = "PhotoSpotsListTableViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 300;
+		vrLoc = 0;
+	};
+	3FB9CC2A131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */;
+		name = "PhotoSpotsListTableViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 617;
+		vrLoc = 0;
+	};
+	3FB9CC2B131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "HomePageTableViewController.h: 9";
+		rLen = 0;
+		rLoc = 178;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	3FB9CC2C131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB9CC13131F3998002F46C4 /* TopPlaceTableViewController.h */;
+		name = "TopPlaceTableViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 867;
+		vrLoc = 0;
+	};
+	3FB9CC2D131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB9CC14131F3998002F46C4 /* TopPlaceTableViewController.m */;
+		name = "TopPlaceTableViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 864;
+		vrLoc = 0;
+	};
+	3FB9CC2E131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 200";
+		rLen = 0;
+		rLoc = 5520;
+		rType = 0;
+		vrLen = 1095;
+		vrLoc = 5028;
+	};
+	3FB9CC2F131F3A88002F46C4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
+		name = "HomePageTableViewController.m: 213";
+		rLen = 0;
+		rLoc = 5960;
+		rType = 0;
+		vrLen = 991;
+		vrLoc = 5416;
 	};
 	3FD96B59131DFB88007D5406 /* FlickrView */ = {
 		isa = PBXExecutable;
@@ -258,837 +543,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	3FD96BC5131E0254007D5406 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Expected identifier before '[' token";
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 0;
-		rLoc = 11;
-		rType = 1;
-	};
-	3FD96BC6131E0254007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 19";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 227;
-		vrLoc = 311;
-	};
-	3FD96BC9131E025B007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
-		name = "FlickrViewAppDelegate_iPhone.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 357;
-		vrLoc = 0;
-	};
-	3FD96BCA131E025B007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
-		name = "MainScreenTableViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 263;
-		vrLoc = 0;
-	};
-	3FD96BCB131E025B007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 19";
-		rLen = 0;
-		rLoc = 412;
-		rType = 0;
-		vrLen = 553;
-		vrLoc = 153;
-	};
-	3FD96BCC131E025B007D5406 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Expected identifier before '[' token";
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 0;
-		rLoc = 11;
-		rType = 1;
-	};
-	3FD96BCD131E025B007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 17";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 546;
-		vrLoc = 38;
-	};
-	3FD96BD0131E0279007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 17";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 546;
-		vrLoc = 38;
-	};
-	3FD96BD1131E0279007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 43";
-		rLen = 0;
-		rLoc = 1075;
-		rType = 0;
-		vrLen = 544;
-		vrLoc = 441;
-	};
-	3FD96BD4131E0296007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 42";
-		rLen = 0;
-		rLoc = 1073;
-		rType = 0;
-		vrLen = 758;
-		vrLoc = 464;
-	};
-	3FD96BD7131E02B5007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 17";
-		rLen = 0;
-		rLoc = 357;
-		rType = 0;
-		vrLen = 560;
-		vrLoc = 57;
-	};
-	3FD96BD8131E02BE007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 18";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 209;
-		vrLoc = 311;
-	};
-	3FD96BF4131E039A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 22";
-		rLen = 0;
-		rLoc = 477;
-		rType = 0;
-		vrLen = 560;
-		vrLoc = 57;
-	};
-	3FD96BF5131E039A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
-		name = "FlickrViewAppDelegate_iPhone.h: 15";
-		rLen = 0;
-		rLoc = 284;
-		rType = 0;
-		vrLen = 357;
-		vrLoc = 0;
-	};
-	3FD96BF6131E039A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 18";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 545;
-		vrLoc = 38;
-	};
-	3FD96BF7131E039A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 23";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 782;
-		vrLoc = 3;
-	};
-	3FD96BFA131E0428007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
-		name = "FlickrViewAppDelegate_iPhone.h: 15";
-		rLen = 0;
-		rLoc = 284;
-		rType = 0;
-		vrLen = 357;
-		vrLoc = 0;
-	};
-	3FD96BFB131E0428007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 23";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 782;
-		vrLoc = 3;
-	};
-	3FD96BFC131E0428007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 20";
-		rLen = 0;
-		rLoc = 454;
-		rType = 0;
-		vrLen = 541;
-		vrLoc = 57;
-	};
-	3FD96BFF131E0435007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 43";
-		rLen = 0;
-		rLoc = 1075;
-		rType = 0;
-		vrLen = 706;
-		vrLoc = 539;
-	};
-	3FD96C02131E049F007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 15";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 134;
-		vrLoc = 156;
-	};
-	3FD96C03131E049F007D5406 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "'MainScreenTableViewController' undeclared (first use in this function)";
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 62;
-		rType = 1;
-	};
-	3FD96C04131E049F007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 29";
-		rLen = 0;
-		rLoc = 192;
-		rType = 0;
-		vrLen = 308;
-		vrLoc = 569;
-	};
-	3FD96C07131E04AF007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 43";
-		rLen = 0;
-		rLoc = 1075;
-		rType = 0;
-		vrLen = 538;
-		vrLoc = 199;
-	};
-	3FD96C08131E04AF007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AC131DF28400734292 /* FlickrViewAppDelegate_iPhone.h */;
-		name = "FlickrViewAppDelegate_iPhone.h: 15";
-		rLen = 0;
-		rLoc = 284;
-		rType = 0;
-		vrLen = 289;
-		vrLoc = 0;
-	};
-	3FD96C09131E04AF007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 16";
-		rLen = 0;
-		rLoc = 594;
-		rType = 0;
-		vrLen = 709;
-		vrLoc = 0;
-	};
-	3FD96C0A131E04AF007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 192;
-		rType = 0;
-		vrLen = 728;
-		vrLoc = 0;
-	};
-	3FD96C0B131E04AF007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 20";
-		rLen = 0;
-		rLoc = 263;
-		rType = 0;
-		vrLen = 337;
-		vrLoc = 0;
-	};
-	3FD96C0C131E04AF007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 10";
-		rLen = 0;
-		rLoc = 197;
-		rType = 0;
-		vrLen = 295;
-		vrLoc = 0;
-	};
-	3FD96C11131E2952007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
-		name = "FlickrViewAppDelegate_iPhone.m: 12";
-		rLen = 0;
-		rLoc = 243;
-		rType = 0;
-		vrLen = 292;
-		vrLoc = 0;
-	};
-	3FD96C12131E2952007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
-		name = "MainScreenTableViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 263;
-		vrLoc = 0;
-	};
-	3FD96C13131E2952007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 96";
-		rLen = 0;
-		rLoc = 2402;
-		rType = 0;
-		vrLen = 824;
-		vrLoc = 1667;
-	};
-	3FD96C16131E29F9007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 97";
-		rLen = 0;
-		rLoc = 2389;
-		rType = 0;
-		vrLen = 618;
-		vrLoc = 1488;
-	};
-	3FD96C1B131E2BA7007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
-		name = "MainScreenTableViewController.h: 15";
-		rLen = 0;
-		rLoc = 291;
-		rType = 0;
-		vrLen = 314;
-		vrLoc = 0;
-	};
-	3FD96C1C131E2BA7007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 13";
-		rLen = 0;
-		rLoc = 263;
-		rType = 0;
-		vrLen = 523;
-		vrLoc = 0;
-	};
-	3FD96C1D131E2BA7007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 29";
-		rLen = 0;
-		rLoc = 732;
-		rType = 0;
-		vrLen = 512;
-		vrLoc = 199;
-	};
-	3FD96C1E131E2C1A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 31";
-		rLen = 0;
-		rLoc = 621;
-		rType = 0;
-		vrLen = 636;
-		vrLoc = 283;
-	};
-	3FD96C21131E2E46007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 30";
-		rLen = 0;
-		rLoc = 192;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 814;
-	};
-	3FD96C22131E2E46007D5406 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Missing sentinel in function call";
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 31;
-		rType = 1;
-	};
-	3FD96C23131E2E46007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 32";
-		rLen = 0;
-		rLoc = 638;
-		rType = 0;
-		vrLen = 179;
-		vrLoc = 555;
-	};
-	3FD96C28131E2E4F007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
-		name = "MainScreenTableViewController.h: 15";
-		rLen = 0;
-		rLoc = 288;
-		rType = 0;
-		vrLen = 309;
-		vrLoc = 0;
-	};
-	3FD96C29131E2E4F007D5406 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Missing sentinel in function call";
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 31;
-		rType = 1;
-	};
-	3FD96C2A131E2E4F007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 32";
-		rLen = 0;
-		rLoc = 706;
-		rType = 0;
-		vrLen = 642;
-		vrLoc = 999;
-	};
-	3FD96C2F131E2EE1007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 126";
-		rLen = 0;
-		rLoc = 2964;
-		rType = 0;
-		vrLen = 1075;
-		vrLoc = 2316;
-	};
-	3FD96C37131E30D5007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 192;
-		rType = 0;
-		vrLen = 966;
-		vrLoc = 0;
-	};
-	3FD96C38131E30D5007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
-		name = "HomePageTableViewController.h: 15";
-		rLen = 0;
-		rLoc = 288;
-		rType = 0;
-		vrLen = 305;
-		vrLoc = 0;
-	};
-	3FD96C39131E30D5007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "MainScreenTableViewController.m: 186";
-		rLen = 0;
-		rLoc = 5021;
-		rType = 0;
-		vrLen = 1016;
-		vrLoc = 4014;
-	};
-	3FD96C3A131E30D5007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "HomwPageTableViewController.m: 186";
-		rLen = 0;
-		rLoc = 5021;
-		rType = 0;
-		vrLen = 1016;
-		vrLoc = 4014;
-	};
-	3FD96C68131E3333007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "HomePageTableViewController.m: 167";
-		rLen = 0;
-		rLoc = 4248;
-		rType = 0;
-		vrLen = 784;
-		vrLoc = 3893;
-	};
-	3FD96C69131E3333007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 325;
-		rType = 0;
-		vrLen = 680;
-		vrLoc = 46;
-	};
-	3FD96C6A131E3333007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 16";
-		rLen = 0;
-		rLoc = 594;
-		rType = 0;
-		vrLen = 709;
-		vrLoc = 0;
-	};
-	3FD96C6B131E3333007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 262;
-		rType = 0;
-		vrLen = 719;
-		vrLoc = 0;
-	};
-	3FD96C6E131E3345007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 262;
-		rType = 0;
-		vrLen = 737;
-		vrLoc = 0;
-	};
-	3FD96C83131E33C5007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 10";
-		rLen = 0;
-		rLoc = 262;
-		rType = 0;
-		vrLen = 737;
-		vrLoc = 0;
-	};
-	3FD96C8E131E36B3007D5406 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/hdhiessu/Desktop/FlickrView/FlickrViewTests/FlickrViewTests-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	3FD96C8F131E36B3007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 12";
-		rLen = 0;
-		rLoc = 358;
-		rType = 0;
-		vrLen = 933;
-		vrLoc = 46;
-	};
-	3FD96C90131E36B3007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 325;
-		rType = 0;
-		vrLen = 660;
-		vrLoc = 46;
-	};
-	3FD96C93131E3831007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "HomePageTableViewController.m: 32";
-		rLen = 0;
-		rLoc = 638;
-		rType = 0;
-		vrLen = 83;
-		vrLoc = 712;
-	};
-	3FD96C94131E3831007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 24";
-		rLen = 0;
-		rLoc = 860;
-		rType = 0;
-		vrLen = 961;
-		vrLoc = 85;
-	};
-	3FD96C95131E3831007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 20";
-		rLen = 0;
-		rLoc = 841;
-		rType = 0;
-		vrLen = 646;
-		vrLoc = 0;
-	};
-	3FD96C96131E3831007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 20";
-		rLen = 0;
-		rLoc = 841;
-		rType = 0;
-		vrLen = 646;
-		vrLoc = 0;
-	};
-	3FD96C97131E3831007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		rLen = 0;
-		rLoc = 192;
-		rType = 0;
-	};
-	3FD96C98131E3831007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 10";
-		rLen = 0;
-		rLoc = 192;
-		rType = 0;
-		vrLen = 220;
-		vrLoc = 145;
-	};
-	3FD96CB3131E51F6007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 32";
-		rLen = 0;
-		rLoc = 1326;
-		rType = 0;
-		vrLen = 1323;
-		vrLoc = 0;
-	};
-	3FD96CB4131E51F6007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
-		name = "HomePageTableViewController.h: 14";
-		rLen = 0;
-		rLoc = 250;
-		rType = 0;
-		vrLen = 305;
-		vrLoc = 0;
-	};
-	3FD96CB5131E51F6007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "HomePageTableViewController.m: 167";
-		rLen = 0;
-		rLoc = 4248;
-		rType = 0;
-		vrLen = 1213;
-		vrLoc = 3291;
-	};
-	3FD96CB6131E51F6007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 47";
-		rLen = 0;
-		rLoc = 1415;
-		rType = 0;
-		vrLen = 1076;
-		vrLoc = 738;
-	};
-	3FD96CB7131E51F6007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 28";
-		rLen = 0;
-		rLoc = 1062;
-		rType = 0;
-		vrLen = 1178;
-		vrLoc = 326;
-	};
-	3FD96CBA131E5215007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 28";
-		rLen = 0;
-		rLoc = 1062;
-		rType = 0;
-		vrLen = 1178;
-		vrLoc = 326;
-	};
-	3FD96CBF131E525E007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 28";
-		rLen = 0;
-		rLoc = 1062;
-		rType = 0;
-		vrLen = 1178;
-		vrLoc = 326;
-	};
-	3FD96CC2131E528D007D5406 /* FlickrViewAppDelegate.m:47 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		functionName = "-_applicationDidFinishLaunchingContinued";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 47;
-		location = FlickrView;
-		modificationTime = 320754370.496548;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	3FD96CC6131E528F007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 28";
-		rLen = 0;
-		rLoc = 1062;
-		rType = 0;
-		vrLen = 1076;
-		vrLoc = 1362;
-	};
-	3FD96CC7131E528F007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 28";
-		rLen = 0;
-		rLoc = 1062;
-		rType = 0;
-		vrLen = 1069;
-		vrLoc = 1362;
-	};
-	3FD96CE8131E5307007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 45";
-		rLen = 0;
-		rLoc = 1415;
-		rType = 0;
-		vrLen = 1073;
-		vrLoc = 1362;
-	};
-	3FD96CE9131E5307007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 49";
-		rLen = 0;
-		rLoc = 1415;
-		rType = 0;
-		vrLen = 1062;
-		vrLoc = 1362;
-	};
-	3FD96CEB131E5355007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 44";
-		rLen = 0;
-		rLoc = 1415;
-		rType = 0;
-		vrLen = 1080;
-		vrLoc = 1362;
-	};
-	3FD96D01131E56AA007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 73";
-		rLen = 0;
-		rLoc = 2765;
-		rType = 0;
-		vrLen = 1177;
-		vrLoc = 1483;
-	};
-	3FD96D02131E5703007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 73";
-		rLen = 0;
-		rLoc = 2765;
-		rType = 0;
-		vrLen = 1177;
-		vrLoc = 1483;
-	};
-	3FD96D03131E5703007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 35";
-		rLen = 0;
-		rLoc = 1371;
-		rType = 0;
-		vrLen = 1441;
-		vrLoc = 85;
-	};
-	3FD96D0F131E583A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 237";
-		rLen = 0;
-		rLoc = 9991;
-		rType = 0;
-		vrLen = 1046;
-		vrLoc = 8773;
-	};
-	3FD96D10131E583A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 35";
-		rLen = 0;
-		rLoc = 1370;
-		rType = 0;
-		vrLen = 1232;
-		vrLoc = 202;
-	};
-	3FD96D11131E583A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 18";
-		rLen = 0;
-		rLoc = 468;
-		rType = 0;
-		vrLen = 1234;
-		vrLoc = 202;
-	};
-	3FD96D12131E583A007D5406 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 81";
-		rLen = 0;
-		rLoc = 3044;
-		rType = 0;
-		vrLen = 1419;
-		vrLoc = 2235;
-	};
 	3FD96D1B131E589E007D5406 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3F0D88AD131DF28400734292 /* FlickrViewAppDelegate_iPhone.m */;
@@ -1109,44 +563,116 @@
 		vrLen = 289;
 		vrLoc = 0;
 	};
-	3FD96D1D131E589E007D5406 /* PBXTextBookmark */ = {
+	3FD96D25131E5983007D5406 /* FlickrAPIKey.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1008, 881}}";
+			sepNavSelRange = "{544, 0}";
+			sepNavVisRange = "{0, 1328}";
+			sepNavWindowFrame = "{{2, 4}, {1278, 998}}";
+		};
+	};
+	3FD96D35131E5BD0007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FD96D25131E5983007D5406 /* FlickrAPIKey.h */;
+		name = "FlickrAPIKey.h: 14";
+		rLen = 0;
+		rLoc = 544;
+		rType = 0;
+		vrLen = 1328;
+		vrLoc = 0;
+	};
+	3FD96D79131E7994007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88B4131DF28400734292 /* FlickrViewAppDelegate_iPad.m */;
+		name = "FlickrViewAppDelegate_iPad.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 282;
+		vrLoc = 0;
+	};
+	3FD96D86131E8E4E007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */;
+		name = "HomePageTableViewController.h: 14";
+		rLen = 0;
+		rLoc = 250;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 0;
+	};
+	3FD96DB0131E9639007D5406 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
-		name = "HomePageTableViewController.m: 154";
+		name = "HomePageTableViewController.m: 21";
 		rLen = 0;
-		rLoc = 3927;
+		rLoc = 738;
 		rType = 0;
-		vrLen = 740;
-		vrLoc = 55;
+		vrLen = 1066;
+		vrLoc = 899;
 	};
-	3FD96D1E131E589E007D5406 /* PBXTextBookmark */ = {
+	3FD96DB1131E9639007D5406 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */;
-		name = "FlickrViewAppDelegate.h: 35";
+		name = "FlickrViewAppDelegate.h: 36";
 		rLen = 0;
 		rLoc = 1371;
 		rType = 0;
-		vrLen = 1441;
-		vrLoc = 85;
+		vrLen = 1381;
+		vrLoc = 145;
 	};
-	3FD96D1F131E589E007D5406 /* PBXTextBookmark */ = {
+	3FD96DB2131E9639007D5406 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 85";
+		name = "FlickrViewAppDelegate.m: 60";
 		rLen = 0;
-		rLoc = 2765;
+		rLoc = 2015;
 		rType = 0;
-		vrLen = 988;
-		vrLoc = 1021;
+		vrLen = 993;
+		vrLoc = 1804;
 	};
-	3FD96D22131E58BA007D5406 /* PBXTextBookmark */ = {
+	3FD96DB3131E9639007D5406 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
-		name = "FlickrViewAppDelegate.m: 85";
+		fRef = 3F0D88CB131DF28400734292 /* FlickrViewTests-Prefix.pch */;
+		name = "FlickrViewTests-Prefix.pch: 1";
 		rLen = 0;
-		rLoc = 2765;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 1008;
-		vrLoc = 1021;
+		vrLen = 161;
+		vrLoc = 0;
+	};
+	3FD96DB4131E9639007D5406 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F0D88C9131DF28400734292 /* en */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	3FD96DB5131E9639007D5406 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDevelopmentRegion,
+		);
+		name = "/Users/hdhiessu/Desktop/FlickrView/FlickrViewTests/FlickrViewTests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	3FD96DB6131E9639007D5406 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 3F0D88C7131DF28400734292 /* FlickrViewTests-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleDevelopmentRegion,
+		);
+		name = "/Users/hdhiessu/Desktop/FlickrView/FlickrViewTests/FlickrViewTests-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 }
