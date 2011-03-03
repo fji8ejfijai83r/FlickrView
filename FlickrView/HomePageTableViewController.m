@@ -8,6 +8,7 @@
 
 #import "HomePageTableViewController.h"
 #import "FlickrViewAppDelegate.h"
+#import "PhotoSpotsListTableViewController.h"
 
 enum {
     beforeRowAuthorize,
@@ -60,6 +61,7 @@ enum {
     [_showList release];
 	[super dealloc];
 }
+
 - (BOOL)isAuthorized
 {
 	return [[FlickrViewAppDelegate sharedDelegate].flickrContext.authToken length];
@@ -67,7 +69,7 @@ enum {
 - (void)updateUserInterface:(NSNotification *)notification
 {
 	if ([self isAuthorized]) {
-		_showList = [[NSArray alloc] initWithObjects:@"You", @"Contacts", @"Upload", @"Nearby", @"Eplore", nil];
+		_showList = [[NSArray alloc] initWithObjects:@"You", @"Contacts", @"Upload", @"Eplore", @"Nearby", @"Search", nil];
 	}
 	if ([[FlickrViewAppDelegate sharedDelegate].flickrUserName length]) {
 		self.navigationItem.title = [FlickrViewAppDelegate sharedDelegate].flickrUserName;
@@ -107,6 +109,12 @@ enum {
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 	self.showList = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	[super viewWillAppear:animated];
+	self.navigationItem.title = [FlickrViewAppDelegate sharedDelegate].flickrUserName;
 }
 
 
@@ -208,7 +216,17 @@ enum {
 - (void)showExploreScreen
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-
+	PhotoSpotsListTableViewController *psltv = [[PhotoSpotsListTableViewController alloc] init];
+    psltv.tabBarItem.image = [UIImage imageNamed:@"all.png"];
+	psltv.title = @"Top Rated";
+	//psltv.managedObjectContext = self.managedObjectContext;
+	//psltv.flickrContext = [FlickrViewAppDelegate sharedDelegate].flickrContext;
+	tabBarController.viewControllers = [NSArray arrayWithObjects:psltv, nil];
+	tabBarController.title = @"Explore";
+	self.navigationItem.title = @"Home";
+	[self.navigationController pushViewController:tabBarController animated:YES];
+	[psltv release];
+	[tabBarController release];
 }
 
 #pragma mark - Table view delegate
@@ -222,9 +240,10 @@ enum {
 			case afterRowContacts:
 				break;
 			case afterRowUpload:
+				[self popUpForAuthorize:indexPath];
 				break;
 			case afterRowExplore:
-				
+				[self showExploreScreen];
 				break;
 		}
 	} 

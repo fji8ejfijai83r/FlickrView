@@ -6,39 +6,27 @@
 //  Copyright 2010 HD. All rights reserved.
 //
 
-#import "FlickrFetcher.h"
 #import "PhotoSpotsListTableViewController.h"
 #import "PhotosListTableViewController.h"
 #import "TopPlaceTableViewController.h"
-#import "Photo.h"
+//#import "Photo.h"
 
 @implementation PhotoSpotsListTableViewController
 
 
-#pragma mark -
-#pragma mark Initialization
-
-
-
-#pragma mark -
-#pragma mark protocol
 - (id)makeKey:(NSDictionary *)aDic;
 {
 	return [[aDic objectForKey:@"_text"] substringToIndex:1];
 }
 
-- (NSArray *)rawData
-{
-	return [FlickrFetcher topPlaces];
-}
-
-
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
-	self.navigationItem.rightBarButtonItem = self.editButtonItem;
-	if (![flickrRequest isRunning]) {
-		[flickrRequest callAPIMethodWithGET:@"flickr.places.getTopPlacesList" arguments:[NSDictionary dictionaryWithObjectsAndKeys:@"7", @"place_type_id", nil]];
+	//self.navigationController.title = @"Explore";
+	//self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+	if (![self.flickrRequest isRunning]) {
+		[self.flickrRequest callAPIMethodWithGET:@"flickr.places.getTopPlacesList" arguments:[NSDictionary dictionaryWithObjectsAndKeys:@"7", @"place_type_id", nil]];
 	}
 }
 
@@ -83,7 +71,7 @@
     }
 
     //self.data will perform data setter that load data from web, so far cannot find better way
-    if (indexPath.row == 0 && !data)
+    if (indexPath.row == 0 && !self.data)
 	{
         cell.detailTextLabel.textAlignment = UITextAlignmentCenter;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -93,7 +81,7 @@
 		return cell;
     }
     
-    if (data > 0) {
+    if (self.data) {
         cell.textLabel.text = [self placeName:indexPath];
         cell.detailTextLabel.text = [self placeDetailInfo:indexPath];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -124,14 +112,30 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
     */
-	PhotosListTableViewController *pltvc= [[PhotosListTableViewController alloc] init];
-	pltvc.photoId = [[self dataInfo:indexPath] objectForKey:@"place_id"];
-	pltvc.placeName = [self placeInfo:indexPath];
-	pltvc.managedObjectContext = self.managedObjectContext;
-	pltvc.title = [self placeName:indexPath];
-	[self.navigationController pushViewController:pltvc animated:YES];
-	[pltvc release];
+	//PhotosListTableViewController *pltvc= [[PhotosListTableViewController alloc] init];
+//	pltvc.photoId = [[self dataInfo:indexPath] objectForKey:@"place_id"];
+//	pltvc.placeName = [self placeInfo:indexPath];
+//	pltvc.managedObjectContext = self.managedObjectContext;
+//	pltvc.title = [self placeName:indexPath];
+//	[self.navigationController pushViewController:pltvc animated:YES];
+//	[pltvc release];
 	
+}
+
+#pragma mark -
+#pragma mark OFFlickrAPIRequestDelegate
+- (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest didCompleteWithResponse:(NSDictionary *)inResponseDictionary
+{
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+	NSArray *rawData = [[inResponseDictionary objectForKey:@"places"] objectForKey:@"place"];
+	[self.data release];
+	self.data = [self makeTableViewData:rawData];
+	[self updateTableView];
+}
+
+- (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest didFailWithError:(NSError *)inError
+{
+	NSLog(@"%s", inError);
 }
 
 

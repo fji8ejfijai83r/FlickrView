@@ -16,21 +16,19 @@
 	NSArray *sections;
 	NSManagedObjectContext *managedObjectContext;
 	
-	OFFlickrAPIContext *flickrContext;
 	OFFlickrAPIRequest *flickrRequest;
 }
 
 @property (retain) NSManagedObjectContext *managedObjectContext;	    
 @property (nonatomic, retain) NSMutableDictionary *data;
 @property (nonatomic, retain) NSArray *sections;
-@property (nonatomic, readonly) OFFlickrAPIContext *flickrContext;
+@property (nonatomic, retain) OFFlickrAPIRequest *flickrRequest;
+
 
 - (id)makeKey:(NSDictionary *)aDic;
-
 - (NSArray *)rawData;
-
 - (NSDictionary *)dataInfo:(NSIndexPath *)indexPath;
-
-
+- (void)updateTableView;
+- (NSMutableDictionary *)makeTableViewData:(NSArray *)rawData;
 
 @end

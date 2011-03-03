@@ -35,6 +35,7 @@
 		3FB9CC26131F3A82002F46C4 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC20131F3A82002F46C4 /* search.png */; };
 		3FB9CC27131F3A82002F46C4 /* star_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC21131F3A82002F46C4 /* star_empty.png */; };
 		3FB9CC28131F3A82002F46C4 /* star_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC22131F3A82002F46C4 /* star_full.png */; };
+		3FB9CD23131F8BFD002F46C4 /* PhotosListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD22131F8BFD002F46C4 /* PhotosListTableViewController.m */; };
 		3FD96C52131E3276007D5406 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD96C51131E3276007D5406 /* CFNetwork.framework */; };
 		3FD96C62131E3289007D5406 /* libObjectiveFlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD96C4E131E320F007D5406 /* libObjectiveFlickr.a */; };
 /* End PBXBuildFile section */
@@ -107,6 +108,8 @@
 		3FB9CC20131F3A82002F46C4 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		3FB9CC21131F3A82002F46C4 /* star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_empty.png; sourceTree = "<group>"; };
 		3FB9CC22131F3A82002F46C4 /* star_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_full.png; sourceTree = "<group>"; };
+		3FB9CD21131F8BFD002F46C4 /* PhotosListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosListTableViewController.h; sourceTree = "<group>"; };
+		3FB9CD22131F8BFD002F46C4 /* PhotosListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosListTableViewController.m; sourceTree = "<group>"; };
 		3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = objectiveflickr/ObjectiveFlickr.xcodeproj; sourceTree = "<group>"; };
 		3FD96C51131E3276007D5406 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3FD96D25131E5983007D5406 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				3FB9CC14131F3998002F46C4 /* TopPlaceTableViewController.m */,
 				3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */,
 				3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */,
+				3FB9CD21131F8BFD002F46C4 /* PhotosListTableViewController.h */,
+				3FB9CD22131F8BFD002F46C4 /* PhotosListTableViewController.m */,
 				3F0D88AB131DF28400734292 /* iPhone */,
 				3F0D88B2131DF28400734292 /* iPad */,
 			);
@@ -425,6 +430,7 @@
 				3F0D88E1131DF5DA00734292 /* HomePageTableViewController.m in Sources */,
 				3FB9CC15131F3998002F46C4 /* TopPlaceTableViewController.m in Sources */,
 				3FB9CC18131F39A5002F46C4 /* PhotoSpotsListTableViewController.m in Sources */,
+				3FB9CD23131F8BFD002F46C4 /* PhotosListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

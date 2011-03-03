@@ -7,34 +7,28 @@
 //
 
 #import "TopPlaceTableViewController.h"
-#import "FlickrFetcher.h"
 #import "ObjectiveFlickr.h"
 #import "FlickrAPIKey.h"
+#import "FlickrViewAppDelegate.h"
 
 #define kCustomRowCount     8
+@interface TopPlaceTableViewController()
+@end
 
 @implementation TopPlaceTableViewController
 
-@synthesize data, sections;
-@synthesize managedObjectContext;
-@synthesize flickrContext;
-
-#pragma mark -
-#pragma mark Initialization
-
-
-
-#pragma mark -
-#pragma mark protocol
+@synthesize data = _data;
+@synthesize sections = _sections;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize flickrRequest = _flickrRequest;
 
 NSString *TableViewUpdateNotification = @"TableViewUpdateNotification";
 
 - (id)init
 {
 	if ((self = [super init])) {
-		flickrContext = [[OFFlickrAPIContext alloc] initWithAPIKey:OBJECTIVE_FLICKR_SAMPLE_API_KEY sharedSecret:OBJECTIVE_FLICKR_SAMPLE_API_SHARED_SECRET];
-		flickrRequest = [[OFFlickrAPIRequest alloc] initWithAPIContext:flickrContext];
-		[flickrRequest setDelegate:self];
+		_flickrRequest = [[OFFlickrAPIRequest alloc] initWithAPIContext:[FlickrViewAppDelegate sharedDelegate].flickrContext];
+		[_flickrRequest setDelegate:self];
 	}
 	return self;
 }
@@ -49,30 +43,7 @@ NSString *TableViewUpdateNotification = @"TableViewUpdateNotification";
 	return nil;
 }
 
-- (NSDictionary *)makeTableViewData
-{
-	NSMutableDictionary *tempDictionary = [NSMutableDictionary dictionary];
-	NSArray *rawData = [self rawData];
-	//NSLog(@"%@", rawData);
-
-	for (id aData in rawData) {
-		id key = [self makeKey:aData];
-		// if an array already exists in the name index dictionary
-		// simply add the element to it, otherwise create an array
-		// and add it to the name index dictionary with the letter as the key
-		NSMutableArray *existingArray;
-		if ((existingArray = [tempDictionary objectForKey:key])) {
-			[existingArray addObject:aData];
-		} else {
-			NSMutableArray *tempArray = [NSMutableArray array];
-			[tempDictionary setObject:tempArray forKey:key];
-			[tempArray addObject:aData];
-		}
-	}
-	return tempDictionary;
-}
-
-- (NSDictionary *)makeTableViewDataEx:(NSArray *)rawData
+- (NSMutableDictionary *)makeTableViewData:(NSArray *)rawData
 {
 	NSMutableDictionary *tempDictionary = [NSMutableDictionary dictionary];
 	for (id aData in rawData) {
@@ -93,29 +64,13 @@ NSString *TableViewUpdateNotification = @"TableViewUpdateNotification";
 }
 
 #pragma mark -
-- (NSMutableDictionary *)data
-{
-	if (!data) {
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-        dispatch_queue_t downloader = dispatch_queue_create("data downloader", NULL);
-		dispatch_async(downloader, ^{
-			data = [[self makeTableViewData] retain];
-			dispatch_async(dispatch_get_main_queue(), ^{
-				[[self tableView] reloadData];
-				[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-			});
-		});
-	dispatch_release(downloader);
-	}
-	return data;
-}
 
 - (NSArray *)sections
 {
-    if (!sections) {
-		sections = [[[data allKeys] sortedArrayUsingSelector:@selector(compare:)] retain];
+    if (!_sections) {
+		_sections = [[[_data allKeys] sortedArrayUsingSelector:@selector(compare:)] retain];
 	}
-	return sections;
+	return _sections;
 }
 
 #pragma mark -
@@ -140,7 +95,7 @@ NSString *TableViewUpdateNotification = @"TableViewUpdateNotification";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
 {
-	NSArray *dataInSection = [data objectForKey:[self.sections objectAtIndex:section]];
+	NSArray *dataInSection = [self.data objectForKey:[self.sections objectAtIndex:section]];
     
     int count = dataInSection.count;
     
@@ -176,33 +131,20 @@ NSString *TableViewUpdateNotification = @"TableViewUpdateNotification";
 	[[NSNotificationCenter defaultCenter] removeObserver:self
 													name:TableViewUpdateNotification
 												  object:nil];
+	self.data = nil;
+	self.sections = nil;
+	self.flickrRequest = nil;
 }
 
 - (void)dealloc {
-	[flickrContext release];
-	[flickrRequest release];
-	[data release];
-	[sections release];
+	[_flickrRequest release];
+	[_data release];
+	[_sections release];
     [super dealloc];
 }
 
-#pragma mark -
-#pragma mark OFFlickrAPIRequestDelegate
-- (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest didCompleteWithResponse:(NSDictionary *)inResponseDictionary
-{
-	[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-	NSArray *rawData = [[inResponseDictionary objectForKey:@"places"] objectForKey:@"place"];
-	//NSLog(@"%@", rawData);
-	[data release];
-	data = [[self makeTableViewDataEx:rawData] retain];
-	//[[NSNotificationCenter defaultCenter] postNotificationName:TableViewUpdateNotification object:self];
-	[self updateTableView];
-}
 
-- (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest didFailWithError:(NSError *)inError
-{
-	NSLog(@"%s", inError);
-}
+
 
 @end
 
