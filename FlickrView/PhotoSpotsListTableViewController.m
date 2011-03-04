@@ -7,7 +7,7 @@
 //
 
 #import "PhotoSpotsListTableViewController.h"
-#import "PhotosListTableViewController.h"
+//#import "PhotosListTableViewController.h"
 #import "TopPlaceTableViewController.h"
 //#import "Photo.h"
 
@@ -112,14 +112,13 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
     */
-	//PhotosListTableViewController *pltvc= [[PhotosListTableViewController alloc] init];
+//	PhotosListTableViewController *pltvc= [[PhotosListTableViewController alloc] init];
 //	pltvc.photoId = [[self dataInfo:indexPath] objectForKey:@"place_id"];
 //	pltvc.placeName = [self placeInfo:indexPath];
-//	pltvc.managedObjectContext = self.managedObjectContext;
+////	pltvc.managedObjectContext = self.managedObjectContext;
 //	pltvc.title = [self placeName:indexPath];
 //	[self.navigationController pushViewController:pltvc animated:YES];
-//	[pltvc release];
-	
+//	[pltvc release];	
 }
 
 #pragma mark -

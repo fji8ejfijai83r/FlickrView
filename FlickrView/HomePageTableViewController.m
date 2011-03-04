@@ -9,6 +9,8 @@
 #import "HomePageTableViewController.h"
 #import "FlickrViewAppDelegate.h"
 #import "PhotoSpotsListTableViewController.h"
+#import "SnapAndRunViewController.h"
+#import "UserPhotosTableViewController.h"
 
 enum {
     beforeRowAuthorize,
@@ -223,24 +225,43 @@ enum {
 	//psltv.flickrContext = [FlickrViewAppDelegate sharedDelegate].flickrContext;
 	tabBarController.viewControllers = [NSArray arrayWithObjects:psltv, nil];
 	tabBarController.title = @"Explore";
-	self.navigationItem.title = @"Home";
 	[self.navigationController pushViewController:tabBarController animated:YES];
 	[psltv release];
 	[tabBarController release];
 }
 
+- (void)showUploadScreen
+{
+	SnapAndRunViewController *uvc = [[SnapAndRunViewController alloc] init];
+	[self.navigationController pushViewController:uvc animated:YES];
+	[uvc release];
+}
+
+- (void)showUserScreen
+{
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+	UserPhotosTableViewController *uptvc = [[UserPhotosTableViewController alloc] init];
+	uptvc.title = @"Photos";
+	tabBarController.viewControllers = [NSArray arrayWithObjects:uptvc, nil];
+	uptvc.userName = @"me"; 
+	[self.navigationController pushViewController:tabBarController animated:YES];
+	[uptvc release];
+	[tabBarController release];
+}
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	self.navigationItem.title = @"Home";
 	if ([self isAuthorized] && indexPath.section == 0) {
 		switch (indexPath.row) {
 			case afterRowYou:
+				[self showUserScreen];
 				break;
 			case afterRowContacts:
 				break;
 			case afterRowUpload:
-				[self popUpForAuthorize:indexPath];
+				[self showUploadScreen];
 				break;
 			case afterRowExplore:
 				[self showExploreScreen];

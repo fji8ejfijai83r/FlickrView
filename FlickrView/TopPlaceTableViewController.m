@@ -38,10 +38,10 @@ NSString *TableViewUpdateNotification = @"TableViewUpdateNotification";
 	return nil;
 }
 
-- (NSArray *)rawData
-{
-	return nil;
-}
+//- (NSArray *)rawData
+//{
+//	return nil;
+//}
 
 - (NSMutableDictionary *)makeTableViewData:(NSArray *)rawData
 {
