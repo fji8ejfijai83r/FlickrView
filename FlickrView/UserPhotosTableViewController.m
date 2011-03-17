@@ -37,6 +37,14 @@
 	if ((self = [super init])) {
 		_flickrRequest = [[OFFlickrAPIRequest alloc] initWithAPIContext:[FlickrViewAppDelegate sharedDelegate].flickrContext];
 		[_flickrRequest setDelegate:self];
+		UIButton *moreButton = [UIButton buttonWithType:111];
+        [moreButton setTitle:@"more photos..." forState:UIControlStateNormal];
+		moreButton.frame = CGRectMake(0, 0, 320, 50);
+		[[moreButton layer] setCornerRadius:8.0f];
+		[[moreButton layer] setMasksToBounds:YES];
+		[[moreButton layer] setBorderWidth:1.0f];
+		[moreButton setBackgroundColor:[UIColor grayColor]];
+		self.tableView.tableFooterView = moreButton;
 	}
 	return self;
 }

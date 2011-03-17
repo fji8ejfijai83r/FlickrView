@@ -11,6 +11,13 @@
 #import "PhotoSpotsListTableViewController.h"
 #import "SnapAndRunViewController.h"
 #import "UserPhotosTableViewController.h"
+#import "UserContactsTableViewController.h"
+#import "Three20/Three20.h"
+#import "SearchResultsPhotoSource.h"
+#import "FlickrSearchResultsModel.h"
+#import "ForwardingAdapters.h"
+#import "SearchTableViewController.h"
+
 
 enum {
     beforeRowAuthorize,
@@ -43,6 +50,7 @@ enum {
 	if (self) {
         // Custom initialization
         self.navigationItem.title = @"Flick View";
+		
     }
     return self;
 }
@@ -53,7 +61,7 @@ enum {
 {
 	if (!_showList) {
 		_showList = [[NSArray alloc] initWithObjects:
-					@"Authorize with Flickr", @"Explore", @"Nearby", @"Search", nil];
+					 @"Authorize with Flickr", @"Explore", @"Nearby", @"Search", nil];
 	}
 	return _showList;
 }
@@ -97,10 +105,10 @@ enum {
 {
     [super viewDidLoad];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInterface:) name:SnapAndRunShouldUpdateAuthInfoNotification object:nil];
-
+	
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -163,51 +171,13 @@ enum {
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 - (void)popUpForAuthorize:(NSIndexPath *)indexPath
 {
-//	[[[UIAlertView alloc] initWithTitle:@"Notice" 
-//								 message:@"Flickr" 
-//								delegate:nil 
-//					   cancelButtonTitle:@"Cancel" 
-//					   otherButtonTitles:@"OK"] show];
+	//	[[[UIAlertView alloc] initWithTitle:@"Notice" 
+	//								 message:@"Flickr" 
+	//								delegate:nil 
+	//					   cancelButtonTitle:@"Cancel" 
+	//					   otherButtonTitles:@"OK"] show];
 	UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
 	cell.textLabel.text = @"Logging in...";
 	NSURL *loginURL = [[FlickrViewAppDelegate sharedDelegate].flickrContext 
@@ -217,16 +187,21 @@ enum {
 
 - (void)showExploreScreen
 {
+	[[TTURLRequestQueue mainQueue] setMaxContentLength:0];
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-	PhotoSpotsListTableViewController *psltv = [[PhotoSpotsListTableViewController alloc] init];
-    psltv.tabBarItem.image = [UIImage imageNamed:@"all.png"];
-	psltv.title = @"Top Rated";
+	SearchResultsPhotoSource *photoSource = [[SearchResultsPhotoSource alloc] 
+					   initWithModel:[[[FlickrSearchResultsModel alloc] init] autorelease]];
+	[photoSource load:TTURLRequestCachePolicyDefault more:NO];
+	TTThumbsViewController *thumbs = [[MyThumbsViewController alloc] initForPhotoSource:photoSource];
+	//SearchTableViewController *thumbs = [[SearchTableViewController alloc] init];
+	thumbs.tabBarItem.image = [UIImage imageNamed:@"all.png"];
+	thumbs.title = @"Top Rated";
 	//psltv.managedObjectContext = self.managedObjectContext;
 	//psltv.flickrContext = [FlickrViewAppDelegate sharedDelegate].flickrContext;
-	tabBarController.viewControllers = [NSArray arrayWithObjects:psltv, nil];
+	tabBarController.viewControllers = [NSArray arrayWithObjects:thumbs, nil];
 	tabBarController.title = @"Explore";
 	[self.navigationController pushViewController:tabBarController animated:YES];
-	[psltv release];
+	[thumbs release];
 	[tabBarController release];
 }
 
@@ -242,10 +217,13 @@ enum {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	UserPhotosTableViewController *uptvc = [[UserPhotosTableViewController alloc] init];
 	uptvc.title = @"Photos";
-	tabBarController.viewControllers = [NSArray arrayWithObjects:uptvc, nil];
-	uptvc.userName = @"me"; 
+	uptvc.userName = @"me";
+	UserContactsTableViewController *uctvc = [[UserContactsTableViewController alloc] init];
+	uctvc.title = @"Contacts";
+	tabBarController.viewControllers = [NSArray arrayWithObjects:uptvc, uctvc, nil];
 	[self.navigationController pushViewController:tabBarController animated:YES];
 	[uptvc release];
+	[uctvc release];
 	[tabBarController release];
 }
 #pragma mark - Table view delegate
@@ -274,6 +252,7 @@ enum {
 				[self popUpForAuthorize:indexPath];
 				break;
 			case beforeRowExplore:
+				[self showExploreScreen];
 				break;
 		}
 	}

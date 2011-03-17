@@ -16,7 +16,7 @@
 	if (self.searchKey.length) {
 		if (self.tableView && !self.tableView.tableHeaderView) {
 			UISearchBar *searchBar = [[[UISearchBar alloc] init] autorelease];
-			[[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+			[[[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self] autorelease];
 			self.searchDisplayController.searchResultsDelegate = self;
 			self.searchDisplayController.searchResultsDataSource = self;
 			self.searchDisplayController.delegate = self;
