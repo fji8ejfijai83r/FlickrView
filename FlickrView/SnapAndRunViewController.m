@@ -30,6 +30,8 @@
 
 NSString *kGetUserInfoStep = @"kGetUserInfoStep";
 NSString *kSetImagePropertiesStep = @"kSetImagePropertiesStep";
+NSString *kSetImageTags = @"kSetImageTags";
+NSString *kSetImagePers = @"kSetImagePers";
 NSString *kUploadImageStep = @"kUploadImageStep";
 
 @interface SnapAndRunViewController (PrivateMethods)
@@ -125,15 +127,49 @@ NSString *kUploadImageStep = @"kUploadImageStep";
 		snapPictureDescriptionLabel.text = @"Setting properties...";
 
         
-        NSLog(@"%@", inResponseDictionary);
-        NSString *photoID = [[inResponseDictionary valueForKeyPath:@"photoid"] textContent];
+        //NSLog(@"%@", inResponseDictionary);
+        photoID = [[[inResponseDictionary valueForKeyPath:@"photoid"] textContent] retain];
 
-        flickrRequest.sessionInfo = kSetImagePropertiesStep;
-        [flickrRequest callAPIMethodWithPOST:@"flickr.photos.setMeta" arguments:[NSDictionary dictionaryWithObjectsAndKeys:photoID, @"photo_id", @"Snap and Run", @"title", @"Uploaded from my iPhone/iPod Touch", @"description", nil]];        		        
-	}
-    else if (inRequest.sessionInfo == kSetImagePropertiesStep) {
+        flickrRequest.sessionInfo = kSetImageTags;
+		
+		[flickrRequest callAPIMethodWithPOST:@"flickr.photos.setMeta" 
+								   arguments:[NSDictionary dictionaryWithObjectsAndKeys:
+											  photoID, @"photo_id", 
+											  [photoInfo objectForKey:@"title"], @"title", 
+											  [photoInfo objectForKey:@"description"], @"description", nil]];        		        
+		
+	} else if (inRequest.sessionInfo == kSetImageTags) {
+		//NSLog(@"%@", inResponseDictionary);
+		snapPictureDescriptionLabel.text = @"Setting Tags...";
+		
+		flickrRequest.sessionInfo = kSetImagePers;
+		[flickrRequest callAPIMethodWithPOST:@"flickr.photos.setTags" 
+								   arguments:[NSDictionary dictionaryWithObjectsAndKeys:
+											  photoID, @"photo_id", 
+											  [photoInfo objectForKey:@"tags"], @"tags", nil]];
+		
+	} else if (inRequest.sessionInfo == kSetImagePers) {
+		snapPictureDescriptionLabel.text = @"Setting Pers...";
+
+		flickrRequest.sessionInfo = kSetImagePropertiesStep;
+		
+		[flickrRequest callAPIMethodWithPOST:@"flickr.photos.setPerms" 
+								   arguments:[NSDictionary dictionaryWithObjectsAndKeys:
+											  photoID, @"photo_id",
+											  [photoInfo objectForKey:@"is_public"], @"is_public",
+											  @"0", @"is_friend",
+											  @"0", @"is_family",
+											  @"3", @"perm_comment",
+											  @"0", @"perm_addmeta", nil]];
+
+
+	} else if (inRequest.sessionInfo == kSetImagePropertiesStep) {
+		[photoID release];
+		[photoInfo release];
 		[self updateUserInterface:nil];		
 		snapPictureDescriptionLabel.text = @"Done";
+		snapPictureButton.enabled = YES;
+		snapPictureDescriptionLabel.text = @"Go on?";
         
 		[UIApplication sharedApplication].idleTimerDisabled = NO;		
         
@@ -154,6 +190,7 @@ NSString *kUploadImageStep = @"kUploadImageStep";
 	else {
 		[[[[UIAlertView alloc] initWithTitle:@"API Failed" message:[inError description] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] autorelease] show];
 	}
+	snapPictureButton.enabled = YES;
 }
 
 - (void)flickrAPIRequest:(OFFlickrAPIRequest *)inRequest imageUploadSentBytes:(NSUInteger)inSentBytes totalBytes:(NSUInteger)inTotalBytes
@@ -173,9 +210,14 @@ NSString *kUploadImageStep = @"kUploadImageStep";
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (void)_startUpload:(UIImage *)image
+- (void)_startUpload:(NSDictionary *)photoInfoDic
 {
-    NSData *JPEGData = UIImageJPEGRepresentation(image, 1.0);
+    //[self.imagePicker popViewControllerAnimated:YES];
+	//[self dismissModalViewControllerAnimated:YES];
+	photoInfo = [photoInfoDic retain];
+	
+	NSData *JPEGData = UIImageJPEGRepresentation(pickedImage, 1.0);
+	TT_RELEASE_SAFELY(pickedImage);
     
 	snapPictureButton.enabled = NO;
 	snapPictureDescriptionLabel.text = @"Uploading";
@@ -196,13 +238,19 @@ NSString *kUploadImageStep = @"kUploadImageStep";
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
 #endif
+	
+	FillPhotoInfoViewController *fpivc = [[[FillPhotoInfoViewController alloc] init] autorelease];
+	fpivc.delegate = self;
+	if (pickedImage) TT_RELEASE_SAFELY(pickedImage);
+	pickedImage = [image retain];
+//	[self dismissModalViewControllerAnimated:NO];
 
-    [self dismissModalViewControllerAnimated:YES];
+	
+	[self.imagePicker pushViewController:fpivc animated:YES];	
 	
 	snapPictureDescriptionLabel.text = @"Preparing...";
-	
 	// we schedule this call in run loop because we want to dismiss the modal view first
-	[self performSelector:@selector(_startUpload:) withObject:image afterDelay:0.0];
+//	[self performSelector:@selector(_startUpload:) withObject:image afterDelay:0.0];
 }
 
 #pragma mark Accesors
@@ -230,6 +278,7 @@ NSString *kUploadImageStep = @"kUploadImageStep";
     }
     return imagePicker;
 }
+
 
 #ifndef __IPHONE_3_0
 - (void)setView:(UIView *)view

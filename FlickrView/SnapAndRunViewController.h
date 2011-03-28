@@ -27,8 +27,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ObjectiveFlickr.h"
+#import "FillPhotoInfoViewController.h"
 
-@interface SnapAndRunViewController : UIViewController <OFFlickrAPIRequestDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface SnapAndRunViewController : UIViewController 
+<OFFlickrAPIRequestDelegate, UIImagePickerControllerDelegate, 
+UINavigationControllerDelegate, FillPhotoInfoViewControllerDelegate>
 {
     OFFlickrAPIRequest *flickrRequest;
     
@@ -36,6 +39,10 @@
     
     UILabel *snapPictureDescriptionLabel;
     UIButton *snapPictureButton;
+	
+	UIImage *pickedImage;
+	NSString *photoID;
+	NSDictionary *photoInfo;
 }
 - (IBAction)snapPictureAction;
 
