@@ -7,6 +7,7 @@
 //
 
 #import "Three20/Three20.h"
+#import "FlickrSearchResultsModel.h"
 
 /*
  *  HACK:
@@ -28,13 +29,19 @@
 @end
 
 
-@interface MyThumbsViewController : TTThumbsViewController
+@interface MyThumbsViewController : TTThumbsViewController <FlickrSearchResultsModelDelegate>
 {
 	id <TTModel> realModel;
 }
 - (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
 @end
 
+@interface MySearchThumbsViewController : TTThumbsViewController <UISearchBarDelegate>
+{
+	id <TTModel> realModel;
+}
+- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
+@end
 
 @interface MyThumbsDataSource : TTThumbsDataSource
 {}

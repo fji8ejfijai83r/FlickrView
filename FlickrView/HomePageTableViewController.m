@@ -187,17 +187,13 @@ enum {
 
 - (void)showExploreScreen
 {
-	[[TTURLRequestQueue mainQueue] setMaxContentLength:0];
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-	SearchResultsPhotoSource *photoSource = [[SearchResultsPhotoSource alloc] 
-					   initWithModel:[[[FlickrSearchResultsModel alloc] init] autorelease]];
-	[photoSource load:TTURLRequestCachePolicyDefault more:NO];
-	TTThumbsViewController *thumbs = [[MyThumbsViewController alloc] initForPhotoSource:photoSource];
-	//SearchTableViewController *thumbs = [[SearchTableViewController alloc] init];
+	
+	TTThumbsViewController *thumbs = [[MyThumbsViewController alloc] init];
+
 	thumbs.tabBarItem.image = [UIImage imageNamed:@"all.png"];
 	thumbs.title = @"Top Rated";
-	//psltv.managedObjectContext = self.managedObjectContext;
-	//psltv.flickrContext = [FlickrViewAppDelegate sharedDelegate].flickrContext;
+
 	tabBarController.viewControllers = [NSArray arrayWithObjects:thumbs, nil];
 	tabBarController.title = @"Explore";
 	[self.navigationController pushViewController:tabBarController animated:YES];
@@ -226,6 +222,17 @@ enum {
 	[uctvc release];
 	[tabBarController release];
 }
+
+- (void)showSearchScreen
+{	
+//	SearchResultsPhotoSource *photoSource = [[SearchResultsPhotoSource alloc] 
+//											 initWithModel:[[[FlickrSearchResultsModel alloc] init] autorelease]];
+//	//[photoSource load:TTURLRequestCachePolicyDefault more:NO];
+//	TTThumbsViewController *thumbs = [[MySearchThumbsViewController alloc] initForPhotoSource:photoSource];
+//	
+//	[self.navigationController pushViewController:thumbs animated:YES];
+//	[thumbs release];	
+}
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -244,6 +251,9 @@ enum {
 			case afterRowExplore:
 				[self showExploreScreen];
 				break;
+			case afterRowSearch:
+				[self showSearchScreen];
+				break;
 		}
 	} 
 	if (![self isAuthorized] && indexPath.section == 0) {
@@ -253,6 +263,9 @@ enum {
 				break;
 			case beforeRowExplore:
 				[self showExploreScreen];
+				break;
+			case beforeRowSearch:
+				[self showSearchScreen];
 				break;
 		}
 	}

@@ -88,6 +88,9 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	//Not sure
+	[[TTURLRequestQueue mainQueue] setMaxContentLength:0];
+	
 	UINavigationController *tempNgc = [[UINavigationController alloc] init];
 	self.ngc = tempNgc;
 	[tempNgc release];

@@ -15,6 +15,7 @@
 const static NSUInteger kFlickrBatchSize = 16;   // The number of results to pull down with each request to the server.
 
 @implementation FlickrSearchResultsModel
+@synthesize delegate;
 
 - (id)init
 {
@@ -26,23 +27,16 @@ const static NSUInteger kFlickrBatchSize = 16;   // The number of results to pul
     return self;
 }
 
-- (NSString *)apiMethod
-{
-	return @"flickr.interestingness.getList";
-	//return @"flickr.people.getPhotos";
 
-}
-
-- (NSDictionary *)argumentsForApiMethod
+- (NSDictionary *)arguments
 {
+	NSDictionary *inArguments = [self.delegate argumentsForApiMethod];
+	NSMutableDictionary *newArgs = inArguments ? [NSMutableDictionary dictionaryWithDictionary:inArguments] : [NSMutableDictionary dictionary];
 	NSString *batchSize = [NSString stringWithFormat:@"%lu", (unsigned long)kFlickrBatchSize];
-	return [NSDictionary dictionaryWithObjectsAndKeys:
-			batchSize, @"per_page", 
-			[NSString stringWithFormat:@"%lu", (unsigned long)page], @"page", 
-			@"url_m,url_t", @"extras", 
-			@"me", @"user_id",
-			nil];
-	//return [NSDictionary dictionaryWithObjectsAndKeys:@"16", @"per_page", nil];
+	[newArgs setObject:batchSize forKey:@"per_page"];
+	[newArgs setObject:[NSString stringWithFormat:@"%lu", (unsigned long)page] forKey:@"page"];
+	[newArgs setObject:@"url_m,url_t" forKey:@"extras"];
+	return newArgs;
 }
 
 - (void)load:(TTURLRequestCachePolicy)cachePolicy more:(BOOL)more
@@ -52,7 +46,7 @@ const static NSUInteger kFlickrBatchSize = 16;   // The number of results to pul
     else
         [responseProcessor.objects removeAllObjects]; // Clear out data from previous request.
     
-    NSString *url = [flickrRequest callAPIForJsonURL:[self apiMethod] arguments:[self argumentsForApiMethod]];
+    NSString *url = [flickrRequest callAPIForJsonURL:[self.delegate apiMethod] arguments:[self arguments]];
 	TTURLRequest *request = [TTURLRequest requestWithURL:url delegate:self];
     request.cachePolicy = cachePolicy;
     request.response = responseProcessor;

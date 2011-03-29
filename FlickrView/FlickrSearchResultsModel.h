@@ -17,13 +17,19 @@
  *      -----------------------
  *
  */
+@protocol FlickrSearchResultsModelDelegate
+- (NSString *)apiMethod;
+- (NSDictionary *)argumentsForApiMethod;
+@end
+
+
 @interface FlickrSearchResultsModel : TTURLRequestModel <SearchResultsModel>
 {
     FlickrResponse *responseProcessor;
     NSUInteger page;
 	OFFlickrAPIRequest *flickrRequest;
+	id<FlickrSearchResultsModelDelegate> delegate;
 }
-
-// The designated initializer is defined in the SearchResultsModel protocol.
-
+@property (nonatomic, assign)  id<FlickrSearchResultsModelDelegate> delegate;
+	
 @end
