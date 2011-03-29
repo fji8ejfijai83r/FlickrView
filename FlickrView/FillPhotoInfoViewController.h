@@ -22,6 +22,8 @@
 @property (nonatomic, retain)  UITextField* photoTags;
 
 @property (nonatomic, retain)  UISwitch *publicSwitch;
+@property (nonatomic, retain)  UISwitch *friendSwitch;
+@property (nonatomic, retain)  UISwitch *familySwitch;
 
 @property (nonatomic, assign)  id<FillPhotoInfoViewControllerDelegate> delegate; 
 

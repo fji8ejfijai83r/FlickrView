@@ -157,8 +157,8 @@ NSString *kUploadImageStep = @"kUploadImageStep";
 								   arguments:[NSDictionary dictionaryWithObjectsAndKeys:
 											  photoID, @"photo_id",
 											  [photoInfo objectForKey:@"is_public"], @"is_public",
-											  @"0", @"is_friend",
-											  @"0", @"is_family",
+											  [photoInfo objectForKey:@"is_friend"], @"is_friend",
+											  [photoInfo objectForKey:@"is_family"], @"is_family",
 											  @"3", @"perm_comment",
 											  @"0", @"perm_addmeta", nil]];
 

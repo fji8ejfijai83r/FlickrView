@@ -8,7 +8,8 @@
 @synthesize photoDescription;
 @synthesize photoTags;
 @synthesize publicSwitch;
-
+@synthesize friendSwitch;
+@synthesize familySwitch;
 @synthesize delegate;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,6 +37,7 @@
 		photoTags = [[[UITextField alloc] init] autorelease];
 		photoTags.font = TTSTYLEVAR(font);
 		photoTags.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+		photoTags.placeholder = @"Seperated by ,";
 		TTTableControlItem* photoTagsItem = [TTTableControlItem itemWithCaption:@"Tags:"
 																		 control:photoTags];
 		
@@ -46,10 +48,10 @@
 		publicSwitch = [[[UISwitch alloc] init] autorelease];
 		TTTableControlItem* publicItem = [TTTableControlItem itemWithCaption:@"Public" control:publicSwitch];
 		
-		UISwitch *friendSwitch = [[[UISwitch alloc] init] autorelease];
+		friendSwitch = [[[UISwitch alloc] init] autorelease];
 		TTTableControlItem* friendsItem = [TTTableControlItem itemWithCaption:@"Friends" control:friendSwitch];
 		
-		UISwitch *familySwitch = [[[UISwitch alloc] init] autorelease];
+		familySwitch = [[[UISwitch alloc] init] autorelease];
 		TTTableControlItem* familyItem = [TTTableControlItem itemWithCaption:@"Family" control:familySwitch];
 		
 		self.dataSource = [TTSectionedDataSource dataSourceWithObjects:
@@ -58,9 +60,9 @@
 						   photoDescription,
 						   photoTagsItem,
 						@"Privacy Settings",
-						   publicItem,
-						   friendsItem,
 						   familyItem,
+						   friendsItem,
+						   publicItem,
 						   nil];
 	}
 	
@@ -92,7 +94,9 @@
 			photoTitle.text, @"title", 
 			photoDescription.text, @"description",
 			photoTags.text, @"tags", 
-			[self permsNumber:publicSwitch.on], @"is_public", nil];
+			[self permsNumber:publicSwitch.on], @"is_public", 
+			[self permsNumber:friendSwitch.on], @"is_friend", 
+			[self permsNumber:familySwitch.on], @"is_family", nil];
 }
 
 - (void)upload
