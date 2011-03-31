@@ -17,6 +17,8 @@
 #import "FlickrSearchResultsModel.h"
 #import "ForwardingAdapters.h"
 #import "SearchTableViewController.h"
+#import "SearchBarController.h"
+
 
 
 enum {
@@ -225,13 +227,10 @@ enum {
 
 - (void)showSearchScreen
 {	
-//	SearchResultsPhotoSource *photoSource = [[SearchResultsPhotoSource alloc] 
-//											 initWithModel:[[[FlickrSearchResultsModel alloc] init] autorelease]];
-//	//[photoSource load:TTURLRequestCachePolicyDefault more:NO];
-//	TTThumbsViewController *thumbs = [[MySearchThumbsViewController alloc] initForPhotoSource:photoSource];
-//	
-//	[self.navigationController pushViewController:thumbs animated:YES];
-//	[thumbs release];	
+	SearchBarController *thumbs = [[SearchBarController alloc] init];
+	
+	[self.navigationController pushViewController:thumbs animated:YES];
+	[thumbs release];	
 }
 #pragma mark - Table view delegate
 
