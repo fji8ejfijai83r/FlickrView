@@ -434,15 +434,15 @@
 	3F3FC67413321606003016F3 /* ForwardingAdapters.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1016.92, 1159}}";
-			sepNavSelRange = "{1059, 0}";
-			sepNavVisRange = "{222, 898}";
+			sepNavSelRange = "{985, 0}";
+			sepNavVisRange = "{221, 899}";
 		};
 	};
 	3F3FC67513321606003016F3 /* ForwardingAdapters.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1103.33, 2676}}";
-			sepNavSelRange = "{1938, 0}";
-			sepNavVisRange = "{1364, 618}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 2788}}";
+			sepNavSelRange = "{1768, 0}";
+			sepNavVisRange = "{1577, 418}";
 		};
 	};
 	3F3FC67713321629003016F3 /* SearchResultsPhotoSource.h */ = {

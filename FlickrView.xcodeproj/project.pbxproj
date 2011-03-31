@@ -52,8 +52,6 @@
 		3FB9CC26131F3A82002F46C4 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC20131F3A82002F46C4 /* search.png */; };
 		3FB9CC27131F3A82002F46C4 /* star_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC21131F3A82002F46C4 /* star_empty.png */; };
 		3FB9CC28131F3A82002F46C4 /* star_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC22131F3A82002F46C4 /* star_full.png */; };
-		3FB9CD3F131F8FB8002F46C4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD3C131F8FB8002F46C4 /* Photo.m */; };
-		3FB9CD40131F8FB8002F46C4 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD3E131F8FB8002F46C4 /* Place.m */; };
 		3FB9CD48131F902E002F46C4 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD45131F902D002F46C4 /* FlickrFetcher.m */; };
 		3FB9CD49131F902E002F46C4 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD47131F902E002F46C4 /* CoreDataTableViewController.m */; };
 		3FB9CD4B131F908B002F46C4 /* FlickrView.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD4A131F908B002F46C4 /* FlickrView.xcdatamodel */; };
@@ -316,10 +314,6 @@
 		3FB9CC20131F3A82002F46C4 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		3FB9CC21131F3A82002F46C4 /* star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_empty.png; sourceTree = "<group>"; };
 		3FB9CC22131F3A82002F46C4 /* star_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_full.png; sourceTree = "<group>"; };
-		3FB9CD3B131F8FB8002F46C4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		3FB9CD3C131F8FB8002F46C4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		3FB9CD3D131F8FB8002F46C4 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
-		3FB9CD3E131F8FB8002F46C4 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		3FB9CD44131F902D002F46C4 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		3FB9CD45131F902D002F46C4 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		3FB9CD46131F902E002F46C4 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
@@ -591,7 +585,6 @@
 				3FC3018F1339EB460009E01F /* FillPhotoInfoViewController.m */,
 				3FABF9C91342ED4700242322 /* SearchBarController.h */,
 				3FABF9CA1342ED4700242322 /* SearchBarController.m */,
-				3FB9CD3A131F8FB8002F46C4 /* Classes */,
 				3F0D88AB131DF28400734292 /* iPhone */,
 				3F0D88B2131DF28400734292 /* iPad */,
 			);
@@ -642,17 +635,6 @@
 				3FB9CC22131F3A82002F46C4 /* star_full.png */,
 			);
 			name = image;
-			sourceTree = "<group>";
-		};
-		3FB9CD3A131F8FB8002F46C4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3FB9CD3B131F8FB8002F46C4 /* Photo.h */,
-				3FB9CD3C131F8FB8002F46C4 /* Photo.m */,
-				3FB9CD3D131F8FB8002F46C4 /* Place.h */,
-				3FB9CD3E131F8FB8002F46C4 /* Place.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		3FB9CD43131F9016002F46C4 /* Helper */ = {
@@ -972,8 +954,6 @@
 				3F0D88B5131DF28400734292 /* FlickrViewAppDelegate_iPad.m in Sources */,
 				3F0D88E1131DF5DA00734292 /* HomePageTableViewController.m in Sources */,
 				3FB9CC18131F39A5002F46C4 /* PhotoSpotsListTableViewController.m in Sources */,
-				3FB9CD3F131F8FB8002F46C4 /* Photo.m in Sources */,
-				3FB9CD40131F8FB8002F46C4 /* Place.m in Sources */,
 				3FB9CD48131F902E002F46C4 /* FlickrFetcher.m in Sources */,
 				3FB9CD49131F902E002F46C4 /* CoreDataTableViewController.m in Sources */,
 				3FB9CD4B131F908B002F46C4 /* FlickrView.xcdatamodel in Sources */,
