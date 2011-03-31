@@ -35,7 +35,16 @@
 
 @end
 
-@interface MyExploreThumbsViewController : MyBaseThumbsViewController <FlickrSearchResultsModelDelegate>
+@interface MyThumbsViewController : MyBaseThumbsViewController <FlickrSearchResultsModelDelegate>
+
+@end
+
+
+@interface MyExploreThumbsViewController : MyThumbsViewController
+
+@end
+
+@interface MyPhotoThumbsViewController : MyThumbsViewController
 
 @end
 

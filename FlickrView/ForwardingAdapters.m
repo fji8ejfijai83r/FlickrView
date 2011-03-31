@@ -48,13 +48,7 @@
 
 @end
 
-
-@implementation MyExploreThumbsViewController
-
-//- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
-//{
-//	return [self init];
-//}
+@implementation MyThumbsViewController
 
 - (id)init
 {
@@ -62,12 +56,35 @@
 		FlickrSearchResultsModel *fsrm = [[[FlickrSearchResultsModel alloc] init] autorelease];
 		fsrm.delegate = self;
 		SearchResultsPhotoSource *source = [[SearchResultsPhotoSource alloc] 
-					initWithModel:fsrm];
+											initWithModel:fsrm];
 		realModel = [[source underlyingModel] retain];
 		self.photoSource = source;
 	}
 	return self;
 }
+
+- (void)dealloc
+{
+	[super dealloc];
+}
+
+#pragma mark -
+#pragma mark FlickrSearchResultsModelDelegate
+- (NSString *)apiMethod
+{
+	return nil;
+}
+
+- (NSDictionary *)argumentsForApiMethod
+{
+	return nil;
+}
+
+@end
+
+
+
+@implementation MyExploreThumbsViewController
 
 - (void)dealloc
 {
@@ -87,6 +104,29 @@
 	return nil;
 }
 @end
+
+@implementation MyPhotoThumbsViewController
+
+- (void)dealloc
+{
+	//[[TTURLCache sharedCache] removeAll:YES];
+	[super dealloc];
+}
+
+#pragma mark -
+#pragma mark FlickrSearchResultsModelDelegate
+- (NSString *)apiMethod
+{
+	return @"flickr.people.getPhotos";
+}
+
+- (NSDictionary *)argumentsForApiMethod
+{
+	return [NSDictionary dictionaryWithObjectsAndKeys:@"me", @"user_id", nil];
+}
+
+@end
+
 
 
 @implementation MySearchThumbsViewController

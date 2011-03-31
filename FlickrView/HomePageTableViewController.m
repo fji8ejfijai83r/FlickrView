@@ -213,14 +213,14 @@ enum {
 - (void)showUserScreen
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-	UserPhotosTableViewController *uptvc = [[UserPhotosTableViewController alloc] init];
-	uptvc.title = @"Photos";
-	uptvc.userName = @"me";
+	MyPhotoThumbsViewController *mptvc = [[MyPhotoThumbsViewController alloc] init];
+	mptvc.title = @"My Photos";
+	//mptvc.userName = @"me";
 	UserContactsTableViewController *uctvc = [[UserContactsTableViewController alloc] init];
 	uctvc.title = @"Contacts";
-	tabBarController.viewControllers = [NSArray arrayWithObjects:uptvc, uctvc, nil];
+	tabBarController.viewControllers = [NSArray arrayWithObjects:mptvc, uctvc, nil];
 	[self.navigationController pushViewController:tabBarController animated:YES];
-	[uptvc release];
+	[mptvc release];
 	[uctvc release];
 	[tabBarController release];
 }
