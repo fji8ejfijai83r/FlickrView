@@ -36,12 +36,10 @@
 - (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
 @end
 
-@interface MySearchThumbsViewController : TTThumbsViewController <UISearchBarDelegate>
-{
-	id <TTModel> realModel;
-}
-- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
+@interface MySearchThumbsViewController : MyThumbsViewController 
+
 @end
+
 
 @interface MyThumbsDataSource : TTThumbsDataSource
 {}
