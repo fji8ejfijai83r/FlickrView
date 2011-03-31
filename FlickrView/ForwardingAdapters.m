@@ -25,12 +25,36 @@
 
 @end
 
-@implementation MyThumbsViewController
+@implementation MyBaseThumbsViewController
 
-- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
+- (void)dealloc
 {
-	return [self init];
+	[realModel release];
+	[super dealloc];
 }
+
+- (void)setModel:(id<TTModel>)m { [super setModel:realModel]; }
+
+- (TTPhotoViewController*)createPhotoViewController
+{
+	MyPhotoViewController *vc = [[[MyPhotoViewController alloc] init] autorelease];
+	vc.realModel = realModel;
+	return vc;
+}
+
+- (id<TTTableViewDataSource>)createDataSource {
+	return [[[MyThumbsDataSource alloc] initWithPhotoSource:_photoSource delegate:self] autorelease];
+}
+
+@end
+
+
+@implementation MyExploreThumbsViewController
+
+//- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
+//{
+//	return [self init];
+//}
 
 - (id)init
 {
@@ -47,22 +71,8 @@
 
 - (void)dealloc
 {
-	[realModel release];
 	//[[TTURLCache sharedCache] removeAll:YES];
 	[super dealloc];
-}
-
-- (void)setModel:(id<TTModel>)m { [super setModel:realModel]; }
-
-- (TTPhotoViewController*)createPhotoViewController
-{
-	MyPhotoViewController *vc = [[[MyPhotoViewController alloc] init] autorelease];
-	vc.realModel = realModel;
-	return vc;
-}
-
-- (id<TTTableViewDataSource>)createDataSource {
-	return [[[MyThumbsDataSource alloc] initWithPhotoSource:_photoSource delegate:self] autorelease];
 }
 
 #pragma mark -

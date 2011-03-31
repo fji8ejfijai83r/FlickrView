@@ -191,7 +191,7 @@ enum {
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
-	TTThumbsViewController *thumbs = [[MyThumbsViewController alloc] init];
+	TTThumbsViewController *thumbs = [[MyExploreThumbsViewController alloc] init];
 
 	thumbs.tabBarItem.image = [UIImage imageNamed:@"all.png"];
 	thumbs.title = @"Top Rated";

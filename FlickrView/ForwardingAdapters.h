@@ -28,15 +28,20 @@
 @property (nonatomic,retain) id <TTModel> realModel;
 @end
 
-
-@interface MyThumbsViewController : TTThumbsViewController <FlickrSearchResultsModelDelegate>
+@interface MyBaseThumbsViewController : TTThumbsViewController
 {
 	id <TTModel> realModel;
 }
-- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
+
 @end
 
-@interface MySearchThumbsViewController : MyThumbsViewController 
+@interface MyExploreThumbsViewController : MyBaseThumbsViewController <FlickrSearchResultsModelDelegate>
+
+@end
+
+@interface MySearchThumbsViewController : MyBaseThumbsViewController 
+
+- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
 
 @end
 
