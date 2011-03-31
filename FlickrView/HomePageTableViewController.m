@@ -225,6 +225,18 @@ enum {
 	[tabBarController release];
 }
 
+- (void)showContactsScreen
+{
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+	MyContactsRecentThumbsViewController *mcrtvc = 
+	[[MyContactsRecentThumbsViewController alloc] init];
+	mcrtvc.title = @"Recents Uploaded";
+	tabBarController.viewControllers = [NSArray arrayWithObjects:mcrtvc, nil];
+	[self.navigationController pushViewController:mcrtvc animated:YES];
+	[mcrtvc release];
+	[tabBarController release];
+}
+
 - (void)showSearchScreen
 {	
 	SearchBarController *thumbs = [[SearchBarController alloc] init];
@@ -243,6 +255,7 @@ enum {
 				[self showUserScreen];
 				break;
 			case afterRowContacts:
+				[self showContactsScreen];
 				break;
 			case afterRowUpload:
 				[self showUploadScreen];

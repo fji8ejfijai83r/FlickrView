@@ -45,6 +45,8 @@
 		3F3FC67E13321638003016F3 /* SearchResultsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3FC67B13321638003016F3 /* SearchResultsTableDataSource.m */; };
 		3F3FC67F13321638003016F3 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3FC67D13321638003016F3 /* SearchTableViewController.m */; };
 		3FABF9CB1342ED4700242322 /* SearchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FABF9CA1342ED4700242322 /* SearchBarController.m */; };
+		3FABFB9C13448C4A00242322 /* ContactsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FABFB9B13448C4A00242322 /* ContactsListTableViewController.m */; };
+		3FABFBA413448D1900242322 /* ContactsListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FABFBA313448D1900242322 /* ContactsListDataSource.m */; };
 		3FB9CC18131F39A5002F46C4 /* PhotoSpotsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */; };
 		3FB9CC23131F3A82002F46C4 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC1D131F3A82002F46C4 /* Placeholder.png */; };
 		3FB9CC24131F3A82002F46C4 /* all.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC1E131F3A82002F46C4 /* all.png */; };
@@ -306,6 +308,10 @@
 		3F3FC67D13321638003016F3 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewController.m; path = ../../../../../../Users/hdhiessu/Desktop/FinalAssignment/FlickrView/FlickrView/SearchTableViewController.m; sourceTree = SDKROOT; };
 		3FABF9C91342ED4700242322 /* SearchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarController.h; sourceTree = "<group>"; };
 		3FABF9CA1342ED4700242322 /* SearchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarController.m; sourceTree = "<group>"; };
+		3FABFB9A13448C4A00242322 /* ContactsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListTableViewController.h; sourceTree = "<group>"; };
+		3FABFB9B13448C4A00242322 /* ContactsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListTableViewController.m; sourceTree = "<group>"; };
+		3FABFBA213448D1900242322 /* ContactsListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListDataSource.h; sourceTree = "<group>"; };
+		3FABFBA313448D1900242322 /* ContactsListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsListDataSource.m; sourceTree = "<group>"; };
 		3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSpotsListTableViewController.h; sourceTree = "<group>"; };
 		3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSpotsListTableViewController.m; sourceTree = "<group>"; };
 		3FB9CC1D131F3A82002F46C4 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
@@ -585,6 +591,10 @@
 				3FC3018F1339EB460009E01F /* FillPhotoInfoViewController.m */,
 				3FABF9C91342ED4700242322 /* SearchBarController.h */,
 				3FABF9CA1342ED4700242322 /* SearchBarController.m */,
+				3FABFB9A13448C4A00242322 /* ContactsListTableViewController.h */,
+				3FABFB9B13448C4A00242322 /* ContactsListTableViewController.m */,
+				3FABFBA213448D1900242322 /* ContactsListDataSource.h */,
+				3FABFBA313448D1900242322 /* ContactsListDataSource.m */,
 				3F0D88AB131DF28400734292 /* iPhone */,
 				3F0D88B2131DF28400734292 /* iPad */,
 			);
@@ -978,6 +988,8 @@
 				3F3FC67F13321638003016F3 /* SearchTableViewController.m in Sources */,
 				3FC301901339EB460009E01F /* FillPhotoInfoViewController.m in Sources */,
 				3FABF9CB1342ED4700242322 /* SearchBarController.m in Sources */,
+				3FABFB9C13448C4A00242322 /* ContactsListTableViewController.m in Sources */,
+				3FABFBA413448D1900242322 /* ContactsListDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

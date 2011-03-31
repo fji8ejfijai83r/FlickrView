@@ -127,6 +127,21 @@
 
 @end
 
+@implementation MyContactsRecentThumbsViewController
+
+- (NSString *)apiMethod
+{
+	return @"flickr.contacts.getListRecentlyUploaded";
+//	return @"flickr.people.getPhotos";
+}
+
+- (NSDictionary *)argumentsForApiMethod
+{
+	return [NSDictionary dictionaryWithObjectsAndKeys:@"24", @"date_lastupload", nil];
+//	return [NSDictionary dictionaryWithObjectsAndKeys:@"me", @"user_id", nil];
+}
+
+@end
 
 
 @implementation MySearchThumbsViewController

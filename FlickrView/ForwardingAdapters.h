@@ -48,6 +48,11 @@
 
 @end
 
+@interface MyContactsRecentThumbsViewController : MyThumbsViewController
+
+
+@end
+
 @interface MySearchThumbsViewController : MyBaseThumbsViewController 
 
 - (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
