@@ -9,73 +9,20 @@
 #import "SearchResult.h"
 #import "ForwardingAdapters.h"
 
-
-//- (void)createSearchBar
-//{
-//	if (self.searchKey.length) {
-//		if (self.tableView && !self.tableView.tableHeaderView) {
-//			UISearchBar *searchBar = [[[UISearchBar alloc] init] autorelease];
-//			[[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
-//			self.searchDisplayController.searchResultsDelegate = self;
-//			self.searchDisplayController.searchResultsDataSource = self;
-//			self.searchDisplayController.delegate = self;
-//			searchBar.frame = CGRectMake(0, 0, 0, 38);
-//			self.tableView.tableHeaderView = searchBar;
-//		}
-//	} else {
-//		self.tableView.tableHeaderView = nil;
-//	}
-//}
-//
-//- (void)setSearchKey:(NSString *)aKey
-//{
-//	[searchKey release];
-//	searchKey = [aKey copy];
-//	[self createSearchBar];
-//}
-@interface PhotoItem : NSObject <TTPhoto>
-{
-    NSString *caption;
-    NSString *imageURL;
-    NSString *thumbnailURL;
-    id <TTPhotoSource> photoSource;
-    CGSize size;
-    NSInteger index;
-}
-@property (nonatomic, retain) NSString *imageURL;
-@property (nonatomic, retain) NSString *thumbnailURL;
-+ (id)itemWithImageURL:(NSString*)imageURL thumbImageURL:(NSString*)thumbImageURL caption:(NSString*)caption size:(CGSize)size;
-@end
-
 @implementation SearchTableViewController
 
+- (id)init {
+//- (id)initWithNavigatorURL:(NSURL*)URL query:(NSDictionary*)query {
 
-- (TTPhotoViewController*)createPhotoViewController {
-	return [[[TTPhotoViewController alloc] init] autorelease];
-}
-
-- (void)didSelectObject:(id)object atIndexPath:(NSIndexPath*)indexPath;
-{
-	//NSLog(@"%@", object);
-	SearchResult *result = [[(id<SearchResultsModel>)self.model results] objectAtIndex:indexPath.row];
-	id<TTPhoto> photo = [PhotoItem itemWithImageURL:result.bigImageURL thumbImageURL:result.thumbnailURL caption:result.title size:result.bigImageSize];
-	TTPhotoViewController *controller = [self createPhotoViewController];
-	//controller.realModel = (id<SearchResultsModel>)self.model;
-	controller.centerPhoto = photo;
-	controller.photoSource = (id<SearchResultsModel>)self.model ;
-	[self.tabBarController.navigationController pushViewController:controller animated:YES];
-}
-
-
-- (id)init
-{
     if ((self = [super init])) {
         self.title = @"Table Example";
         
         // Initialize our TTTableViewDataSource and our TTModel.
         id<TTTableViewDataSource> ds = [SearchResultsTableDataSource dataSourceWithItems:nil];
-        ds.model = [[[FlickrSearchResultsModel alloc] init] autorelease];
-        
+		FlickrSearchResultsModel *fsrm = [[[FlickrSearchResultsModel alloc] init] autorelease];
+		fsrm.delegate = self;
+
+		ds.model = fsrm;        
         // By setting the dataSource property, the model property for this
         // class (SearchTableViewController) will automatically be hooked up 
         // to point at the same model that the dataSource points at, 
@@ -122,4 +69,26 @@
 - (id<UITableViewDelegate>)createDelegate {
 	return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
 }
+
+#pragma mark -
+#pragma mark FlickrSearchResultsModelDelegate
+- (NSString *)apiMethod
+{
+	return @"flickr.contacts.getList";
+}
+
+- (NSDictionary *)argumentsForApiMethod
+{
+	return nil;
+}
+
+//- (NSString *)apiMethod
+//{
+//	return @"flickr.people.getPhotos";
+//}
+//
+//- (NSDictionary *)argumentsForApiMethod
+//{
+//	return [NSDictionary dictionaryWithObjectsAndKeys:@"me", @"user_id", nil];
+//}
 @end

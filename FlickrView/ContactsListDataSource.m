@@ -13,7 +13,13 @@
 
 - (void)tableViewDidLoadModel:(UITableView *)tableView
 {
+	[super tableViewDidLoadModel:tableView];
 	
+	[self.items removeAllObjects];
+	
+   // for (SearchResult *result in [(id<SearchResultsModel>)self.model results]) {
+//		
+//	}
 }
 
 #pragma mark TTTableViewDataSource protocol
@@ -32,7 +38,7 @@
 #pragma mark FlickrSearchResultsModelDelegate
 - (NSString *)apiMethod
 {
-	return nil;
+	return @"flicrk.contacts.getList";
 }
 
 - (NSDictionary *)argumentsForApiMethod

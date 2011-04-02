@@ -44,8 +44,10 @@
 
 @end
 
-@interface MyPhotoThumbsViewController : MyThumbsViewController
-
+@interface MyPhotoThumbsViewController : MyThumbsViewController {
+	NSString *name;
+}
+- (id)initWithName:(NSString *)aName;
 @end
 
 @interface MyContactsRecentThumbsViewController : MyThumbsViewController
@@ -53,9 +55,11 @@
 
 @end
 
-@interface MySearchThumbsViewController : MyBaseThumbsViewController 
-
-- (id)initForPhotoSource:(SearchResultsPhotoSource *)source;
+@interface MySearchThumbsViewController : MyThumbsViewController
+{
+	NSString *searchText;
+}
+- (id)initWithSearchText:(NSString *)searchText;
 
 @end
 

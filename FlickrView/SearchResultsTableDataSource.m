@@ -34,7 +34,7 @@
         tii.imageStyle = [TTImageStyle styleWithImage:nil
                                          defaultImage:[UIImage imageNamed:@"photo_placeholder.png"]
                                           contentMode:UIViewContentModeScaleAspectFill
-                                                 size:CGSizeMake(75.f, 75.f)
+                                                 size:CGSizeMake(48.f, 48.f)
                                                  next:nil];
         [self.items addObject:tii];
     }

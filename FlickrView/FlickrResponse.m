@@ -5,8 +5,51 @@
 #import "FlickrResponse.h"
 #import "SearchResult.h"
 #import "JSON/JSON.h"
+#import "FlickrViewAppDelegate.h"
 
 @implementation FlickrResponse
+
+- (void)handleJSONForPhotos:(NSDictionary *)json
+{
+	NSDictionary *root = [json objectForKey:@"photos"];
+    totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
+	
+    // Now wrap the results from the server into a domain-specific object.
+    NSArray *results = [root objectForKey:@"photo"];
+    for (NSDictionary *rawResult in results) {
+        
+        SearchResult *result = [[SearchResult alloc] init];
+        result.bigImageURL = [rawResult objectForKey:@"url_m"];
+        result.thumbnailURL = [rawResult objectForKey:@"url_t"];
+        result.title = [rawResult objectForKey:@"title"];
+        result.bigImageSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
+                                         [[rawResult objectForKey:@"height_m"] floatValue]);
+		
+        [self.objects addObject:result];
+		[result release];
+    }
+}
+
+- (void)handleJSONForContacts:(NSDictionary *)json
+{
+	NSDictionary *root = [json objectForKey:@"contacts"];
+	totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
+
+	NSArray *results = [root objectForKey:@"contact"];
+	for (NSDictionary *rawResult in results) {
+        SearchResult *result = [[SearchResult alloc] init];
+
+		NSURL *URL = [[FlickrViewAppDelegate sharedDelegate].flickrContext 
+			 buddyIconSourceURLFromDictionary:rawResult];
+
+		result.thumbnailURL = [URL absoluteString];
+
+		result.title = [rawResult objectForKey:@"username"];
+		
+		[self.objects addObject:result];
+		[result release];
+	}
+}
 
 - (NSError*)request:(TTURLRequest*)request processResponse:(NSHTTPURLResponse*)response data:(id)data
 {
@@ -15,25 +58,17 @@
     // Parse the JSON data that we retrieved from the server.
     NSDictionary *json = [responseBody JSONValue];
     [responseBody release];
-    NSLog(@"%@", json);
     // Drill down into the JSON object to get the parts
     // that we're actually interested in.
-    NSDictionary *root = [json objectForKey:@"photos"];
-    totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
+    NSLog(@"%@", json);
 	
-    // Now wrap the results from the server into a domain-specific object.
-    NSArray *results = [root objectForKey:@"photo"];
-    for (NSDictionary *rawResult in results) {
-        
-        SearchResult *result = [[[SearchResult alloc] init] autorelease];
-        result.bigImageURL = [rawResult objectForKey:@"url_m"];
-        result.thumbnailURL = [rawResult objectForKey:@"url_t"];
-        result.title = [rawResult objectForKey:@"title"];
-        result.bigImageSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
-                                         [[rawResult objectForKey:@"height_m"] floatValue]);
-		
-        [self.objects addObject:result];
-    }
+	if ([json objectForKey:@"photos"]) {
+		//Condition 1 photo
+		[self handleJSONForPhotos:json];
+	} else if ([json objectForKey:@"contacts"]) {
+		//Condition 2 Contact
+		[self handleJSONForContacts:json];
+	}
     
     return nil;
 }

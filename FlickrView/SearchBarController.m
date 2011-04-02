@@ -99,29 +99,13 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-	//[self.navigationController popViewControllerAnimated:NO];
-	FlickrSearchResultsModel *fsrm = [[[FlickrSearchResultsModel alloc] init] autorelease];
-	fsrm.delegate = self;
-	SearchResultsPhotoSource *source = [[SearchResultsPhotoSource alloc] 
-										initWithModel:fsrm];
-	
 	MySearchThumbsViewController *thumbs = [[MySearchThumbsViewController alloc] 
-											initForPhotoSource:source];
+											initWithSearchText:self.mySearchBar.text];
 	[self.navigationController pushViewController:thumbs animated:YES];
 	[thumbs release];
 }
 
-#pragma mark -
-#pragma mark FlickrSearchResultsModelDelegate
-- (NSString *)apiMethod
-{
-	return @"flickr.photos.search";
-}
 
-- (NSDictionary *)argumentsForApiMethod
-{
-	return [NSDictionary dictionaryWithObjectsAndKeys:self.mySearchBar.text, @"text", nil];
-}
 
 
 @end

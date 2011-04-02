@@ -48,8 +48,7 @@
 #import <UIKit/UIKit.h>
 #import "FlickrSearchResultsModel.h"
 
-@interface SearchBarController : TTViewController <UISearchBarDelegate, 
-FlickrSearchResultsModelDelegate>
+@interface SearchBarController : TTViewController <UISearchBarDelegate>
 {
 	UISearchBar	*mySearchBar;
 }

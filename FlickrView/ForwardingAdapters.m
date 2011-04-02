@@ -107,14 +107,21 @@
 
 @implementation MyPhotoThumbsViewController
 
+- (id)initWithName:(NSString *)aName
+{
+	name = [aName copy];
+	if (self = [super init]) {
+		
+	}
+	return self;
+}
+
 - (void)dealloc
 {
-	//[[TTURLCache sharedCache] removeAll:YES];
+	[name release];
 	[super dealloc];
 }
 
-#pragma mark -
-#pragma mark FlickrSearchResultsModelDelegate
 - (NSString *)apiMethod
 {
 	return @"flickr.people.getPhotos";
@@ -122,7 +129,7 @@
 
 - (NSDictionary *)argumentsForApiMethod
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:@"me", @"user_id", nil];
+	return [NSDictionary dictionaryWithObjectsAndKeys:name, @"user_id", nil];
 }
 
 @end
@@ -131,14 +138,16 @@
 
 - (NSString *)apiMethod
 {
-	return @"flickr.contacts.getListRecentlyUploaded";
+	return @"flickr.contacts.getList";
+//	return @"flickr.people.getInfo";
 //	return @"flickr.people.getPhotos";
 }
 
 - (NSDictionary *)argumentsForApiMethod
 {
-	return [NSDictionary dictionaryWithObjectsAndKeys:@"24", @"date_lastupload", nil];
+//	return [NSDictionary dictionaryWithObjectsAndKeys:@"29272314@N06", @"user_id", nil];
 //	return [NSDictionary dictionaryWithObjectsAndKeys:@"me", @"user_id", nil];
+	return nil;
 }
 
 @end
@@ -146,18 +155,32 @@
 
 @implementation MySearchThumbsViewController
 
-- (id)initForPhotoSource:(SearchResultsPhotoSource *)source
+- (id)initWithSearchText:(NSString *)aSearchText
 {
+	searchText = [aSearchText copy];
+	NSLog(@"%@", searchText);
 	if ((self = [super init])) {		
-		realModel = [[source underlyingModel] retain];
-		self.photoSource = source;
+
 	}
 	return self;
 }
 
 - (void)dealloc
 {
+	[searchText release];
 	[super dealloc];
+}
+
+#pragma mark -
+#pragma mark FlickrSearchResultsModelDelegate
+- (NSString *)apiMethod
+{
+	return @"flickr.photos.search";
+}
+
+- (NSDictionary *)argumentsForApiMethod
+{
+	return [NSDictionary dictionaryWithObjectsAndKeys:searchText, @"text", nil];
 }
 
 @end

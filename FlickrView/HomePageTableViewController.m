@@ -213,7 +213,7 @@ enum {
 - (void)showUserScreen
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-	MyPhotoThumbsViewController *mptvc = [[MyPhotoThumbsViewController alloc] init];
+	MyPhotoThumbsViewController *mptvc = [[MyPhotoThumbsViewController alloc] initWithName:@"81449505@N00"];
 	mptvc.title = @"My Photos";
 	//mptvc.userName = @"me";
 	UserContactsTableViewController *uctvc = [[UserContactsTableViewController alloc] init];
@@ -228,9 +228,9 @@ enum {
 - (void)showContactsScreen
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-	MyContactsRecentThumbsViewController *mcrtvc = 
-	[[MyContactsRecentThumbsViewController alloc] init];
-	mcrtvc.title = @"Recents Uploaded";
+	SearchTableViewController *mcrtvc = 
+	[[SearchTableViewController alloc] init];
+	mcrtvc.title = @"Contacts";
 	tabBarController.viewControllers = [NSArray arrayWithObjects:mcrtvc, nil];
 	[self.navigationController pushViewController:mcrtvc animated:YES];
 	[mcrtvc release];

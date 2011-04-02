@@ -2,7 +2,7 @@
 //  SearchTableViewController.h
 //
 
-#import "Three20/Three20.h"
+#import "FlickrSearchResultsModel.h"
 
 /*
  *      SearchTableViewController
@@ -12,7 +12,8 @@
  *  display Yahoo or Flickr image search results. 
  *
  */
-@interface SearchTableViewController : TTTableViewController <UISearchBarDelegate>
+@interface SearchTableViewController : TTTableViewController 
+<UISearchBarDelegate,FlickrSearchResultsModelDelegate>
 {
 }
 

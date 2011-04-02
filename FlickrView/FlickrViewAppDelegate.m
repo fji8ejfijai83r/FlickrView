@@ -9,6 +9,7 @@
 #import "FlickrViewAppDelegate.h"
 #import "HomePageTableViewController.h"
 #import "FlickrAPIKey.h"
+#import "SearchTableViewController.h"
 
 NSString *SnapAndRunShouldUpdateAuthInfoNotification = @"SnapAndRunShouldUpdateAuthInfoNotification";
 // preferably, the auth token is stored in the keychain, but since working with keychain is a pain, we use the simpler default system
@@ -88,6 +89,15 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	TTNavigator *navigator = [TTNavigator navigator];
+    navigator.window = _window;
+	
+    TTURLMap *map = navigator.URLMap;
+    [map from:@"tt://SearchTable" 
+toSharedViewController:[SearchTableViewController class]];
+	
+    [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://SearchTable"]];
+	
 	//Not sure
 	[[TTURLRequestQueue mainQueue] setMaxContentLength:0];
 	
