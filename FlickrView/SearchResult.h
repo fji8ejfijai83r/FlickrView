@@ -22,12 +22,14 @@
     NSString *title;
     NSString *bigImageURL;
     NSString *thumbnailURL;
+	NSString *userid;
     CGSize bigImageSize;
 }
 
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *bigImageURL;
-@property (nonatomic, retain) NSString *thumbnailURL;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *bigImageURL;
+@property (nonatomic, copy) NSString *thumbnailURL;
+@property (nonatomic, copy)  NSString *userid;
 @property (nonatomic, assign) CGSize bigImageSize;
 
 @end

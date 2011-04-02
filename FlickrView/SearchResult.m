@@ -11,13 +11,15 @@
 @implementation SearchResult
 
 @synthesize title, bigImageURL, thumbnailURL, bigImageSize;
+@synthesize userid;
 
 - (void)dealloc
 {
     [title release];
     [bigImageURL release];
     [thumbnailURL release];
-    [super dealloc];
+    [userid release];
+	[super dealloc];
 }
 
 @end

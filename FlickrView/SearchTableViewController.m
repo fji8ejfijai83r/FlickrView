@@ -17,7 +17,16 @@
     if ((self = [super init])) {
         self.title = @"Table Example";
         
-        // Initialize our TTTableViewDataSource and our TTModel.
+		TTNavigator *navigator = [TTNavigator navigator];
+		navigator.window = self.view.window;
+		TTURLMap *map = navigator.URLMap;
+		
+		[map from:@"tt://SearchTable" 
+			toSharedViewController:[SearchTableViewController class]];
+		[map from:@"tt://SearchTable/(initWithName:)" 
+			toSharedViewController:[MyPhotoThumbsViewController class]];
+		
+		// Initialize our TTTableViewDataSource and our TTModel.
         id<TTTableViewDataSource> ds = [SearchResultsTableDataSource dataSourceWithItems:nil];
 		FlickrSearchResultsModel *fsrm = [[[FlickrSearchResultsModel alloc] init] autorelease];
 		fsrm.delegate = self;
@@ -41,29 +50,9 @@
     // Create the tableview.
     self.view = [[[UIView alloc] initWithFrame:TTApplicationFrame()] autorelease];
     self.tableView = [[[UITableView alloc] initWithFrame:TTApplicationFrame() style:UITableViewStylePlain] autorelease];
-    self.tableView.rowHeight = 80.f;
+    self.tableView.rowHeight = 48.f;
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.tableView];
-    
-    // Add search bar to top of screen.
-    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.f, 0.f, TTApplicationFrame().size.width, TT_ROW_HEIGHT)];
-    searchBar.delegate = self;
-    searchBar.placeholder = @"Image Search";
-    self.tabBarController.navigationItem.titleView = searchBar;
-    [searchBar release];
-}
-
-/////////////////////////////////////////////////////////////////////////////////////
-#pragma mark UISearchBarDelegate
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
-    // Configure our TTModel with the user's search terms
-    // and tell the TTModelViewController to reload.
-    [searchBar resignFirstResponder];
-//    [(id<SearchResultsModel>)self.model setSearchTerms:[searchBar text]];
-//    [self reload];
-//    [self.tableView scrollToTop:YES];
 }
 
 - (id<UITableViewDelegate>)createDelegate {
@@ -82,13 +71,4 @@
 	return nil;
 }
 
-//- (NSString *)apiMethod
-//{
-//	return @"flickr.people.getPhotos";
-//}
-//
-//- (NSDictionary *)argumentsForApiMethod
-//{
-//	return [NSDictionary dictionaryWithObjectsAndKeys:@"me", @"user_id", nil];
-//}
 @end

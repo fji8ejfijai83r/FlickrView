@@ -107,6 +107,7 @@ enum {
 {
     [super viewDidLoad];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUserInterface:) name:SnapAndRunShouldUpdateAuthInfoNotification object:nil];
+
 	
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -226,10 +227,12 @@ enum {
 }
 
 - (void)showContactsScreen
-{
+{	
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	SearchTableViewController *mcrtvc = 
 	[[SearchTableViewController alloc] init];
+	
+
 	mcrtvc.title = @"Contacts";
 	tabBarController.viewControllers = [NSArray arrayWithObjects:mcrtvc, nil];
 	[self.navigationController pushViewController:mcrtvc animated:YES];

@@ -25,7 +25,8 @@
         TTTableImageItem* tii = [TTTableImageItem itemWithText:result.title
                                                       imageURL:result.thumbnailURL
                                                   defaultImage:[UIImage imageNamed:@"photo_placeholder.png"]
-                                                           URL:nil];
+                                                           URL:[NSString stringWithFormat:
+																@"tt://SearchTable/%@", result.userid]];
 
         // There is a bug in Three20's table cell image logic w.r.t.
         // Three20's image cache. By applying this TTImageStyle, we can

@@ -13,7 +13,7 @@
  *
  */
 @interface SearchTableViewController : TTTableViewController 
-<UISearchBarDelegate,FlickrSearchResultsModelDelegate>
+<FlickrSearchResultsModelDelegate>
 {
 }
 

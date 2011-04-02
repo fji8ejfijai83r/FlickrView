@@ -45,6 +45,7 @@
 		result.thumbnailURL = [URL absoluteString];
 
 		result.title = [rawResult objectForKey:@"username"];
+		result.userid = [rawResult objectForKey:@"nsid"];
 		
 		[self.objects addObject:result];
 		[result release];
@@ -60,7 +61,6 @@
     [responseBody release];
     // Drill down into the JSON object to get the parts
     // that we're actually interested in.
-    NSLog(@"%@", json);
 	
 	if ([json objectForKey:@"photos"]) {
 		//Condition 1 photo
