@@ -214,7 +214,7 @@ enum {
 - (void)showUserScreen
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
-	MyPhotoThumbsViewController *mptvc = [[MyPhotoThumbsViewController alloc] initWithName:@"81449505@N00"];
+	MyPhotoThumbsViewController *mptvc = [[MyPhotoThumbsViewController alloc] initWithName:@"me"];
 	mptvc.title = @"My Photos";
 	//mptvc.userName = @"me";
 	UserContactsTableViewController *uctvc = [[UserContactsTableViewController alloc] init];
