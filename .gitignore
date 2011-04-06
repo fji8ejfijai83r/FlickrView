@@ -1,6 +1,5 @@
 /build
-/SystemConfiguration.framework
-FlickrView.xcodeproj/*.mode1v3
 .DS_Store
 *.tm_build_errors
-FlickrView.xcodeproj/*.pbxuser
+# FlickrView.xcodeproj/*.pbxuser
+# FlickrView.xcodeproj/*.mode1v3
