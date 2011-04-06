@@ -1,5 +1,5 @@
 /build
 .DS_Store
 *.tm_build_errors
-# FlickrView.xcodeproj/*.pbxuser
-# FlickrView.xcodeproj/*.mode1v3
+FlickrView.xcodeproj/*.pbxuser
+FlickrView.xcodeproj/*.mode1v3
