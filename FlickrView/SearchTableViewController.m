@@ -11,6 +11,15 @@
 
 @implementation SearchTableViewController
 
+- (void)didSelectObject:(TTTableLinkedItem *)object atIndexPath:(NSIndexPath*)indexPath
+{
+	MyPhotoThumbsViewController *mptvc = 
+	[[MyPhotoThumbsViewController alloc] initWithName:object.URL];
+	[self.navigationController pushViewController:mptvc animated:YES];
+	[mptvc release];
+	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 - (id)init {
 //- (id)initWithNavigatorURL:(NSURL*)URL query:(NSDictionary*)query {
 

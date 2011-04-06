@@ -228,16 +228,15 @@ enum {
 
 - (void)showContactsScreen
 {	
-	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+	//UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	SearchTableViewController *mcrtvc = 
 	[[SearchTableViewController alloc] init];
 	
-
 	mcrtvc.title = @"Contacts";
-	tabBarController.viewControllers = [NSArray arrayWithObjects:mcrtvc, nil];
+	//tabBarController.viewControllers = [NSArray arrayWithObjects:mcrtvc, nil];
 	[self.navigationController pushViewController:mcrtvc animated:YES];
 	[mcrtvc release];
-	[tabBarController release];
+	//[tabBarController release];
 }
 
 - (void)showSearchScreen
