@@ -30,6 +30,11 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 @synthesize persistentStoreCoordinator=__persistentStoreCoordinator;
 @synthesize activityIndicator, progressView, cancelButton, progressDescription;
 
++ (UIColor *)FlickrViewNavBarTintColor
+{
+	return [UIColor blueColor];
+}
+
 #pragma mark -
 #pragma mark GETTER method
 - (OFFlickrAPIRequest *)flickrRequest

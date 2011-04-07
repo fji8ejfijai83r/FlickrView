@@ -33,6 +33,7 @@ extern NSString *SnapAndRunShouldUpdateAuthInfoNotification;
 @property (nonatomic, retain) IBOutlet UILabel *progressDescription;
 
 + (FlickrViewAppDelegate *)sharedDelegate;
++ (UIColor *)FlickrViewNavBarTintColor;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 - (void)setAndStoreFlickrAuthToken:(NSString *)inAuthToken;
