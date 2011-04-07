@@ -3,7 +3,7 @@
 	3F0D8887131DF28300734292 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 3FB61997134B24FA004B9AA0 /* FlickrView */;
-		activeSDKPreference = iphoneos4.2;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 3F0D888F131DF28300734292 /* FlickrView */;
 		addToTargets = (
 			3F0D888F131DF28300734292 /* FlickrView */,
@@ -81,6 +81,8 @@
 			3FB629B4134D5D50004B9AA0 = 3FB629B4134D5D50004B9AA0 /* PBXTextBookmark */;
 			3FB629B5134D5D50004B9AA0 = 3FB629B5134D5D50004B9AA0 /* PBXTextBookmark */;
 			3FB629B6134D5D50004B9AA0 = 3FB629B6134D5D50004B9AA0 /* PBXTextBookmark */;
+			3FB62AC6134D6589004B9AA0 /* XCBuildMessageTextBookmark */ = 3FB62AC6134D6589004B9AA0 /* XCBuildMessageTextBookmark */;
+			3FB62AC7134D6589004B9AA0 /* PBXTextBookmark */ = 3FB62AC7134D6589004B9AA0 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3FB619B0134B2519004B9AA0 /* Source Control */;
 		userBuildSettings = {
@@ -101,17 +103,17 @@
 	};
 	3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1060.9, 1046}}";
-			sepNavSelRange = "{1355, 14}";
-			sepNavVisRange = "{264, 1257}";
+			sepNavIntBoundsRect = "{{0, 0}, {1060.9, 1071}}";
+			sepNavSelRange = "{1371, 40}";
+			sepNavVisRange = "{400, 1166}";
 		};
 	};
 	3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{7798, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 12830}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1697.07, 8738}}";
-			sepNavSelRange = "{1429, 0}";
-			sepNavVisRange = "{750, 940}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"View controller\";\n            r = \"{7871, 19}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 12903}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1837.71, 8930}}";
+			sepNavSelRange = "{5092, 20}";
+			sepNavVisRange = "{4422, 1075}";
 		};
 	};
 	3F0D88BD131DF28400734292 /* FlickrViewTests */ = {
@@ -418,7 +420,7 @@
 		fRef = 3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */;
 		name = "FlickrViewAppDelegate.m: 66";
 		rLen = 8;
-		rLoc = 2252;
+		rLoc = 2325;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 1456;
@@ -427,8 +429,8 @@
 		isa = PBXTextBookmark;
 		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
 		name = "HomePageTableViewController.m: 188";
-		rLen = 7;
-		rLoc = 5058;
+		rLen = 0;
+		rLoc = 4979;
 		rType = 0;
 		vrLen = 1307;
 		vrLoc = 4019;
@@ -437,11 +439,30 @@
 		isa = PBXTextBookmark;
 		fRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */;
 		name = "HomePageTableViewController.m: 188";
-		rLen = 7;
-		rLoc = 5058;
+		rLen = 0;
+		rLoc = 4979;
 		rType = 0;
 		vrLen = 903;
 		vrLoc = 3477;
+	};
+	3FB62AC6134D6589004B9AA0 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incomplete implementation of class 'TopPlaceTableViewController'";
+		fRef = 3FB9CE15131F965E002F46C4 /* TopPlaceTableViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 148;
+		rType = 1;
+	};
+	3FB62AC7134D6589004B9AA0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3FB9CE15131F965E002F46C4 /* TopPlaceTableViewController.m */;
+		name = "TopPlaceTableViewController.m: 149";
+		rLen = 0;
+		rLoc = 3453;
+		rType = 0;
+		vrLen = 12;
+		vrLoc = 3447;
 	};
 	3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */ = {
 		uiCtxt = {
@@ -467,9 +488,9 @@
 	};
 	3FB9CE15131F965E002F46C4 /* TopPlaceTableViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1135.66, 3938}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 3996}}";
 			sepNavSelRange = "{3453, 0}";
-			sepNavVisRange = "{3112, 347}";
+			sepNavVisRange = "{3447, 12}";
 		};
 	};
 	3FB9CE58131F9FB6002F46C4 /* SnapAndRunViewController.h */ = {

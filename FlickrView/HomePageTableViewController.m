@@ -176,16 +176,25 @@ enum {
 
 - (void)popUpForAuthorize:(NSIndexPath *)indexPath
 {
-	//	[[[UIAlertView alloc] initWithTitle:@"Notice" 
-	//								 message:@"Flickr" 
-	//								delegate:nil 
-	//					   cancelButtonTitle:@"Cancel" 
-	//					   otherButtonTitles:@"OK"] show];
-	UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-	cell.textLabel.text = @"Logging in...";
-	NSURL *loginURL = [[FlickrViewAppDelegate sharedDelegate].flickrContext 
-					   loginURLFromFrobDictionary:nil requestedPermission:OFFlickrWritePermission];
-	[[UIApplication sharedApplication] openURL:loginURL];
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notice" 
+													message:@"FlickrView will popup safari to login flickr, please make sure"
+												   delegate:self 
+										  cancelButtonTitle:@"Cancel" 
+										  otherButtonTitles:@"OK", nil];
+	[alert show];
+	[alert release];
+//	UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+//	cell.textLabel.text = @"Logging in...";
+	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+	if(buttonIndex != alertView.cancelButtonIndex) {
+		NSURL *loginURL = [[FlickrViewAppDelegate sharedDelegate].flickrContext 
+						   loginURLFromFrobDictionary:nil requestedPermission:OFFlickrWritePermission];
+		[[UIApplication sharedApplication] openURL:loginURL];
+	}
 }
 
 - (void)showExploreScreen
