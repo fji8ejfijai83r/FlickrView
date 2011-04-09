@@ -67,11 +67,9 @@
 	
 	self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];	// use the table view background color
 		
-	//self.mySearchBar = [[[UISearchBar alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, 44.0)] autorelease];
 	self.mySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.f, 0.f, TTApplicationFrame().size.width, TT_ROW_HEIGHT)];
 
 	self.mySearchBar.delegate = self;
-	//self.mySearchBar.showsCancelButton = YES;
 	self.mySearchBar.searchResultsButtonSelected = YES;
 	
 	
@@ -99,7 +97,6 @@
 
 #pragma mark -
 #pragma mark UISearchBarDelegate
-
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
