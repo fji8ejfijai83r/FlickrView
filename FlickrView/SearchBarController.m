@@ -74,12 +74,16 @@
 	//self.mySearchBar.showsCancelButton = YES;
 	self.mySearchBar.searchResultsButtonSelected = YES;
 	
-	// note: here you can also change its "tintColor" property to a different UIColor
-	[self.mySearchBar becomeFirstResponder];
+	
+	[self performSelector:@selector(focus) withObject:nil afterDelay:0.5];
 
 	[self.view addSubview: self.mySearchBar];
 }
 
+- (void)focus
+{
+	[self.mySearchBar becomeFirstResponder];
+}
 // called after the view controller's view is released and set to nil.
 // For example, a memory warning which causes the view to be purged. Not invoked as a result of -dealloc.
 // So release any properties that are loaded in viewDidLoad or can be recreated lazily.
