@@ -199,18 +199,18 @@ enum {
 
 - (void)showExploreScreen
 {
-	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+	//UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	
 	TTThumbsViewController *thumbs = [[MyExploreThumbsViewController alloc] init];
 
-	thumbs.tabBarItem.image = [UIImage imageNamed:@"all.png"];
-	thumbs.title = @"Top Rated";
+	//thumbs.tabBarItem.image = [UIImage imageNamed:@"all.png"];
+	thumbs.title = @"Explore";
 
-	tabBarController.viewControllers = [NSArray arrayWithObjects:thumbs, nil];
-	tabBarController.title = @"Explore";
-	[self.navigationController pushViewController:tabBarController animated:YES];
+	//tabBarController.viewControllers = [NSArray arrayWithObjects:thumbs, nil];
+	//tabBarController.title = @"Explore";
+	[self.navigationController pushViewController:thumbs animated:YES];
 	[thumbs release];
-	[tabBarController release];
+	//[tabBarController release];
 }
 
 - (void)showUploadScreen
