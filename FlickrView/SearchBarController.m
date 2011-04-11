@@ -67,19 +67,21 @@
 	
 	self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];	// use the table view background color
 		
-	//self.mySearchBar = [[[UISearchBar alloc] initWithFrame:CGRectMake(0.0, 0.0, self.view.bounds.size.width, 44.0)] autorelease];
 	self.mySearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0.f, 0.f, TTApplicationFrame().size.width, TT_ROW_HEIGHT)];
 
 	self.mySearchBar.delegate = self;
-	//self.mySearchBar.showsCancelButton = YES;
 	self.mySearchBar.searchResultsButtonSelected = YES;
 	
-	// note: here you can also change its "tintColor" property to a different UIColor
-	[self.mySearchBar becomeFirstResponder];
+	
+	[self performSelector:@selector(focus) withObject:nil afterDelay:0.5];
 
 	[self.view addSubview: self.mySearchBar];
 }
 
+- (void)focus
+{
+	[self.mySearchBar becomeFirstResponder];
+}
 // called after the view controller's view is released and set to nil.
 // For example, a memory warning which causes the view to be purged. Not invoked as a result of -dealloc.
 // So release any properties that are loaded in viewDidLoad or can be recreated lazily.
@@ -95,7 +97,6 @@
 
 #pragma mark -
 #pragma mark UISearchBarDelegate
-
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {

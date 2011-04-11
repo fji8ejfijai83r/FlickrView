@@ -23,20 +23,22 @@
 
 		photoTitle = [[[UITextField alloc] init] autorelease];
 		photoTitle.font = TTSTYLEVAR(font);
-		photoTitle.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+		//photoTitle.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+		photoTitle.clearButtonMode = UITextFieldViewModeWhileEditing;
 		TTTableControlItem* photoTitleItem = [TTTableControlItem itemWithCaption:@"Title:"
 																		control:photoTitle];
 		
 		photoDescription = [[[TTTextEditor alloc] init] autorelease];
-		photoDescription.font = TTSTYLEVAR(font);
-		photoDescription.backgroundColor = TTSTYLEVAR(backgroundColor);
+		//photoDescription.font = TTSTYLEVAR(font);
+		//photoDescription.backgroundColor = TTSTYLEVAR(backgroundColor);
 		photoDescription.autoresizesToText = NO;
 		photoDescription.minNumberOfLines = 2;
 		photoDescription.placeholder = @"Description:";
 		
 		photoTags = [[[UITextField alloc] init] autorelease];
-		photoTags.font = TTSTYLEVAR(font);
-		photoTags.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+		//photoTags.font = TTSTYLEVAR(font);
+		//photoTags.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+		photoTags.clearButtonMode = UITextFieldViewModeWhileEditing;
 		photoTags.placeholder = @"Seperated by ,";
 		TTTableControlItem* photoTagsItem = [TTTableControlItem itemWithCaption:@"Tags:"
 																		 control:photoTags];

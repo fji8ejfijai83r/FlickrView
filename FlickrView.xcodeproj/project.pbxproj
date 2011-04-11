@@ -34,6 +34,8 @@
 		3F0D88CD131DF28400734292 /* FlickrViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3F0D88CC131DF28400734292 /* FlickrViewTests.h */; };
 		3F0D88CF131DF28400734292 /* FlickrViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D88CE131DF28400734292 /* FlickrViewTests.m */; };
 		3F0D88E1131DF5DA00734292 /* HomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */; };
+		3F10028A1351B97000C89FC5 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1002881351B97000C89FC5 /* refresh.png */; };
+		3F10028B1351B97000C89FC5 /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1002891351B97000C89FC5 /* refresh@2x.png */; };
 		3FABF9CB1342ED4700242322 /* SearchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FABF9CA1342ED4700242322 /* SearchBarController.m */; };
 		3FABFB9C13448C4A00242322 /* ContactsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FABFB9B13448C4A00242322 /* ContactsListTableViewController.m */; };
 		3FABFBA413448D1900242322 /* ContactsListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FABFBA313448D1900242322 /* ContactsListDataSource.m */; };
@@ -280,6 +282,8 @@
 		3F0D88CE131DF28400734292 /* FlickrViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrViewTests.m; sourceTree = "<group>"; };
 		3F0D88DF131DF5DA00734292 /* HomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTableViewController.h; sourceTree = "<group>"; };
 		3F0D88E0131DF5DA00734292 /* HomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTableViewController.m; sourceTree = "<group>"; };
+		3F1002881351B97000C89FC5 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		3F1002891351B97000C89FC5 /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
 		3FABF9C91342ED4700242322 /* SearchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarController.h; sourceTree = "<group>"; };
 		3FABF9CA1342ED4700242322 /* SearchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarController.m; sourceTree = "<group>"; };
 		3FABFB9A13448C4A00242322 /* ContactsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsListTableViewController.h; sourceTree = "<group>"; };
@@ -643,6 +647,8 @@
 				3FB9CC20131F3A82002F46C4 /* search.png */,
 				3FB9CC21131F3A82002F46C4 /* star_empty.png */,
 				3FB9CC22131F3A82002F46C4 /* star_full.png */,
+				3F1002881351B97000C89FC5 /* refresh.png */,
+				3F1002891351B97000C89FC5 /* refresh@2x.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -922,6 +928,8 @@
 				3FB9CC28131F3A82002F46C4 /* star_full.png in Resources */,
 				3FB9CE5C131F9FB6002F46C4 /* SnapAndRunViewController.xib in Resources */,
 				3FB61FDA134C129A004B9AA0 /* Three20.bundle in Resources */,
+				3F10028A1351B97000C89FC5 /* refresh.png in Resources */,
+				3F10028B1351B97000C89FC5 /* refresh@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

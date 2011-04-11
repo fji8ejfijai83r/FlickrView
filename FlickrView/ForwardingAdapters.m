@@ -59,6 +59,14 @@
 											initWithModel:fsrm];
 		realModel = [[source underlyingModel] retain];
 		self.photoSource = source;
+		
+		UIBarButtonItem *reloadItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"]
+																	   style:UIBarButtonItemStylePlain
+																	  target:self
+																	  action:@selector(refresh:)];
+		reloadItem.width = 25.0;
+		self.navigationItem.rightBarButtonItem = reloadItem;
+		[reloadItem release];
 	}
 	return self;
 }
@@ -66,6 +74,11 @@
 - (void)dealloc
 {
 	[super dealloc];
+}
+
+- (void)refresh:(id)sender
+{
+    [self.photoSource load:TTURLRequestCachePolicyNoCache more:NO];
 }
 
 #pragma mark -

@@ -58,5 +58,11 @@
     return [UIImage imageNamed:@"Three20.bundle/images/error.png"];
 }
 
+#pragma mark table view delegate stuff
+- (void)tableView:(UITableView *)tableView cell:(UITableViewCell *)cell willAppearAtIndexPath:(NSIndexPath *)indexPath 
+{
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator; 
+}
+
 
 @end
