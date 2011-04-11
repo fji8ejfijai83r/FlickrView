@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ObjectiveFlickr.h"
+#import "FVNavigationController.h"
 
 extern NSString *SnapAndRunShouldUpdateAuthInfoNotification;
 
@@ -18,7 +19,7 @@ extern NSString *SnapAndRunShouldUpdateAuthInfoNotification;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet UINavigationController *ngc;
+@property (nonatomic, retain) FVNavigationController *ngc;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
