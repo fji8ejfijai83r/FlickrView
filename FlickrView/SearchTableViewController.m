@@ -26,14 +26,14 @@
     if ((self = [super init])) {
         self.title = @"Table Example";
         
-		TTNavigator *navigator = [TTNavigator navigator];
-		navigator.window = self.view.window;
-		TTURLMap *map = navigator.URLMap;
-		
-		[map from:@"tt://SearchTable" 
-			toSharedViewController:[SearchTableViewController class]];
-		[map from:@"tt://SearchTable/(initWithName:)" 
-			toSharedViewController:[MyPhotoThumbsViewController class]];
+//		TTNavigator *navigator = [TTNavigator navigator];
+//		navigator.window = self.view.window;
+//		TTURLMap *map = navigator.URLMap;
+//		
+//		[map from:@"tt://SearchTable" 
+//			toSharedViewController:[SearchTableViewController class]];
+//		[map from:@"tt://SearchTable/(initWithName:)" 
+//			toSharedViewController:[MyPhotoThumbsViewController class]];
 		
 		// Initialize our TTTableViewDataSource and our TTModel.
         id<TTTableViewDataSource> ds = [SearchResultsTableDataSource dataSourceWithItems:nil];
