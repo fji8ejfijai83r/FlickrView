@@ -8,6 +8,7 @@
 
 #import "FlickrViewAppDelegate.h"
 #import "HomePageTableViewController.h"
+#import "RootViewController.h"
 #import "FlickrAPIKey.h"
 #import "SearchTableViewController.h"
 #import "ForwardingAdapters.h"
@@ -101,7 +102,7 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 	UINavigationController *tempNgc = [[UINavigationController alloc] init];
 	self.ngc = tempNgc;
 	[tempNgc release];
-	HomePageTableViewController *hptvc = [[HomePageTableViewController alloc] init];
+	RootViewController *hptvc = [[RootViewController alloc] init];
 	[self.ngc initWithRootViewController:hptvc];
 	[hptvc release];
 	[self.window addSubview:self.ngc.view];
