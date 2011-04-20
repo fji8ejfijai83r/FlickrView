@@ -8,9 +8,11 @@
 
 #import "FlickrViewAppDelegate.h"
 #import "HomePageTableViewController.h"
+#import "RootViewController.h"
 #import "FlickrAPIKey.h"
 #import "SearchTableViewController.h"
 #import "ForwardingAdapters.h"
+
 
 NSString *SnapAndRunShouldUpdateAuthInfoNotification = @"SnapAndRunShouldUpdateAuthInfoNotification";
 // preferably, the auth token is stored in the keychain, but since working with keychain is a pain, we use the simpler default system
@@ -98,11 +100,11 @@ NSString *kCheckTokenStep = @"kCheckTokenStep";
 	//Not sure
 	[[TTURLRequestQueue mainQueue] setMaxContentLength:0];
 	
-	UINavigationController *tempNgc = [[UINavigationController alloc] init];
+	FVNavigationController *tempNgc = [[FVNavigationController alloc] init];
 	self.ngc = tempNgc;
 	[tempNgc release];
-	HomePageTableViewController *hptvc = [[HomePageTableViewController alloc] init];
-	[self.ngc initWithRootViewController:hptvc];
+	RootViewController *hptvc = [[RootViewController alloc] init];
+	[self.ngc pushViewController:hptvc animated:NO];
 	[hptvc release];
 	[self.window addSubview:self.ngc.view];
     [self.window makeKeyAndVisible];
