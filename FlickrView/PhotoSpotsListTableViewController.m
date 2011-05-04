@@ -4,7 +4,7 @@
 //
 //  Created by HD hiessu on 10-12-29.
 //  Copyright 2010 HD. All rights reserved.
-//
+// 
 
 #import "PhotoSpotsListTableViewController.h"
 //#import "PhotosListTableViewController.h"
