@@ -60,11 +60,12 @@
 		realModel = [[source underlyingModel] retain];
 		self.photoSource = source;
 		
-		UIBarButtonItem *reloadItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"refresh.png"]
-																	   style:UIBarButtonItemStylePlain
-																	  target:self
-																	  action:@selector(refresh:)];
-		reloadItem.width = 25.0;
+		UIBarButtonItem *reloadItem = 
+        [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                     target:self
+                                                     action:@selector(refresh:)];
+        
+        reloadItem.width = 25.0;
 		self.navigationItem.rightBarButtonItem = reloadItem;
 		[reloadItem release];
 	}
