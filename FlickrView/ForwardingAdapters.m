@@ -125,6 +125,7 @@
 {
 	name = [aName copy];
 	if (self = [super init]) {
+		self.photoSource.title = @"Photos";
 	}
 	return self;
 }
@@ -143,6 +144,28 @@
 - (NSDictionary *)argumentsForApiMethod
 {
 	return [NSDictionary dictionaryWithObjectsAndKeys:name, @"user_id", nil];
+}
+
+@end
+
+@implementation MyFavPhotoThumbsViewController
+
+- (id)init
+{
+	if (self = [super init]) {
+		self.photoSource.title = @"Favortie";
+	}
+	return self;
+}
+
+- (void)dealloc
+{
+	[super dealloc];
+}
+
+- (NSString *)apiMethod
+{
+	return @"flickr.favorites.getList";
 }
 
 @end

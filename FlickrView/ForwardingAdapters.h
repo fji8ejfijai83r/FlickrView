@@ -50,6 +50,12 @@
 - (id)initWithName:(NSString *)aName;
 @end
 
+@interface MyFavPhotoThumbsViewController : MyThumbsViewController {
+
+}
+
+@end
+
 @interface MyContactsRecentThumbsViewController : MyThumbsViewController
 
 

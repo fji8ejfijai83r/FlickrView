@@ -51,7 +51,6 @@
 		3FB6214C134C1E05004B9AA0 /* SearchResultsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB62142134C1E05004B9AA0 /* SearchResultsTableDataSource.m */; };
 		3FB6214D134C1E05004B9AA0 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB62144134C1E05004B9AA0 /* SearchTableViewController.m */; };
 		3FB6214E134C1E05004B9AA0 /* URLModelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB62146134C1E05004B9AA0 /* URLModelResponse.m */; };
-		3FB9CC18131F39A5002F46C4 /* PhotoSpotsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */; };
 		3FB9CC23131F3A82002F46C4 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC1D131F3A82002F46C4 /* Placeholder.png */; };
 		3FB9CC24131F3A82002F46C4 /* all.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC1E131F3A82002F46C4 /* all.png */; };
 		3FB9CC25131F3A82002F46C4 /* faves.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CC1F131F3A82002F46C4 /* faves.png */; };
@@ -68,7 +67,6 @@
 		3FB9CD60131F91C9002F46C4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD59131F91C9002F46C4 /* SBJsonParser.m */; };
 		3FB9CD61131F91C9002F46C4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CD5B131F91C9002F46C4 /* SBJsonWriter.m */; };
 		3FB9CDE6131F9272002F46C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB9CDE5131F9272002F46C4 /* MapKit.framework */; };
-		3FB9CE16131F965E002F46C4 /* TopPlaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CE15131F965E002F46C4 /* TopPlaceTableViewController.m */; };
 		3FB9CE5B131F9FB6002F46C4 /* SnapAndRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CE59131F9FB6002F46C4 /* SnapAndRunViewController.m */; };
 		3FB9CE5C131F9FB6002F46C4 /* SnapAndRunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB9CE5A131F9FB6002F46C4 /* SnapAndRunViewController.xib */; };
 		3FB9CEAB132089B2002F46C4 /* UserPhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9CEA9132089B2002F46C4 /* UserPhotosTableViewController.m */; };
@@ -76,6 +74,8 @@
 		3FB9D00D1320EF1E002F46C4 /* UserContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9D00C1320EF1E002F46C4 /* UserContactsTableViewController.m */; };
 		3FB9D07D1321CE94002F46C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB9D07C1321CE94002F46C4 /* QuartzCore.framework */; };
 		3FC301901339EB460009E01F /* FillPhotoInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3018F1339EB460009E01F /* FillPhotoInfoViewController.m */; };
+		3FD0AE981387609B0051CDC4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0AE961387609B0051CDC4 /* SettingsViewController.m */; };
+		3FD0AE991387609B0051CDC4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD0AE971387609B0051CDC4 /* SettingsViewController.xib */; };
 		3FD96C52131E3276007D5406 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD96C51131E3276007D5406 /* CFNetwork.framework */; };
 		3FD96C62131E3289007D5406 /* libObjectiveFlickr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD96C4E131E320F007D5406 /* libObjectiveFlickr.a */; };
 /* End PBXBuildFile section */
@@ -321,8 +321,6 @@
 		3FB62144134C1E05004B9AA0 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewController.m; path = FlickrView/SearchTableViewController.m; sourceTree = SOURCE_ROOT; };
 		3FB62145134C1E05004B9AA0 /* URLModelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLModelResponse.h; path = FlickrView/URLModelResponse.h; sourceTree = SOURCE_ROOT; };
 		3FB62146134C1E05004B9AA0 /* URLModelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLModelResponse.m; path = FlickrView/URLModelResponse.m; sourceTree = SOURCE_ROOT; };
-		3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoSpotsListTableViewController.h; sourceTree = "<group>"; };
-		3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoSpotsListTableViewController.m; sourceTree = "<group>"; };
 		3FB9CC1D131F3A82002F46C4 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
 		3FB9CC1E131F3A82002F46C4 /* all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all.png; sourceTree = "<group>"; };
 		3FB9CC1F131F3A82002F46C4 /* faves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faves.png; sourceTree = "<group>"; };
@@ -348,8 +346,6 @@
 		3FB9CD5A131F91C9002F46C4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		3FB9CD5B131F91C9002F46C4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		3FB9CDE5131F9272002F46C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		3FB9CE14131F965E002F46C4 /* TopPlaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlaceTableViewController.h; sourceTree = "<group>"; };
-		3FB9CE15131F965E002F46C4 /* TopPlaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlaceTableViewController.m; sourceTree = "<group>"; };
 		3FB9CE58131F9FB6002F46C4 /* SnapAndRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapAndRunViewController.h; sourceTree = "<group>"; };
 		3FB9CE59131F9FB6002F46C4 /* SnapAndRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapAndRunViewController.m; sourceTree = "<group>"; };
 		3FB9CE5A131F9FB6002F46C4 /* SnapAndRunViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnapAndRunViewController.xib; sourceTree = "<group>"; };
@@ -362,6 +358,9 @@
 		3FB9D07C1321CE94002F46C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		3FC3018E1339EB460009E01F /* FillPhotoInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FillPhotoInfoViewController.h; sourceTree = "<group>"; };
 		3FC3018F1339EB460009E01F /* FillPhotoInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FillPhotoInfoViewController.m; sourceTree = "<group>"; };
+		3FD0AE951387609B0051CDC4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3FD0AE961387609B0051CDC4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3FD0AE971387609B0051CDC4 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		3FD96C42131E320F007D5406 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = objectiveflickr/ObjectiveFlickr.xcodeproj; sourceTree = "<group>"; };
 		3FD96C51131E3276007D5406 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3FD96D25131E5983007D5406 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
@@ -520,14 +519,10 @@
 				3F0D88A5131DF28300734292 /* FlickrViewAppDelegate.h */,
 				3F0D88A6131DF28300734292 /* FlickrViewAppDelegate.m */,
 				3F0D88A8131DF28300734292 /* FlickrView.xcdatamodeld */,
-				3FB9CE14131F965E002F46C4 /* TopPlaceTableViewController.h */,
-				3FB9CE15131F965E002F46C4 /* TopPlaceTableViewController.m */,
 				3F1004551352DEB500C89FC5 /* FVNavigationController.h */,
 				3F1004561352DEB500C89FC5 /* FVNavigationController.m */,
 				3F10041C1352BB2500C89FC5 /* RootViewController.h */,
 				3F10041D1352BB2500C89FC5 /* RootViewController.m */,
-				3FB9CC16131F39A5002F46C4 /* PhotoSpotsListTableViewController.h */,
-				3FB9CC17131F39A5002F46C4 /* PhotoSpotsListTableViewController.m */,
 				3FB9CE58131F9FB6002F46C4 /* SnapAndRunViewController.h */,
 				3FB9CE59131F9FB6002F46C4 /* SnapAndRunViewController.m */,
 				3FB9CE5A131F9FB6002F46C4 /* SnapAndRunViewController.xib */,
@@ -545,6 +540,9 @@
 				3FABFB9B13448C4A00242322 /* ContactsListTableViewController.m */,
 				3FABFBA213448D1900242322 /* ContactsListDataSource.h */,
 				3FABFBA313448D1900242322 /* ContactsListDataSource.m */,
+				3FD0AE951387609B0051CDC4 /* SettingsViewController.h */,
+				3FD0AE961387609B0051CDC4 /* SettingsViewController.m */,
+				3FD0AE971387609B0051CDC4 /* SettingsViewController.xib */,
 				3F0D88AB131DF28400734292 /* iPhone */,
 				3F0D88B2131DF28400734292 /* iPad */,
 			);
@@ -939,6 +937,7 @@
 				3FB61FDA134C129A004B9AA0 /* Three20.bundle in Resources */,
 				3F10028A1351B97000C89FC5 /* refresh.png in Resources */,
 				3F10028B1351B97000C89FC5 /* refresh@2x.png in Resources */,
+				3FD0AE991387609B0051CDC4 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,7 +978,6 @@
 				3F0D88AA131DF28400734292 /* FlickrView.xcdatamodeld in Sources */,
 				3F0D88AE131DF28400734292 /* FlickrViewAppDelegate_iPhone.m in Sources */,
 				3F0D88B5131DF28400734292 /* FlickrViewAppDelegate_iPad.m in Sources */,
-				3FB9CC18131F39A5002F46C4 /* PhotoSpotsListTableViewController.m in Sources */,
 				3FB9CD48131F902E002F46C4 /* FlickrFetcher.m in Sources */,
 				3FB9CD49131F902E002F46C4 /* CoreDataTableViewController.m in Sources */,
 				3FB9CD4B131F908B002F46C4 /* FlickrView.xcdatamodel in Sources */,
@@ -989,7 +987,6 @@
 				3FB9CD5F131F91C9002F46C4 /* SBJsonBase.m in Sources */,
 				3FB9CD60131F91C9002F46C4 /* SBJsonParser.m in Sources */,
 				3FB9CD61131F91C9002F46C4 /* SBJsonWriter.m in Sources */,
-				3FB9CE16131F965E002F46C4 /* TopPlaceTableViewController.m in Sources */,
 				3FB9CE5B131F9FB6002F46C4 /* SnapAndRunViewController.m in Sources */,
 				3FB9CEAB132089B2002F46C4 /* UserPhotosTableViewController.m in Sources */,
 				3FB9CFBB1320E781002F46C4 /* UserTableViewController.m in Sources */,
@@ -1008,6 +1005,7 @@
 				3FB6214E134C1E05004B9AA0 /* URLModelResponse.m in Sources */,
 				3F10041E1352BB2500C89FC5 /* RootViewController.m in Sources */,
 				3F1004571352DEB500C89FC5 /* FVNavigationController.m in Sources */,
+				3FD0AE981387609B0051CDC4 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

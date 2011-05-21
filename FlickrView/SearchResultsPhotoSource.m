@@ -38,7 +38,7 @@
 - (id)initWithModel:(id <SearchResultsModel>)theModel
 {
     if ((self = [super init])) {
-        albumTitle = @"Photos";
+        albumTitle = @"Photo";
         model = [theModel retain];
     }
     return self;

@@ -8,7 +8,6 @@
 
 #import "RootViewController.h"
 #import "FlickrViewAppDelegate.h"
-#import "PhotoSpotsListTableViewController.h"
 #import "SnapAndRunViewController.h"
 #import "UserPhotosTableViewController.h"
 #import "UserContactsTableViewController.h"
@@ -18,6 +17,8 @@
 #import "ForwardingAdapters.h"
 #import "SearchTableViewController.h"
 #import "SearchBarController.h"
+#import "SettingsViewController.h"
+
 
 @interface RootViewController()
 - (BOOL)isAuthorized;
@@ -131,7 +132,7 @@
 - (void)createModel
 {
 	NSArray *topItems = [self topItems];
-	NSArray *settingsItems = [NSArray arrayWithObjects:[TTTableTextItem itemWithText:@"Settings" URL:@"/settings/"], nil];
+	NSArray *settingsItems = [NSArray arrayWithObjects:[TTTableTextItem itemWithText:@"Settings" URL:@"/settings"], nil];
 
 	self.dataSource = [rootViewSectionedDataSource dataSourceWithArrays:@"", topItems, @"", settingsItems, nil];
 }
@@ -202,14 +203,13 @@
 {
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
 	MyPhotoThumbsViewController *mptvc = [[MyPhotoThumbsViewController alloc] initWithName:@"me"];
-	mptvc.title = @"My Photos";
-	//mptvc.userName = @"me";
-	UserContactsTableViewController *uctvc = [[UserContactsTableViewController alloc] init];
-	uctvc.title = @"Contacts";
-	tabBarController.viewControllers = [NSArray arrayWithObjects:mptvc, uctvc, nil];
+	mptvc.title = @"Photos";
+    MyFavPhotoThumbsViewController *mfptvc = [[MyFavPhotoThumbsViewController alloc] init];
+    mfptvc.title = @"Favorite";
+	tabBarController.viewControllers = [NSArray arrayWithObjects:mptvc, mfptvc, nil];
 	[self.navigationController pushViewController:tabBarController animated:YES];
 	[mptvc release];
-	[uctvc release];
+	[mfptvc release];
 	[tabBarController release];
 }
 
@@ -234,6 +234,13 @@
 	[thumbs release];	
 }
 
+- (void)showSettingsScreen
+{
+	SettingsViewController *svc = [[SettingsViewController alloc] init];
+	[self.navigationController pushViewController:svc animated:YES];
+	[svc release];
+}
+
 - (void)didSelectObject:(TTTableLinkedItem *)object atIndexPath:(NSIndexPath*)indexPath
 {
 	if ([object.URL isEqual:@"/authorize"]) {
@@ -248,6 +255,8 @@
 		[self showContactsScreen];
 	} else if ([object.URL isEqual:@"/upload"]) {
 		[self showUploadScreen];
+	} else if ([object.URL isEqual:@"/settings"]) {
+		[self showSettingsScreen];
 	}
 	return;
 }
